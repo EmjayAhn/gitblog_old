@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Emjay&#39;s DailyCommit Blog</title>
+  
+  <subtitle>Emjay&#39;s DataScience &amp; Development</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://emjayahn.github.io/"/>
+  <updated>2018-10-23T14:30:54.168Z</updated>
+  <id>https://emjayahn.github.io/</id>
+  
+  <author>
+    <name>EmjayAhn(Minjae Ahn)</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://emjayahn.github.io/2018/10/23/hello-world/"/>
+    <id>https://emjayahn.github.io/2018/10/23/hello-world/</id>
+    <published>2018-10-23T14:30:54.167Z</published>
+    <updated>2018-10-23T14:30:54.168Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://emjayahn.github.io/2018/10/23/181023-DailyScrum/"/>
+    <id>https://emjayahn.github.io/2018/10/23/181023-DailyScrum/</id>
+    <published>2018-10-23T04:31:39.118Z</published>
+    <updated>2018-10-23T16:06:25.043Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181023-DailyScrum"><a href="#181023-DailyScrum" class="headerlink" title="181023 DailyScrum"></a>181023 DailyScrum</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol><li>Queue 정리 하기</li><li>확률 분포 공부</li><li>&lt;스터디&gt;멀티 스레딩 개념을 포함한 네이버 크롤링 코드짜기</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>&lt;스터디&gt; 멀티 스레딩에 관해 이야기, 공부해볼 정보들 공유, 어떻게 코드를 구성할 것인지 의견을 나누었다.</li><li>Queue 개념 정리 및 코드 구현 연습</li><li>베르누이 분포, 이항분포 정리 및 Searching</li><li>블로그 수정</li></ol><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>오후 4시 멀티 스레드 관련한 내용으로 온라인 스터디 모임 예정</li><li>멀티스레딩 개념을 활용한 네이버 크롤링 코드 짜기</li><li>각종 확률 분포 및 검정 부분까지 복습</li></ol><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘 공부한 testing 시작부분부터는 그간 배웠던 것을 한꺼번에 적용한다. 배웠던 여러가지 분포를 활용하여,<br>가설을 세우고 이 가설이 선택한 분포의 관점에서 봤을 떄, 가설을 선택할지 기각할지에 관한 내용은 점차<br>data를 통해 prediction 을 해가는 과정에 있는 듯한 느낌을 받았다.</li><li>아직 검정 과정과 앞으로 공부하게 될 여러가지 분석 모델을 이해하기에 앞서배운 확률분포 부분의 내용이<br>부족한듯하여, 계속 꾸준히 앞부분을 공부해야될 것 같다.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181023-DailyScrum&quot;&gt;&lt;a href=&quot;#181023-DailyScrum&quot; class=&quot;headerlink&quot; title=&quot;181023 DailyScrum&quot;&gt;&lt;/a&gt;181023 DailyScrum&lt;/h1&gt;&lt;h2 id=&quot;오늘-할-
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://emjayahn.github.io/2018/10/22/181022-DailyScrum/"/>
+    <id>https://emjayahn.github.io/2018/10/22/181022-DailyScrum/</id>
+    <published>2018-10-21T23:22:41.104Z</published>
+    <updated>2018-10-22T14:12:43.224Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181022-DailyScrum"><a href="#181022-DailyScrum" class="headerlink" title="181022 DailyScrum"></a>181022 DailyScrum</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol><li>블로그 테마 바꾸기</li><li>Selenium 과제 두번째 것 (17:47 - 19:00)</li><li>확률 분포 다시 한번 정리하기</li><li>데이터구조 (PseudoLinkedList, Stack, Queue)정리</li><li>새 맥북 환경 설정 조금씩 마저 더하기</li><li>DailyScrum Upload</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Selenium NBA Page Crawling 해서, DataFrame으로 정리 (17:47 - 18:55)</li><li>Stack 정리</li><li>Github 설정</li></ol><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>확률 분포 공부</li><li>Queue 정리</li></ol><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>맥북을 바꾸면서, 환경 설정하는데 너무 많은 시간이 든다. 틈틈히 하고 있는데도 아직 이전 맥북의 환경에서 100% 똑같은 환경을 만들지 못하고 있다. 장비를 바꿀 때, 혹은 다른 작업 환경에서 연속성을 이어 나가기 위해 나에게 맞는 환경설정도 정리할 필요성을 느낀다.</li><li>오늘 공부한 PseudoLinkedList, Stack, Queue 의 활용성에 대해 깊이 고민 해 볼 수 있어서 뿌듯하다. 특히나 PseudoLinkedList의 경우 내가 사용하지 않았던 자료구조나 class를 목적에 맞게 customize 할 수 있는 측면에서 활용성이 높다고 생각된다. 다른 사람이 작성한 class 를 잘 읽어보고, 그 활용도를 높이기 위해 overriding 하는 방법을 틈틈히 챙겨 봐야겠다. </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181022-DailyScrum&quot;&gt;&lt;a href=&quot;#181022-DailyScrum&quot; class=&quot;headerlink&quot; title=&quot;181022 DailyScrum&quot;&gt;&lt;/a&gt;181022 DailyScrum&lt;/h1&gt;&lt;h2 id=&quot;오늘-할-
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

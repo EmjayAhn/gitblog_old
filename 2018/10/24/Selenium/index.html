@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>Selenium | Emjay&#39;s DailyCommit Blog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Web, Crawling, Selenium">
+    
+    <meta name="description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+<meta name="keywords" content="Web, Crawling, Selenium">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Selenium">
+<meta property="og:url" content="https://emjayahn.github.io/2018/10/24/Selenium/index.html">
+<meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
+<meta property="og:description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-10-24T14:54:10.426Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Selenium">
+<meta name="twitter:description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Emjay&#39;s DailyCommit Blog" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Emjay&#39;s DataScience &amp; Development</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/TWIL/">TWIL</a></li></ul>
+                                    
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Python/">Python</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-Selenium" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Selenium
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/10/24/Selenium/" class="article-date">
+            <time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Web-Crawling-Selenium/">Web, Crawling, Selenium</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h1><ul>
+<li>자동화 할 수 있는 프로그램</li>
+</ul>
+<h2 id="Install-Selenium"><a href="#Install-Selenium" class="headerlink" title="[ Install Selenium ]"></a>[ Install Selenium ]</h2><ol>
+<li><p>chrome driver 다운로드</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> mv ~/Download/chromedriver /usr/local/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Selenium Python Package 설치</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo pip3 install selenium</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="1-셀레니움-사용해보기"><a href="#1-셀레니움-사용해보기" class="headerlink" title="1. 셀레니움 사용해보기"></a>1. 셀레니움 사용해보기</h2><ul>
+<li><p>import</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Open Browser (Chrome Driver)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver = webdriver.Chrome()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>페이지 이동</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.get(url)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>브라우져 상에서 자바 스크립트 실행</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.execute_script(<span class="string">"window.scrollTo(300, 400)"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>지금 control하고 있는 window 객체 확인</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">main_window = driver.current_window_handle</span><br><span class="line">main_window</span><br><span class="line"><span class="comment">#현재 control 하고 있는 window 의 객체를 리턴한다.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>열려 있는 전체 window 탭 모두 확인</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">windows = driver.window_handles</span><br><span class="line">windows</span><br><span class="line"><span class="comment">#현재 열려있는 모든 탭의 객체를 리스트 형태로 리턴한다.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>열려있는 window 탭 중, control 대상 window 로 바꾸기</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">driver.switch_to_window(windows[<span class="number">0</span>])</span><br><span class="line"><span class="comment">#다시 원래 열었던 창으로 돌아가기</span></span><br><span class="line">driver.switch_to_window(main_window)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="2-Alert-와-Confirm-다루기"><a href="#2-Alert-와-Confirm-다루기" class="headerlink" title="2. Alert 와 Confirm 다루기"></a>2. Alert 와 Confirm 다루기</h2><ul>
+<li>웹을 자동화해서 다니다보면, Alert 창이나 Confirm 창이 의도치 않게 나올 수 있다. 이를 다루는 방법은 다음과 같다.</li>
+<li>Alert와 Confirm 창의 차이는, <br><br>Alert 는 확인 창 하나만 있고, Confirm은 확인과 취소가 같이 있는 창이다.</li>
+</ul>
+<h3 id="1-Alert"><a href="#1-Alert" class="headerlink" title="(1) Alert"></a>(1) Alert</h3><ul>
+<li><p>Alert 띄우기</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">drive.switch_to_window(main_window)</span><br><span class="line">drive.execute_script(<span class="string">"alert('이게 alert 로 뜰겁니다.');"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Alert 확인 누르기</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alert = driver.switch_to.alert</span><br><span class="line">alert.accept()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Alert 창이 있으면 확인을 누르고, 없으면 없다고 리턴하기 (예외처리)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">  alert = driver.switch_to.alert</span><br><span class="line">  alert.accept()</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">  print(<span class="string">"alert 가 없습니다."</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-Confirm"><a href="#2-Confirm" class="headerlink" title="(2) Confirm"></a>(2) Confirm</h3><ul>
+<li><p>Confirm 띄우기</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.execute_script(<span class="string">"confirm('이게 Confirm 창입니다.');"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Confirm 창 확인 누르기 or 취소 누르기</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">confirm = driver.switch_to.alert</span><br><span class="line"><span class="comment"># 확인</span></span><br><span class="line"><span class="comment"># confirm.accept()</span></span><br><span class="line"><span class="comment"># 취소</span></span><br><span class="line">confirm.dismiss()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-입력창에-글씨-입력하기"><a href="#3-입력창에-글씨-입력하기" class="headerlink" title="3. 입력창에 글씨 입력하기"></a>3. 입력창에 글씨 입력하기</h2><ul>
+<li>이제부터 Selenium을 통해 특정 html 의 element 에 액션을 주려면,<br>각종 Selector 를 사용하여 html 상의 element을 셀렉팅 하고, 해당 element 에게 액션을 주어야한다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(nameof cssselector).send_keys(<span class="string">"입력할 내용"</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>.find_element_by_css_selector 와 <br><br>.find_<b>elements</b>_<br>by_css_selector 는 다르다.element 는 하나의 selector 만 선택하는 반면, elements 는 여러가지 element 를 셀렉팅 해서, 리스트 형식으로 Return 한다.</li>
+<li>따라서 이렇게 리스트 형식으로 Return 이 된 경우, List[0] 등과 같이 그 엘리먼트를 뒤에 지정해줘야된다. 즉,<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(nameof cssselector)</span><br><span class="line"><span class="comment">#위는 바로 selecting 이 된것이지만,</span></span><br><span class="line">driver.find_elements_by_css_selector(nameof cssselector)[<span class="number">0</span>]</span><br><span class="line"><span class="comment">#위는 뒤에 selecting 위해 list 의 요소를 선택 해주어야한다.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="4-버튼-클릭하기"><a href="#4-버튼-클릭하기" class="headerlink" title="4. 버튼 클릭하기"></a>4. 버튼 클릭하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 위의 방법처럼, element 를 선택해준다.</span></span><br><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>).click()</span><br></pre></td></tr></table></figure>
+<h2 id="5-id-class-그-외의-attribute-값을-selecting-하는-법"><a href="#5-id-class-그-외의-attribute-값을-selecting-하는-법" class="headerlink" title="5. id, class, 그 외의 attribute 값을 selecting 하는 법"></a>5. id, class, 그 외의 attribute 값을 selecting 하는 법</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector."</span>)click()</span><br><span class="line"><span class="comment"># id 의 경우 : #idname</span></span><br><span class="line"><span class="comment"># class 의 경우 : .classname</span></span><br><span class="line"><span class="comment"># 다른 attribute 의 경우 : [attribute = 'value']</span></span><br></pre></td></tr></table></figure>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/emjayahn" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/10/24/Requests/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Requests
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/10/24/thread/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Thread</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/Requests/" class="title">Requests</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/Selenium/" class="title">Selenium</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/thread/" class="title">Thread</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
+                            <p class="item-title"><a href="/2018/10/24/181024-TodayWhatILearned/" class="title">181024 TodayWhatILearned</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T01:41:11.714Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
+                            <p class="item-title"><a href="/2018/10/23/181023-TodayWhatILearned/" class="title">181023 TodayWhatILearned</a></p>
+                            <p class="item-date"><time datetime="2018-10-23T04:31:39.118Z" itemprop="datePublished">2018-10-23</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TWIL/">TWIL</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Crawling-Web-Requests/">Crawling, Web, Requests</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TWIL/">TWIL</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thread/">Thread</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Crawling-Selenium/">Web, Crawling, Selenium</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Crawling-Web-Requests/" style="font-size: 10px;">Crawling, Web, Requests</a> <a href="/tags/TWIL/" style="font-size: 20px;">TWIL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Web-Crawling-Selenium/" style="font-size: 10px;">Web, Crawling, Selenium</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 EmjayAhn(Minjae Ahn)</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'emjaygithubpage';
+    
+    
+    var disqus_url = 'https://emjayahn.github.io/2018/10/24/Selenium/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

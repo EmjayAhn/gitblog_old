@@ -6,24 +6,24 @@
     
 
     
-    <title>Emjay&#39;s DailyCommit Blog</title>
+    <title>181023 TodayWhatILearned | Emjay&#39;s DailyCommit Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="">
+        <meta name="keywords" content="TWIL">
     
-    <meta name="description" content="181022 DailyScrum오늘 할 일은 무엇인가 블로그 테마 바꾸기 Selenium 과제 두번째 것 (17:47 - 19:00) 확률 분포 다시 한번 정리하기 데이터구조 (PseudoLinkedList, Stack, Queue)정리 새 맥북 환경 설정 조금씩 마저 더하기 DailyScrum Upload  오늘 한 일은 무엇인가 Selenium NBA">
-<meta name="keywords" content="DailyCommit">
+    <meta name="description" content="181023 TWIL오늘 할 일은 무엇인가 Queue 정리 하기 확률 분포 공부 &amp;lt;스터디&amp;gt;멀티 스레딩 개념을 포함한 네이버 크롤링 코드짜기  오늘 한 일은 무엇인가 &amp;lt;스터디&amp;gt; 멀티 스레딩에 관해 이야기, 공부해볼 정보들 공유, 어떻게 코드를 구성할 것인지 의견을 나누었다. Queue 개념 정리 및 코드 구현 연습 베르누이 분포, 이항분">
+<meta name="keywords" content="TWIL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:url" content="https://emjayahn.github.io/2018/10/22/181022-DailyScrum/index.html">
+<meta property="og:title" content="181023 TodayWhatILearned">
+<meta property="og:url" content="https://emjayahn.github.io/2018/10/23/181023-TodayWhatILearned/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:description" content="181022 DailyScrum오늘 할 일은 무엇인가 블로그 테마 바꾸기 Selenium 과제 두번째 것 (17:47 - 19:00) 확률 분포 다시 한번 정리하기 데이터구조 (PseudoLinkedList, Stack, Queue)정리 새 맥북 환경 설정 조금씩 마저 더하기 DailyScrum Upload  오늘 한 일은 무엇인가 Selenium NBA">
-<meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-10-22T14:12:43.224Z">
+<meta property="og:description" content="181023 TWIL오늘 할 일은 무엇인가 Queue 정리 하기 확률 분포 공부 &amp;lt;스터디&amp;gt;멀티 스레딩 개념을 포함한 네이버 크롤링 코드짜기  오늘 한 일은 무엇인가 &amp;lt;스터디&amp;gt; 멀티 스레딩에 관해 이야기, 공부해볼 정보들 공유, 어떻게 코드를 구성할 것인지 의견을 나누었다. Queue 개념 정리 및 코드 구현 연습 베르누이 분포, 이항분">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-10-24T14:53:07.012Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Emjay&#39;s DailyCommit Blog">
-<meta name="twitter:description" content="181022 DailyScrum오늘 할 일은 무엇인가 블로그 테마 바꾸기 Selenium 과제 두번째 것 (17:47 - 19:00) 확률 분포 다시 한번 정리하기 데이터구조 (PseudoLinkedList, Stack, Queue)정리 새 맥북 환경 설정 조금씩 마저 더하기 DailyScrum Upload  오늘 한 일은 무엇인가 Selenium NBA">
+<meta name="twitter:title" content="181023 TodayWhatILearned">
+<meta name="twitter:description" content="181023 TWIL오늘 할 일은 무엇인가 Queue 정리 하기 확률 분포 공부 &amp;lt;스터디&amp;gt;멀티 스레딩 개념을 포함한 네이버 크롤링 코드짜기  오늘 한 일은 무엇인가 &amp;lt;스터디&amp;gt; 멀티 스레딩에 관해 이야기, 공부해볼 정보들 공유, 어떻게 코드를 구성할 것인지 의견을 나누었다. Queue 개념 정리 및 코드 구현 연습 베르누이 분포, 이항분">
     
 
     
@@ -74,10 +74,10 @@
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item">
-                                    <a class="main-nav-list-link" href="/">홈</a>
+                                    <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
-                                        
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/TWIL/">TWIL</a></li></ul>
                                     
                                 <li class="main-nav-list-item">
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
@@ -88,7 +88,7 @@
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -107,10 +107,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: '포스트',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: '카테고리',
-            TAGS: '태그',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -136,50 +136,64 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    미지정
+    <a class="page-title-link" href="/categories/TWIL/">TWIL</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-181022-DailyScrum" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-181023-TodayWhatILearned" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        181023 TodayWhatILearned
+        </h1>
+    
+
+            </header>
         
         
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/10/22/181022-DailyScrum/" class="article-date">
-            <time datetime="2018-10-21T23:22:41.104Z" itemprop="datePublished">2018-10-22</time>
+        <a href="/2018/10/23/181023-TodayWhatILearned/" class="article-date">
+            <time datetime="2018-10-23T04:31:39.118Z" itemprop="datePublished">2018-10-23</time>
         </a>
     </div>
 
 		
 
                 
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/TWIL/">TWIL</a>
+    </div>
+
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="181022-DailyScrum"><a href="#181022-DailyScrum" class="headerlink" title="181022 DailyScrum"></a>181022 DailyScrum</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol>
-<li>블로그 테마 바꾸기</li>
-<li>Selenium 과제 두번째 것 (17:47 - 19:00)</li>
-<li>확률 분포 다시 한번 정리하기</li>
-<li>데이터구조 (PseudoLinkedList, Stack, Queue)정리</li>
-<li>새 맥북 환경 설정 조금씩 마저 더하기</li>
-<li>DailyScrum Upload</li>
+            <h1 id="181023-TWIL"><a href="#181023-TWIL" class="headerlink" title="181023 TWIL"></a>181023 TWIL</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol>
+<li>Queue 정리 하기</li>
+<li>확률 분포 공부</li>
+<li>&lt;스터디&gt;멀티 스레딩 개념을 포함한 네이버 크롤링 코드짜기</li>
 </ol>
 <h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol>
-<li>Selenium NBA Page Crawling 해서, DataFrame으로 정리 (17:47 - 18:55)</li>
-<li>Stack 정리</li>
-<li>Github 설정</li>
+<li>&lt;스터디&gt; 멀티 스레딩에 관해 이야기, 공부해볼 정보들 공유, 어떻게 코드를 구성할 것인지 의견을 나누었다.</li>
+<li>Queue 개념 정리 및 코드 구현 연습</li>
+<li>베르누이 분포, 이항분포 정리 및 Searching</li>
+<li>블로그 수정</li>
 </ol>
 <h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol>
-<li>확률 분포 공부</li>
-<li>Queue 정리</li>
+<li>오후 4시 멀티 스레드 관련한 내용으로 온라인 스터디 모임 예정</li>
+<li>멀티스레딩 개념을 활용한 네이버 크롤링 코드 짜기</li>
+<li>각종 확률 분포 및 검정 부분까지 복습</li>
 </ol>
 <h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul>
-<li>맥북을 바꾸면서, 환경 설정하는데 너무 많은 시간이 든다. 틈틈히 하고 있는데도 아직 이전 맥북의 환경에서 100% 똑같은 환경을 만들지 못하고 있다. 장비를 바꿀 때, 혹은 다른 작업 환경에서 연속성을 이어 나가기 위해 나에게 맞는 환경설정도 정리할 필요성을 느낀다.</li>
-<li>오늘 공부한 PseudoLinkedList, Stack, Queue 의 활용성에 대해 깊이 고민 해 볼 수 있어서 뿌듯하다. 특히나 PseudoLinkedList의 경우 내가 사용하지 않았던 자료구조나 class를 목적에 맞게 customize 할 수 있는 측면에서 활용성이 높다고 생각된다. 다른 사람이 작성한 class 를 잘 읽어보고, 그 활용도를 높이기 위해 overriding 하는 방법을 틈틈히 챙겨 봐야겠다. </li>
+<li>오늘 공부한 testing 시작부분부터는 그간 배웠던 것을 한꺼번에 적용한다. 배웠던 여러가지 분포를 활용하여,<br>가설을 세우고 이 가설이 선택한 분포의 관점에서 봤을 떄, 가설을 선택할지 기각할지에 관한 내용은 점차<br>data를 통해 prediction 을 해가는 과정에 있는 듯한 느낌을 받았다.</li>
+<li>아직 검정 과정과 앞으로 공부하게 될 여러가지 분석 모델을 이해하기에 앞서배운 확률분포 부분의 내용이<br>부족한듯하여, 계속 꾸준히 앞부분을 공부해야될 것 같다.</li>
 </ul>
 
         </div>
@@ -262,7 +276,7 @@
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>팔로우:</p>
+        <p>follow:</p>
         <ul class="social-links">
             
                 
@@ -287,16 +301,22 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/10/23/181023-DailyScrum/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
+        <a href="/2018/10/24/181024-TodayWhatILearned/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            (no title)
+            181024 TodayWhatILearned
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
+    
+        <a href="/2018/10/22/181022-TodayWhatILearned/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">181022 TodayWhatILearned</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
     
 </nav>
 
@@ -306,67 +326,52 @@
             
                 
     <div class="widget-wrap">
-        <h3 class="widget-title">최근 글</h3>
+        <h3 class="widget-title">recents</h3>
         <div class="widget">
-            <ul id="recent-post" class="">
+            <ul id="recent-post" class="no-thumbnail">
                 
                     <li>
                         
-                        <div class="item-thumbnail">
-                            <a href="/2018/10/23/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/10/23/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-10-23T14:30:54.167Z" itemprop="datePublished">2018-10-23</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/Requests/" class="title">Requests</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
-                        <div class="item-thumbnail">
-                            <a href="/2018/10/23/181023-DailyScrum/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/Selenium/" class="title">Selenium</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
                         </div>
+                    </li>
+                
+                    <li>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/10/23/181023-DailyScrum/" class="title"></a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/24/thread/" class="title">Thread</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
+                            <p class="item-title"><a href="/2018/10/24/181024-TodayWhatILearned/" class="title">181024 TodayWhatILearned</a></p>
+                            <p class="item-date"><time datetime="2018-10-24T01:41:11.714Z" itemprop="datePublished">2018-10-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
+                            <p class="item-title"><a href="/2018/10/23/181023-TodayWhatILearned/" class="title">181023 TodayWhatILearned</a></p>
                             <p class="item-date"><time datetime="2018-10-23T04:31:39.118Z" itemprop="datePublished">2018-10-23</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/10/22/181022-DailyScrum/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/10/22/181022-DailyScrum/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-10-21T23:22:41.104Z" itemprop="datePublished">2018-10-22</time></p>
                         </div>
                     </li>
                 
@@ -376,22 +381,43 @@
 
             
                 
-
-            
-                
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">아카이브</h3>
+        <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TWIL/">TWIL</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li></ul>
+        </div>
+    </div>
+
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Crawling-Web-Requests/">Crawling, Web, Requests</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TWIL/">TWIL</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thread/">Thread</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Crawling-Selenium/">Web, Crawling, Selenium</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Crawling-Web-Requests/" style="font-size: 10px;">Crawling, Web, Requests</a> <a href="/tags/TWIL/" style="font-size: 20px;">TWIL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Web-Crawling-Selenium/" style="font-size: 10px;">Web, Crawling, Selenium</a>
+        </div>
+    </div>
+
 
             
         
@@ -428,7 +454,7 @@
     var disqus_shortname = 'emjaygithubpage';
     
     
-    var disqus_url = 'https://emjayahn.github.io/2018/10/22/181022-DailyScrum/';
+    var disqus_url = 'https://emjayahn.github.io/2018/10/23/181023-TodayWhatILearned/';
     
     (function() {
     var dsq = document.createElement('script');

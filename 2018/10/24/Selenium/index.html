@@ -12,18 +12,18 @@
     
         <meta name="keywords" content="Web, Crawling, Selenium">
     
-    <meta name="description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+    <meta name="description" content="Selenium 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.  자동화 할 수 있는 프로그램   [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium">
 <meta name="keywords" content="Web, Crawling, Selenium">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Selenium">
 <meta property="og:url" content="https://emjayahn.github.io/2018/10/24/Selenium/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+<meta property="og:description" content="Selenium 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.  자동화 할 수 있는 프로그램   [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-10-24T14:54:10.426Z">
+<meta property="og:updated_time" content="2018-10-25T12:57:17.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Selenium">
-<meta name="twitter:description" content="Selenium 자동화 할 수 있는 프로그램  [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium   1. 셀레니움 사용해보기 import 1from se">
+<meta name="twitter:description" content="Selenium 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.  자동화 할 수 있는 프로그램   [ Install Selenium ] chrome driver 다운로드 1$ mv ~/Download/chromedriver /usr/local/bin  Selenium Python Package 설치 1$ sudo pip3 install selenium">
     
 
     
@@ -77,7 +77,7 @@
                                     <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/TWIL/">TWIL</a></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DataStructure/">DataStructure</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/TWIL/">TWIL</a></li></ul>
                                     
                                 <li class="main-nav-list-item">
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
@@ -175,9 +175,12 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h1><ul>
+            <h1 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h1><blockquote>
+<p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
+<ul>
 <li>자동화 할 수 있는 프로그램</li>
 </ul>
+</blockquote>
 <h2 id="Install-Selenium"><a href="#Install-Selenium" class="headerlink" title="[ Install Selenium ]"></a>[ Install Selenium ]</h2><ol>
 <li><p>chrome driver 다운로드</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> mv ~/Download/chromedriver /usr/local/bin</span><br></pre></td></tr></table></figure>
@@ -242,7 +245,15 @@
 </li>
 </ul>
 <h2 id="4-버튼-클릭하기"><a href="#4-버튼-클릭하기" class="headerlink" title="4. 버튼 클릭하기"></a>4. 버튼 클릭하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 위의 방법처럼, element 를 선택해준다.</span></span><br><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>).click()</span><br></pre></td></tr></table></figure>
-<h2 id="5-id-class-그-외의-attribute-값을-selecting-하는-법"><a href="#5-id-class-그-외의-attribute-값을-selecting-하는-법" class="headerlink" title="5. id, class, 그 외의 attribute 값을 selecting 하는 법"></a>5. id, class, 그 외의 attribute 값을 selecting 하는 법</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector."</span>)click()</span><br><span class="line"><span class="comment"># id 의 경우 : #idname</span></span><br><span class="line"><span class="comment"># class 의 경우 : .classname</span></span><br><span class="line"><span class="comment"># 다른 attribute 의 경우 : [attribute = 'value']</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-id-class-그-외의-attribute-값을-selecting-하는-법"><a href="#5-id-class-그-외의-attribute-값을-selecting-하는-법" class="headerlink" title="5. id, class, 그 외의 attribute 값을 selecting 하는 법"></a>5. id, class, 그 외의 attribute 값을 selecting 하는 법</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector."</span>).click()</span><br><span class="line"><span class="comment"># id 의 경우 : #idname</span></span><br><span class="line"><span class="comment"># class 의 경우 : .classname</span></span><br><span class="line"><span class="comment"># 다른 attribute 의 경우 : [attribute = 'value']</span></span><br></pre></td></tr></table></figure>
+<h2 id="6-selecting-한-element-의-attribute-value-를-얻는-방법"><a href="#6-selecting-한-element-의-attribute-value-를-얻는-방법" class="headerlink" title="6. selecting 한 element 의 attribute value 를 얻는 방법"></a>6. selecting 한 element 의 attribute value 를 얻는 방법</h2><ul>
+<li>CSS로 선택한 element에 html 태그에는 다양한 attribute 들이 있을 수 있다. 이 중<br>attribute의 value에 접근 하고 싶을 때는 .get_attribute()메소드를 사용할 수 있다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>).get_attribute(<span class="string">"attribute_name"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="7-element-의-위치와-사이즈-구하기"><a href="#7-element-의-위치와-사이즈-구하기" class="headerlink" title="7. element 의 위치와, 사이즈 구하기"></a>7. element 의 위치와, 사이즈 구하기</h2><ul>
+<li>스크롤을 내리거나, 엘리먼트의 위치와 크기를 알고 싶을 때 사용할 수 있다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">element = driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>)</span><br><span class="line">element.location</span><br><span class="line"><span class="comment">#element 의 좌측 상단의 위치가 pixel 단위로 x, y 값의 dictionary로 보여준다.</span></span><br><span class="line">element.size</span><br><span class="line"><span class="comment">#element 의 size 를 height, width를 pixel 단위로 dictionary로 보여준다.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
         </div>
         <footer class="article-footer">
@@ -382,6 +393,24 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
+                            <p class="item-title"><a href="/2018/10/25/Pillow/" class="title">Pillow</a></p>
+                            <p class="item-date"><time datetime="2018-10-25T12:22:20.000Z" itemprop="datePublished">2018-10-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
+                            <p class="item-title"><a href="/2018/10/25/181025-TodayWhatILearned/" class="title">181025_TodayWhatILearned</a></p>
+                            <p class="item-date"><time datetime="2018-10-25T00:01:11.000Z" itemprop="datePublished">2018-10-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Python/">Python</a></p>
                             <p class="item-title"><a href="/2018/10/24/Requests/" class="title">Requests</a></p>
                             <p class="item-date"><time datetime="2018-10-24T03:02:50.000Z" itemprop="datePublished">2018-10-24</time></p>
                         </div>
@@ -405,24 +434,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
-                            <p class="item-title"><a href="/2018/10/24/181024-TodayWhatILearned/" class="title">181024 TodayWhatILearned</a></p>
-                            <p class="item-date"><time datetime="2018-10-24T01:41:11.714Z" itemprop="datePublished">2018-10-24</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/TWIL/">TWIL</a></p>
-                            <p class="item-title"><a href="/2018/10/23/181023-TodayWhatILearned/" class="title">181023 TodayWhatILearned</a></p>
-                            <p class="item-date"><time datetime="2018-10-23T04:31:39.118Z" itemprop="datePublished">2018-10-23</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -432,7 +443,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TWIL/">TWIL</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DataStructure/">DataStructure</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TWIL/">TWIL</a><span class="category-list-count">6</span></li></ul>
         </div>
     </div>
 
@@ -442,7 +453,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">12</span></li></ul>
         </div>
     </div>
 
@@ -452,7 +463,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Crawling-Web-Requests/">Crawling, Web, Requests</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TWIL/">TWIL</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thread/">Thread</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Crawling-Selenium/">Web, Crawling, Selenium</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Crawling-Web-Requests/">Crawling, Web, Requests</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TWIL/">TWIL</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thread/">Thread</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Crawling-Selenium/">Web, Crawling, Selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datastructure/">datastructure</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -462,7 +473,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Crawling-Web-Requests/" style="font-size: 10px;">Crawling, Web, Requests</a> <a href="/tags/TWIL/" style="font-size: 20px;">TWIL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Web-Crawling-Selenium/" style="font-size: 10px;">Web, Crawling, Selenium</a>
+            <a href="/tags/Crawling-Web-Requests/" style="font-size: 10px;">Crawling, Web, Requests</a> <a href="/tags/TWIL/" style="font-size: 20px;">TWIL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Web-Crawling-Selenium/" style="font-size: 10px;">Web, Crawling, Selenium</a> <a href="/tags/datastructure/" style="font-size: 15px;">datastructure</a>
         </div>
     </div>
 

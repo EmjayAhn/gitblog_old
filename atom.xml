@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-10-27T15:02:02.008Z</updated>
+  <updated>2018-10-28T13:20:17.826Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>181027-TodayWhatILearnced</title>
-    <link href="https://emjayahn.github.io/2018/10/27/181027-TodayWhatILearnced/"/>
-    <id>https://emjayahn.github.io/2018/10/27/181027-TodayWhatILearnced/</id>
+    <title>181028-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/10/28/181028-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/10/28/181028-TodayWhatILearned/</id>
+    <published>2018-10-28T13:09:13.000Z</published>
+    <updated>2018-10-28T13:20:17.826Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181027-TWIL"><a href="#181027-TWIL" class="headerlink" title="181027 TWIL"></a>181027 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>검정과 추정 공부</li><li>Blog 테마 수정</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>‘추정’에서 수식 부분 다시 보기</li><li>(Study) 데이터 구조 강의 듣기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li><p>MaximumLikelihood 를 실제로 손으로 써가며 풀어보는 과정에서, 지금까지 배웠던 수학적 테크닉들이 모두 쓰이는 것을 보고 뿌듯하면서도 재미있었다. 뿌듯한 이유는 아마도 한줄 한줄 써가는 내용이 여태 공부한 수학 개념들로 이루어진것 때문일 것이다. 그 중에서도 다음 식을 전개하는 과정에서 눈에 잘 들어오지 않아 전개하지 못할 때도 있었다. 이것은 아마 앞부분 개념이 그 순간에 적용이 되지 않기 때문이라고 생각된다. 행렬의 내용중 몇가지 특성들과 라그랑주 멀티플라이어에 대한 수식을 틈이 생길떄 챙겨서 봐야겠다.</p></li><li><p>오늘은 수학을 공부하느라 프로그래밍은 하지 못했다. 중간에 졸린 걸 해소해보고자 블로그 테마 색깔 수정과 그 수정을 위해 블로그의 코드 구조를 본게 전부 였다. 30분 푹빠져서 하다가 주객전도 되지않으려 다음으로 미뤘다.</p></li><li>위 주제들에 관해 알게된 것도 많은 하루였고, 뿌듯한 하루였다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181027-TWIL&quot;&gt;&lt;a href=&quot;#181027-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181027 TWIL&quot;&gt;&lt;/a&gt;181027 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>181027-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/10/27/181027-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/10/27/181027-TodayWhatILearned/</id>
     <published>2018-10-27T14:38:04.000Z</published>
-    <updated>2018-10-27T15:02:02.008Z</updated>
+    <updated>2018-10-28T13:09:52.766Z</updated>
     
     <content type="html"><![CDATA[<h1 id="181027-TWIL"><a href="#181027-TWIL" class="headerlink" title="181027 TWIL"></a>181027 TWIL</h1><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>확률 수학 공부</li><li>자기전 (스터디)데이터구조 부분 1강 듣기<h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2></li><li>확률분포를 다시 복습하면서 검정, 추정에서 이어지는 부분 꼼꼼히 공부</li><li>데이터 구조 강의 수강 계획 세우기</li></ol><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>검정방법론에 대해 좀더 꼼꼼히 보았다. 수학적인 수식들은 수업시간에 다 이해가 되는 편이지만 이 수식들을<br>말로써 표현하고, 글로 풀어쓰는 순간 머리가 빠릿빠릿 안돌아가는 느낌이어서, 한단계한단계 논리적으로 따져가며<br>공부하니 이제야 좀 편해진것 같다. 가설 검정 같은 때에도, 말로 풀어쓰는 것 보다 간단하게 수식으로 표현하고,<br>각각의 p-value 를 확인한뒤 원래 작성했던 H_0, H_a 에 대해 생각해보면 쉽게 되었으나 이것을 말로 표현하고<br>글로 구성하려고 하니 간단한것도 복잡하게 생각했던 것 같다. 결국 내가 알게 된것을 상대방과 논의하고<br>앞으로 만나게 될 클라이언트들을 대상으로 설명해야하는 것이 모두 이런 부분에서 시작되는 것임을 느꼈기에,<br>내 생각과 가정 -&gt; 수식으로 표현 -&gt; 다시 말 혹은 글로 표현 하는 것을 습관처럼 해야겠다.</li></ul>]]></content>
     

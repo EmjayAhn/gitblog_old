@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-10-29T14:31:15.814Z</updated>
+  <updated>2018-10-30T14:26:50.227Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181030-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/10/30/181030-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/10/30/181030-TodayWhatILearned/</id>
+    <published>2018-10-30T14:20:31.000Z</published>
+    <updated>2018-10-30T14:26:50.227Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181030-TWIL"><a href="#181030-TWIL" class="headerlink" title="181030 TWIL"></a>181030 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>검정, 추정 부분 수식 꼼꼼히 다시 보기</li><li>A star(A*) Algorithm 개념 읽기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>선형회귀분석 정리 (패키지 별로 특징, 메서드 파라미터 위주)</li><li>데이터 전처리 부분 공부</li><li>Test data 처리는 어떻게 하는 건지 공부해보기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>추정부분 수식을 공부하면서 eigenvalue 부분이 기억이 잘 안나던 것을 시간이 될 때 자료들을 챙겨봐야겠다.</li><li>오늘 공부한 선형 회귀분석을 배우니 조금이나마 프로젝트를 어떻게 진행해야되는 건지 감이 잡힌 것 같다. 미약한<br>시작을 하기위해 오늘 공부한 개념들을 사용해서 여러가지 돌려보고 데이터를 파악해볼 수 있을 것 같다.<br>하지만, 우리가 가지고 있는 데이터셋이 바로 적용 할 수 없는 현실적인 데이터이기 때문에, 여러가지 전처리<br>작업이 필요할 것 같다. 오늘 배운 것을 적용해보기 위해 내일은 데이터 전처리를 공부해보고, 또한 test data의<br>생성 역시 공부해보아야할 부분인 것 같다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181030-TWIL&quot;&gt;&lt;a href=&quot;#181030-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181030 TWIL&quot;&gt;&lt;/a&gt;181030 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181029-TodayWhatILearned</title>

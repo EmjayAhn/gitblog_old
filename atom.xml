@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-10-30T14:26:50.227Z</updated>
+  <updated>2018-10-31T14:27:39.155Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181031-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/10/31/181031-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/10/31/181031-TodayWhatILearned/</id>
+    <published>2018-10-31T14:17:59.000Z</published>
+    <updated>2018-10-31T14:27:39.155Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181031-TWIL"><a href="#181031-TWIL" class="headerlink" title="181031 TWIL"></a>181031 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>선형회귀분석 공부</li><li>행렬의 미분 공부</li><li>(PROJECTmini)A star Algorithm 개념 정리</li><li>(PROJECT)프로젝트 진행 data 탐구</li><li>데이터 전처리 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임</li><li>데이터 전처리, 데이터들의 의미 파악, 예측할 delay 부분 정의하기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘은 아침부터 하루종일 컴퓨터 앞에 앉아 있어서, 눈과 목이 너무 아프다. 그래도 새로운 알고리즘 내용에<br>관한 이해와, 앞으로 진행할 메인 프로젝트의 data들의 의미를 파악해서 뿌듯한 하루였다. Data의 의미를<br>파악했으나 이것을 처리하기 위해서 numpy 와 pandas 의 documentation 을 읽으면서 데이터들을 다뤘다.<br>라이브러리와 패키지들의 메소드와 클래스들을 자유자재로 다루기 위해선, 계속 사용해보면서 익혀야 함을 느꼈다.<br>메소드들을 알면 복잡하게 코드를 안짜도 이미 내장되어있는 메소드로 손쉽게 처리할 수 있기 때문이다.</li><li>data를 혼자 곰곰히 보다, 시간에 관한 column 의 의미를 파악했으나 이것을 손쉽게 합쳐서 데이터들을<br>재정렬하는데 오늘 실패했다. 의미는 파악했으니, 내일 좀더 시도해보면 시간에 관한 data 를 정리할 수 있지<br>않을까 한다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181031-TWIL&quot;&gt;&lt;a href=&quot;#181031-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181031 TWIL&quot;&gt;&lt;/a&gt;181031 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181030-TodayWhatILearned</title>

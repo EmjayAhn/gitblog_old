@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-04T14:10:26.054Z</updated>
+  <updated>2018-11-05T13:35:12.039Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181105-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/05/181105-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/05/181105-TodayWhatILearned/</id>
+    <published>2018-11-05T03:15:36.000Z</published>
+    <updated>2018-11-05T13:35:12.039Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181105-TWIL"><a href="#181105-TWIL" class="headerlink" title="181105 TWIL"></a>181105 TWIL</h1><hr><h2 id="프로젝트-STEP"><a href="#프로젝트-STEP" class="headerlink" title="프로젝트 STEP"></a>프로젝트 STEP</h2><ol><li>전처리 Nan 값 처리 해결</li><li>Partial Regression Plot 그려보기</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>프로젝트 모임</li><li>Crawling miniProject 와 mainProject 진행</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>프로젝트, 오늘까지 진행사항 코드 정리</li><li>수학 회기 전체 정리</li><li>프로젝트 생각하기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘은 프로젝트 모임을 통해서, 많은 것을 얻었다. OLS function 을 실제로 돌림에 있어서 많은 제약조건이<br>필요함을 알게되었고, 그만큼 데이터전처리가 매우 중요하다는 것을 알게 되었다.</li><li>다양한 feature 들마다 다양한 방법으로 전처리를 해주어야 한다. 처음엔 NaN값의 처리 방식에 대해 고민했으나,<br>이제는 각 feature 의 특성들마다 전처리 해주는 방식이 달라져야 하고, 또 이번 고비가 넘어가게 되면<br>좋은 prediction 결과를 얻기 위해 다양한 feature 의 조합이 필요함이 피부에 와닿았다.</li><li>만족스런 결과물을 얻기 위해선, 아는게 많은 것 보다, 그 결과물을 만들고자 하는 구성원이 중요함을 느꼈다.<br>알고있는 지식은 해결해야할 문제보다 항상 작기 마련이다. 또한 알고있는 지식이 완벽한지는 계속 스스로 의문을<br>던지며 업데이트 해야만한다. 하지만 이보다 더 중요한 것은 문제에 부딪힐 때마다 의욕적이고, 해결해보고자 하는 팀원들<br>덕분에 오늘의 보람과 뿌듯함을 얻을 수 있었던 것 같다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181105-TWIL&quot;&gt;&lt;a href=&quot;#181105-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181105 TWIL&quot;&gt;&lt;/a&gt;181105 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;프로젝트-STEP&quot;&gt;&lt;a href=&quot;#프로젝
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181104-TodayWhatILearned</title>
@@ -479,31 +503,6 @@
     
     
       <category term="Crawling, Web, Requests" scheme="https://emjayahn.github.io/tags/Crawling-Web-Requests/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>181024 TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/10/24/181024-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/10/24/181024-TodayWhatILearned/</id>
-    <published>2018-10-24T01:41:11.714Z</published>
-    <updated>2018-10-26T04:13:11.870Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181024-TWIL"><a href="#181024-TWIL" class="headerlink" title="181024 TWIL"></a>181024 TWIL</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol><li>멀티스레딩으로 네이버 크롤링 코드 작성</li><li>오후 4시 스터디</li><li>확률 분포 공부</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>멀티스레딩 개념을 활용한 크롤링 코드 작성</li><li>오후 4시 스터디</li><li>확률분포 공부</li></ol><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>확률분포 공부</li><li>프로젝트 모임</li><li>Pandas 정리해보기</li></ol><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Documentation 과 각종 개념 자료들을 혼자 보고 공부하면서, 파이썬이라는 언어가 단순히 책 한권 끝냈다고 해서 끝나는 언어가 아님을 깨달았다. 기본적인 문법을 금방 익숙해져서, ‘역시 쉬운 언어인가’라고 생각했다가 오늘 다양한 자료를 찾아보고 읽어보면서 언어 하나만해도 아직 공부할게 무궁무진 하다는 것을 깨달았다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181024-TWIL&quot;&gt;&lt;a href=&quot;#181024-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181024 TWIL&quot;&gt;&lt;/a&gt;181024 TWIL&lt;/h1&gt;&lt;h2 id=&quot;오늘-할-일은-무엇인가&quot;&gt;&lt;a href=&quot;#오늘-할-
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-      <category term="TWIL" scheme="https://emjayahn.github.io/tags/TWIL/"/>
     
   </entry>
   

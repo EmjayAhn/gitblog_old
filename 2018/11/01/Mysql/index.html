@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
 <meta property="og:description" content="MySQL1. Install MySQL https://dev.mysql.com/downloads/mysql/5.7.html#downloads 에서DMG 파일 다운로드  시스템 환경설정에서 MySQL -&amp;gt; Start MySQL Server : server 시작   1$ cd usr/local/mysql/bin 위 경로에서  MySQL 서버에 접속1$ s">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-01T14:10:42.677Z">
+<meta property="og:updated_time" content="2018-11-06T01:17:51.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mysql">
 <meta name="twitter:description" content="MySQL1. Install MySQL https://dev.mysql.com/downloads/mysql/5.7.html#downloads 에서DMG 파일 다운로드  시스템 환경설정에서 MySQL -&amp;gt; Start MySQL Server : server 시작   1$ cd usr/local/mysql/bin 위 경로에서  MySQL 서버에 접속1$ s">
@@ -200,27 +200,54 @@ ga('send', 'pageview');
 </ul>
 <h2 id="2-MySQL-Shell-Command"><a href="#2-MySQL-Shell-Command" class="headerlink" title="2. MySQL Shell Command"></a>2. MySQL Shell Command</h2><h3 id="1-DATABASE-생성-접속-삭제"><a href="#1-DATABASE-생성-접속-삭제" class="headerlink" title="(1) DATABASE 생성, 접속, 삭제"></a>(1) DATABASE 생성, 접속, 삭제</h3><ul>
 <li><p>현재 상태 보기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; status</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; STATUS</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>DB 목록 보기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show databases;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SHOW DATABASES;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>DB 만들기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create database DBNAME</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE DATABASE DBNAME</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>DB 접속하기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; use DBNAME;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; USE DBNAME;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>현재 접속중인 DB 확인하기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; select database();</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT DATABASE();</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>DB 지우기</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; drop database DBNAME;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; DROP DATABASE DBNAME;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="2-TABLE-생성-추가-삭제"><a href="#2-TABLE-생성-추가-삭제" class="headerlink" title="(2) TABLE 생성, 추가, 삭제"></a>(2) TABLE 생성, 추가, 삭제</h3><ul>
-<li>table 만들기</li>
-<li>user 라는 table에 name, email, age 컬럼 생성<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create table user(name char(20), email char(40), age int(3))</span><br></pre></td></tr></table></figure>
+<li><p>table 만들기</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name(</span><br><span class="line">  column_name_1 column_data_type_1 column_constraint_1,</span><br><span class="line">  column_name_2 column_data_type_2 column_constraint_2,</span><br><span class="line">  .</span><br><span class="line">  .</span><br><span class="line">  .</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>column_constraint</strong> 는 Optional 이다. (unique 와 같은 제약조건)<br><br></p>
+</li>
+</ul>
+<h4 id="user-라는-table에-name-email-age-컬럼-생성"><a href="#user-라는-table에-name-email-age-컬럼-생성" class="headerlink" title="user 라는 table에 name, email, age 컬럼 생성"></a>user 라는 table에 name, email, age 컬럼 생성</h4><ul>
+<li><p>example1 : constraint 가 없을 떄,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE TABLE user(</span><br><span class="line">  name CHAR(20),</span><br><span class="line">  email CHAR(40),</span><br><span class="line">  age INT(3)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>example2 : constraint가 있을 때,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE TABLE user2(</span><br><span class="line">  user_id INT PRIMARY KEY AUTO_INCREMENT,</span><br><span class="line">  name VARCHAR(20) NOT NULL,</span><br><span class="line">  email VARCHAR(30) UNIQUE NOT NULL,</span><br><span class="line">  age INT(3) DEFAULT<span class="string">'30'</span>,</span><br><span class="line">  rdate TIMESTAMP</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="3-수정"><a href="#3-수정" class="headerlink" title="(3) 수정"></a>(3) 수정</h2><h3 id="3-1-DATABASE-수정"><a href="#3-1-DATABASE-수정" class="headerlink" title="(3)-1. DATABASE 수정"></a>(3)-1. DATABASE 수정</h3><ul>
+<li>DATABASE 의 <strong>encoding</strong> 수정<br><br><br><br></li>
+<li><p>현재 문자열 encoding 확인</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SHOW VARIABLES LIKE <span class="string">"CHARACTER_SET_DATABASE"</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mydb 데이터베이스의 문자열 인코딩을 <code>utf8</code> 로 변경</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER DATABASE mydb CHARACTER_SET = utf8;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>user 데이터베이스의 문자열 인코딩을 <code>ascii</code> 로 변경</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER DATABASE user CHARACTER_SET=ascii</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-2-TABLE-수정"><a href="#3-2-TABLE-수정" class="headerlink" title="(3)-2. TABLE 수정"></a>(3)-2. TABLE 수정</h3><ul>
+<li><code>user</code> 테이블에 <code>tmp</code>라는 컬럼명, <code>TEXT</code> 데이터 타입 컬럼을 추가<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER TABLE user ADD tmp TEXT;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 

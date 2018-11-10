@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-09T14:23:02.860Z</updated>
+  <updated>2018-11-10T13:24:15.964Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181110-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/</id>
+    <published>2018-11-10T13:20:02.000Z</published>
+    <updated>2018-11-10T13:24:15.964Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181110-TWIL"><a href="#181110-TWIL" class="headerlink" title="181110 TWIL"></a>181110 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Prediction main project data 탐색</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로 기준시점에서 지난 초 수 로 scale 과 unit 을 바꿔준디 돌렸더니, 돌아는간다…</li><li>문제는 전혀 예측했던 모형이 아니었다. scatter plot 의 외형만 보고 판단했다는 것을 마지막에 깨달은 것 같다. 모델을 하기위해 묶어보고 새로운 feature 라고 생각되는 것도 빼보지만 아직 경향성이나 공통적인 특정 같은 것은 보이지 않는다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181110-TWIL&quot;&gt;&lt;a href=&quot;#181110-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181110 TWIL&quot;&gt;&lt;/a&gt;181110 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181109-TodayWhatILearned</title>
@@ -466,29 +490,6 @@
     </summary>
     
       <category term="Python" scheme="https://emjayahn.github.io/categories/Python/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181025_TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/10/25/181025-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/10/25/181025-TodayWhatILearned/</id>
-    <published>2018-10-25T00:01:11.000Z</published>
-    <updated>2018-10-26T04:13:17.230Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181025-TWIL"><a href="#181025-TWIL" class="headerlink" title="181025 TWIL"></a>181025 TWIL</h1><h2 id="오늘-할-일은-무엇인가"><a href="#오늘-할-일은-무엇인가" class="headerlink" title="오늘 할 일은 무엇인가"></a>오늘 할 일은 무엇인가</h2><ol><li>확률분포 공부</li><li>프로젝트 모임</li><li>Selenium, Scrapy, Pillow 활용 공부</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Selenium, Pillow 활용 공부</li></ol><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>확률분포 공부</li></ol><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>동영상과 이미지를 처리하는 방법에 대해 공부하면서, Selenium 을 활용해 많은 활용도를 느꼈다.<br>주말을 이용해 동영상이나 이미지들을 Crawling 해서 class 형태로 만드는 방법을 시도해봐야겠다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181025-TWIL&quot;&gt;&lt;a href=&quot;#181025-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181025 TWIL&quot;&gt;&lt;/a&gt;181025 TWIL&lt;/h1&gt;&lt;h2 id=&quot;오늘-할-일은-무엇인가&quot;&gt;&lt;a href=&quot;#오늘-할-
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
     
     
   </entry>

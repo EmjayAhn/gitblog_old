@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-10T13:24:15.964Z</updated>
+  <updated>2018-11-11T14:17:55.269Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181111-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/11/181111-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/11/181111-TodayWhatILearned/</id>
+    <published>2018-11-11T14:14:47.000Z</published>
+    <updated>2018-11-11T14:17:55.269Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181111-TWIL"><a href="#181111-TWIL" class="headerlink" title="181111 TWIL"></a>181111 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Project 모임</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project_Data 탐색</li><li>시계열 분석 공부<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>어제보다는 약간의 진보가 있었지만, 이에 대한 이유는 명확히 몰라 사실 분석이라기보다 얻어걸린 기분이든다. EDA 를 통해 작성한 모델링에서의 식은 아직까지 완성된 느낌을 받지 못해 답답하고, 방향성을 잘못 접근하고 있는 것인가 하는 느낌을 받기도 했지만, 마지막에 조금 기분이 나아졌다.</li><li>내일 오전에는 프로젝트에 밀렸던 시계열 데이터 분석에 관한 기초적인 공부를 다시 하고, 오후에는 프로젝트 데이터를 좀더 살펴보아야겠다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181111-TWIL&quot;&gt;&lt;a href=&quot;#181111-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181111 TWIL&quot;&gt;&lt;/a&gt;181111 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>181110-TodayWhatILearned</title>
@@ -466,31 +488,6 @@
     
     
       <category term="TWIL" scheme="https://emjayahn.github.io/tags/TWIL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pillow</title>
-    <link href="https://emjayahn.github.io/2018/10/25/Pillow/"/>
-    <id>https://emjayahn.github.io/2018/10/25/Pillow/</id>
-    <published>2018-10-25T12:22:20.000Z</published>
-    <updated>2018-10-25T13:16:51.602Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Pillow"><a href="#Pillow" class="headerlink" title="Pillow"></a>Pillow</h1><blockquote><p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p></blockquote><ul><li>Pillow 는 Python에서 이미지를 핸들링 하기위한 라이브러리이다. 스크린 샷, 이미지 크롭, 썸네일<br>등을 만들 수 있다.</li><li>또한, 다양한 이미지 확장자를 다룰수 있다. (예, jpg, png)</li></ul><h2 id="Pillow-install"><a href="#Pillow-install" class="headerlink" title="Pillow install"></a>Pillow install</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install Pillow</span><br></pre></td></tr></table></figure><h3 id="1-Import-Convention"><a href="#1-Import-Convention" class="headerlink" title="1. Import Convention"></a>1. Import Convention</h3><ul><li>Pillow 를 사용하기에 앞서, Import 해야한다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-Pillow-메소드"><a href="#2-Pillow-메소드" class="headerlink" title="2. Pillow 메소드"></a>2. Pillow 메소드</h3><h4 id="1-open"><a href="#1-open" class="headerlink" title="(1) open()"></a>(1) open()</h4><ul><li><p>이름 그대로, 경로와 파일 이름을 적어주면, 해당 이미지리턴하여 Variable 에 할당한다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image = Image.open(<span class="string">"imagefile_name"</span>)</span><br></pre></td></tr></table></figure><h4 id="2-crop"><a href="#2-crop" class="headerlink" title="(2) crop()"></a>(2) crop()</h4></li><li>이름 그대로, image 를 잘라준다. 이 때 Parameter 는 box형태로 들어가게 된다.</li><li>box 는 (left, upper, right, lower) 로 들어가게 된든데, pixel 단위로 들어가면 된다</li><li><p>이미지의 가장 왼쪽과 위쪽 라인을 기준으로, <br></p><ul><li>left px 만큼</li><li>upper px 만큼</li><li>(왼쪽을 기준으로) right px 만큼</li><li>(위쪽을 기준으로) bottom px 만큼 <br><br>잘라, box 로 만들어 준다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box = (<span class="number">10</span>, <span class="number">10</span>, <span class="number">110</span>, <span class="number">110</span>)</span><br><span class="line">image.crop(box)</span><br><span class="line"><span class="comment">### 이렇게 되면 가로세로 100px 만큼의 이미지가 만들어진다.</span></span><br></pre></td></tr></table></figure></li></ul><h4 id="3-thumbnail"><a href="#3-thumbnail" class="headerlink" title="(3) thumbnail()"></a>(3) thumbnail()</h4></li><li>썸네일을 만들어준다.</li><li>썸네일의 활용 방안은 한 가지 사진을 어플리케이션 곳곳에서 사용한다고 할 때, 데이터 사이즈가 큰 원본 사진을 계속 해서 들고 다니며 사용하면 어플리케이션에 따라 메모리 낭비, 서버용량 낭비, 트래픽 낭비 등으로 이어질 수 있다. 따라서, 이미지의 데이터 크기와 해상도를 낮춰 사용할 수 있다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">image.thumbnail((pixel, pixel))</span><br><span class="line"><span class="comment">#thumbnail 메소드를 사용하여, 원하는 pixel 수로 줄일 수 있다.</span></span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Pillow&quot;&gt;&lt;a href=&quot;#Pillow&quot; class=&quot;headerlink&quot; title=&quot;Pillow&quot;&gt;&lt;/a&gt;Pillow&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;공부한 내용을 스스로 보기 쉽게 정리한 글입니다.&lt;/p&gt;
-&lt;/blockqu
-      
-    
-    </summary>
-    
-      <category term="Python" scheme="https://emjayahn.github.io/categories/Python/"/>
-    
     
   </entry>
   

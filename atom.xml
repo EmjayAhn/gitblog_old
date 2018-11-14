@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-12T14:49:02.762Z</updated>
+  <updated>2018-11-14T13:05:24.610Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181114-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/14/181114-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/14/181114-TodayWhatILearned/</id>
+    <published>2018-11-14T13:01:39.000Z</published>
+    <updated>2018-11-14T13:05:24.610Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181114-TWIL"><a href="#181114-TWIL" class="headerlink" title="181114 TWIL"></a>181114 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>flight prediction</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>프로젝트 모임<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>계속 비행기 delay시간을 예측하는 프로젝트를 진행하고 있다. 여러가지 feature 들을 다루면서 arrival delay 를 예측하는 것을 목표로 삼고 있는데, 가지고 있는 데이터에서 공통적인 특징을 발견할 수가 없다.</li><li>외부 데이터를 사용해야할지, 갸지고 있는 데이터 셋에서 새로운 컬럼을 만들어야 할지 모르겠다. 많은 컬럼을 만들고 지우면서, 단순히 아이디어, 혹은 이러지 않을까라는 추측으로 컬럼을 만드는 것이 방법론 적으로 잘못된 것인가하는 의문이 들기도 한다.</li><li>correlation 이 높은 것을 가지고 OLS 를 돌리는 것 외에 새로운 컬럼을 가지고 만드는 것. 어떻게 다루어야 할지 고민이다.</li><li>이제 due date 가 얼마 남지 않은 만큼 최대한 남은 기간 열심히 돌려보고 만들어보면서 계속 trial and error 로 찾아보아야 겠다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181114-TWIL&quot;&gt;&lt;a href=&quot;#181114-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181114 TWIL&quot;&gt;&lt;/a&gt;181114 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181112-TodayWhatILearned</title>
@@ -452,33 +476,6 @@
         &lt;h1 id=&quot;Scrapy&quot;&gt;&lt;a href=&quot;#Scrapy&quot; class=&quot;headerlink&quot; title=&quot;Scrapy&quot;&gt;&lt;/a&gt;Scrapy&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;공부한 내용을 스스로 보기 쉽게 정리한 글입니다.&lt;/p&gt;
 &lt;/blockqu
-      
-    
-    </summary>
-    
-      <category term="Python" scheme="https://emjayahn.github.io/categories/Python/"/>
-    
-      <category term="Crawling" scheme="https://emjayahn.github.io/categories/Python/Crawling/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Xpath</title>
-    <link href="https://emjayahn.github.io/2018/10/26/Xpath/"/>
-    <id>https://emjayahn.github.io/2018/10/26/Xpath/</id>
-    <published>2018-10-26T13:02:50.000Z</published>
-    <updated>2018-10-26T14:05:44.006Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a>xpath</h1><blockquote><p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p></blockquote><h2 id="1-xpath란"><a href="#1-xpath란" class="headerlink" title="1. xpath란?"></a>1. xpath란?</h2><ul><li>xpath = XML Path Language</li><li>XML 문서의 element나 attribute의 value에 접근하기 위한 언어</li><li>XML 문서를 해석하기 위한 언어이므로, 기본적으로 path expression 이 바탕이 되어있다.</li><li>연산, 문자열 처리를 위한 라이브러리를 내장하고 있다.</li></ul><h2 id="2-Location-Path"><a href="#2-Location-Path" class="headerlink" title="2. Location Path"></a>2. Location Path</h2><ul><li>element 를 찾으러 가는 것이므로, location을 나타내기 위한 연산자는 다음과 같다.</li></ul><ol><li><code>element_name</code> : element_name 과 일치하는 모든 element를 선택한다.</li><li><code>/</code> :<ul><li>가장 처음 쓰는 <code>/</code>는 절대경로를 의미한다.</li><li>Path 중간에 쓰는 <code>/</code>는 조건에 맞는 바로 다음 하위 엘리먼트를 검색한다. (css selector에서 <code>&gt;</code>와 같다)</li></ul></li><li><code>//</code> : 가장 상위 엘리먼트</li><li><code>.</code> : 현재 엘리먼트</li><li><code>*</code> : 조건에 맞는 전체 하위 엘리먼트를 검색한다(css selector 에서 한칸 띄우는 것 과 같다)</li><li><code>element[조건]</code> : 엘리먼트에 조건에 해당되는 것을 검색한다<ul><li>(예) <code>p[2]</code> : p 엘리먼트 중 두번째 엘리먼트를 선택 <strong>주의:1부터 시작, 0이 아님 </strong></li><li>(예) <code>[@(attribute_key=&quot;attribute_value&quot;)]</code> : 속성값으로 엘리먼트를 선택<br><code>[@id=&quot;main&quot;]</code> : “main” 이라는 id 를 선택<br><code>[@class=&quot;pp&quot;]</code> : “pp” 라는 class 를 선택</li></ul></li><li><code>not(조건)</code> : 조건이 아닌 엘리먼트를 찾는다.</li><li><code>/text()</code> : 해당 엘리먼트의 text 데이터를 가져온다</li><li><code>/@attribute_name</code> : 해당 엘리먼트의 attribute_name 에 할당된 value 값을 가져옴<ul><li><code>/@href</code> : 해당 엘리먼트의 href의 value 값을 가져옴</li></ul></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;xpath&quot;&gt;&lt;a href=&quot;#xpath&quot; class=&quot;headerlink&quot; title=&quot;xpath&quot;&gt;&lt;/a&gt;xpath&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;공부한 내용을 스스로 보기 쉽게 정리한 글입니다.&lt;/p&gt;
-&lt;/blockquote&gt;
       
     
     </summary>

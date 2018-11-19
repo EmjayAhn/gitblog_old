@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-14T13:05:24.610Z</updated>
+  <updated>2018-11-19T13:48:49.367Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181119-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/19/181119-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/19/181119-TodayWhatILearned/</id>
+    <published>2018-11-19T00:29:31.000Z</published>
+    <updated>2018-11-19T13:48:49.367Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181119-TWIL"><a href="#181119-TWIL" class="headerlink" title="181119 TWIL"></a>181119 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>시계열 공부</li><li>MA, AR, ARMA 공부 및 수식 꼼꼼히 전개</li><li>스터디 모임 : 프로그래밍 구현계획짜기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>ARIMA, SARIMA 수식 정리</li><li>DataStructure 코드 정리</li><li>A* 알고리즘 공부</li><li>회기분석 리뷰<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>할게 산더미인듯한 느낌이지만, 하나씩 그어나가다보면 되겠지라는 마음으로…<br>체력적으로 힘듬이 느껴진다.. </li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181119-TWIL&quot;&gt;&lt;a href=&quot;#181119-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181119 TWIL&quot;&gt;&lt;/a&gt;181119 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181114-TodayWhatILearned</title>
@@ -457,33 +481,6 @@
     
     
       <category term="TWIL" scheme="https://emjayahn.github.io/tags/TWIL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy</title>
-    <link href="https://emjayahn.github.io/2018/10/26/Scrapy/"/>
-    <id>https://emjayahn.github.io/2018/10/26/Scrapy/</id>
-    <published>2018-10-26T14:04:20.000Z</published>
-    <updated>2018-10-26T14:05:46.026Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Scrapy"><a href="#Scrapy" class="headerlink" title="Scrapy"></a>Scrapy</h1><blockquote><p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p></blockquote><ul><li>Scrapy 라이브러리는 파이썬에서 제공하는 라이브러리로써, 대량의 페이지들의 Crawling을 손쉽게 해주는 라이브러리이다.</li></ul><h2 id="1-Install"><a href="#1-Install" class="headerlink" title="1. Install"></a>1. Install</h2><ul><li>파이썬의 라이브러리 이므로 pip 으로 설치 할 수 있다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install scrapy</span><br></pre></td></tr></table></figure></li></ul><h2 id="2-실습"><a href="#2-실습" class="headerlink" title="2. 실습"></a>2. 실습</h2><ul><li>실습을 위해 <strong>import</strong> 할 것들</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> scrapy.http <span class="keyword">import</span> TextResponse</span><br></pre></td></tr></table></figure><ol><li>requests 를 통해 url 정보를 받아온다.</li><li>TextResponse 를 통해 받아온 html 파일을 encoding 과 text형식으로 return</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">req = requests.get(<span class="string">"url_name"</span>)</span><br><span class="line">response = TextResponse(req.url, body=req.text, encoding=<span class="string">"utf-8"</span>)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = response.xpath(<span class="string">'xpath'</span>)</span><br><span class="line"><span class="comment"># xpath 로 지정한 엘리먼트를 가져온다.</span></span><br><span class="line">a_text = reponse.xpath(<span class="string">'xpath/text()'</span>)</span><br><span class="line"><span class="comment"># 엘리먼트의 text data 를 가져온다.</span></span><br><span class="line">a_text.extract()</span><br><span class="line"><span class="comment"># 엘리먼트의 text data들을 말그대로 extract 하여, list 형태로 return 해준다</span></span><br></pre></td></tr></table></figure><h2 id="3-Scrapy-사용하기"><a href="#3-Scrapy-사용하기" class="headerlink" title="3. Scrapy 사용하기"></a>3. Scrapy 사용하기</h2><h3 id="1-scrapy-프로젝트-생성"><a href="#1-scrapy-프로젝트-생성" class="headerlink" title="(1) scrapy 프로젝트 생성"></a>(1) scrapy 프로젝트 생성</h3><ul><li>shell command<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject crawler</span><br></pre></td></tr></table></figure></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!scrapy startproject crawler</span><br></pre></td></tr></table></figure><pre><code>New Scrapy project &apos;crawler&apos;, using template directory &apos;/Users/emjayahn/.pyenv/versions/3.7.0/envs/dss/lib/python3.7/site-packages/scrapy/templates/project&apos;, created in:    /Users/emjayahn/Dev/DSS/TIL(markdown)/crawlerYou can start your first spider with:    cd crawler    scrapy genspider example example.com</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!tree crawler</span><br></pre></td></tr></table></figure><pre><code>crawler├── crawler│   ├── __init__.py│   ├── __pycache__│   ├── items.py│   ├── middlewares.py│   ├── pipelines.py│   ├── settings.py│   └── spiders│       ├── __init__.py│       └── __pycache__└── scrapy.cfg4 directories, 7 files</code></pre><h3 id="2-Scrapy-기본-구조"><a href="#2-Scrapy-기본-구조" class="headerlink" title="(2) Scrapy 기본 구조"></a>(2) Scrapy 기본 구조</h3><ol><li><p>Spider</p><ul><li>크롤링 절차 정하기</li><li>어떤 웹사이트들을 어떻게 크롤링 할 것인지 선언</li><li>각각의 웹페이지의 어떤 부분을 스크래핑 할 것 인지 명시하는 클래스</li></ul></li><li><p>items.py</p><ul><li>spider 가 크롤링한 data 들을 저장할 때, 사용자 정의 자료구조 클래스</li><li>MVC : 중 Model 부분에 해당</li><li>Feature 라고 생각</li></ul></li><li><p>pipeline.py</p><ul><li>스크래핑한 데이터를 어떻게 처리할지 정의</li><li>데이터에 한글이 포함되어 있을 때는 encoding=’utf-8’ utf-8인코딩이 필요</li></ul></li><li><p>settings.py</p><ul><li>Spider, item, pipeline 의 세부 사항을 설정</li><li>(예) 크롤링 빈도 등</li><li>(예) robots.txt - ROBOTSTXT_OBEY=True</li></ul></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Scrapy&quot;&gt;&lt;a href=&quot;#Scrapy&quot; class=&quot;headerlink&quot; title=&quot;Scrapy&quot;&gt;&lt;/a&gt;Scrapy&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;공부한 내용을 스스로 보기 쉽게 정리한 글입니다.&lt;/p&gt;
-&lt;/blockqu
-      
-    
-    </summary>
-    
-      <category term="Python" scheme="https://emjayahn.github.io/categories/Python/"/>
-    
-      <category term="Crawling" scheme="https://emjayahn.github.io/categories/Python/Crawling/"/>
-    
     
   </entry>
   

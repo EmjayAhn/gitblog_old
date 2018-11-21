@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-20T14:13:14.388Z</updated>
+  <updated>2018-11-21T14:47:42.515Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181121-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/</id>
+    <published>2018-11-20T23:10:19.000Z</published>
+    <updated>2018-11-21T14:47:42.515Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181121-TWIL"><a href="#181121-TWIL" class="headerlink" title="181121 TWIL"></a>181121 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>A* Alogorithm : Pseudo Code  작성</li><li>~ PACF 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>시계열 모형의 추정 부분 나머지 공부</li><li>NLTK, KoNLPY 메소드 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지<br>파악했다. 기초적인 알고리즘들은 체계적으로 정리되어있는 자료들이 많지만, 이렇게 응용이 된 알고리즘들은<br>업계와 학계에서 사용하면서 점차 개발됨에 따라 다양하고, 어느 방면에 효율성을 맞추느냐에 따라서 정말 다양하게<br>파생된 것들이 많다. 그 중에서도 가장 간단하고 기본적인 원리가 설명되어있는 documentation 을 찾고,<br>이해하려고 하다보니 시간이 많이 걸린 것 같다.</li><li>이렇게 기본적인 이해를하고, 다양한 응용된 문서를 보니, 그 각각이 추구하고 있는 방향도 읽혀지는 것 같다.<br>내일부터는 이렇게 파악된 것을 바탕으로 본격적인 코드 구현을 해보아야할 것 같다. 오늘 잠깐 생각한 바로는,<br>우리가 배웠던 자료구조를 사용하는 것이 효율적인지, 파이썬에 내장되어있는 자료구조를 사용 할 것인지 간에<br>효율을 결정하는데, 어떤 factor 를 기준으로 정해야 할지 모르겠다. 스터디 때 이 부분도 물어보고, 이야기를<br>나눠보면 좋을 것 같다.</li><li>AR, MA 가 p, q 차로 되었을 때, k에 따른 PACF 함수의 모양을 증명해 보면서, AR, MA 의 ACF,<br>COV general form 을 계속 찾아보면서 증명하게 되었다. 사실은 이 부분까지 다시한번더 증명하고 이를<br>참조하는 방향으로 증명을 써 내려가야하는 것이 맞지만, 이전에 했다는 핑계로 참조했는데, 찜찜하다.<br>증명은 어렵지 않았으나, 외워야 한다는 것이 좀 압박이다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181121-TWIL&quot;&gt;&lt;a href=&quot;#181121-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181121 TWIL&quot;&gt;&lt;/a&gt;181121 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181120-TodayWhatILearned</title>
@@ -449,30 +473,6 @@
       
       
         &lt;h1 id=&quot;181029-TWIL&quot;&gt;&lt;a href=&quot;#181029-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181029 TWIL&quot;&gt;&lt;/a&gt;181029 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181028-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/10/28/181028-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/10/28/181028-TodayWhatILearned/</id>
-    <published>2018-10-28T13:09:13.000Z</published>
-    <updated>2018-10-29T14:25:13.521Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181028-TWIL"><a href="#181028-TWIL" class="headerlink" title="181028 TWIL"></a>181028 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>검정과 추정 공부</li><li>Blog 테마 수정</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>‘추정’에서 수식 부분 다시 보기</li><li>(Study) 데이터 구조 강의 듣기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li><p>MaximumLikelihood 를 실제로 손으로 써가며 풀어보는 과정에서, 지금까지 배웠던 수학적 테크닉들이 모두 쓰이는 것을 보고 뿌듯하면서도 재미있었다. 뿌듯한 이유는 아마도 한줄 한줄 써가는 내용이 여태 공부한 수학 개념들로 이루어진것 때문일 것이다. 그 중에서도 다음 식을 전개하는 과정에서 눈에 잘 들어오지 않아 전개하지 못할 때도 있었다. 이것은 아마 앞부분 개념이 그 순간에 적용이 되지 않기 때문이라고 생각된다. 행렬의 내용중 몇가지 특성들과 라그랑주 멀티플라이어에 대한 수식을 틈이 생길떄 챙겨서 봐야겠다.</p></li><li><p>오늘은 수학을 공부하느라 프로그래밍은 하지 못했다. 중간에 졸린 걸 해소해보고자 블로그 테마 색깔 수정과 그 수정을 위해 블로그의 코드 구조를 본게 전부 였다. 30분 푹빠져서 하다가 주객전도 되지않으려 다음으로 미뤘다.</p></li><li>위 주제들에 관해 알게된 것도 많은 하루였고, 뿌듯한 하루였다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181028-TWIL&quot;&gt;&lt;a href=&quot;#181028-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181028 TWIL&quot;&gt;&lt;/a&gt;181028 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

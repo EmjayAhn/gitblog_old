@@ -6,24 +6,24 @@
     
 
     
-    <title>181110-TodayWhatILearned | Emjay&#39;s DailyCommit Blog</title>
+    <title>181121-TodayWhatILearned | Emjay&#39;s DailyCommit Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="">
     
-    <meta name="description" content="181110 TWIL 오늘 한 일은 무엇인가 Prediction main project data 탐색   내일 할 일은 무엇인가 Project 모임   무엇을 느꼈는가 어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로">
+    <meta name="description" content="181121 TWIL 오늘 한 일은 무엇인가 A* Alogorithm : Pseudo Code  작성 ~ PACF 공부   내일 할 일은 무엇인가 시계열 모형의 추정 부분 나머지 공부 NLTK, KoNLPY 메소드 정리   무엇을 느꼈는가 A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지파악했다. 기초적인">
 <meta name="keywords" content="DailyCommit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="181110-TodayWhatILearned">
-<meta property="og:url" content="https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/index.html">
+<meta property="og:title" content="181121-TodayWhatILearned">
+<meta property="og:url" content="https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:description" content="181110 TWIL 오늘 한 일은 무엇인가 Prediction main project data 탐색   내일 할 일은 무엇인가 Project 모임   무엇을 느꼈는가 어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로">
+<meta property="og:description" content="181121 TWIL 오늘 한 일은 무엇인가 A* Alogorithm : Pseudo Code  작성 ~ PACF 공부   내일 할 일은 무엇인가 시계열 모형의 추정 부분 나머지 공부 NLTK, KoNLPY 메소드 정리   무엇을 느꼈는가 A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지파악했다. 기초적인">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-10T13:24:15.964Z">
+<meta property="og:updated_time" content="2018-11-21T14:47:42.515Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="181110-TodayWhatILearned">
-<meta name="twitter:description" content="181110 TWIL 오늘 한 일은 무엇인가 Prediction main project data 탐색   내일 할 일은 무엇인가 Project 모임   무엇을 느꼈는가 어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로">
+<meta name="twitter:title" content="181121-TodayWhatILearned">
+<meta name="twitter:description" content="181121 TWIL 오늘 한 일은 무엇인가 A* Alogorithm : Pseudo Code  작성 ~ PACF 공부   내일 할 일은 무엇인가 시계열 모형의 추정 부분 나머지 공부 NLTK, KoNLPY 메소드 정리   무엇을 느꼈는가 A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지파악했다. 기초적인">
     
 
     
@@ -152,14 +152,14 @@ ga('send', 'pageview');
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-181110-TodayWhatILearned" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-181121-TodayWhatILearned" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        181110-TodayWhatILearned
+        181121-TodayWhatILearned
         </h1>
     
 
@@ -169,8 +169,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/11/10/181110-TodayWhatILearned/" class="article-date">
-            <time datetime="2018-11-10T13:20:02.000Z" itemprop="datePublished">2018-11-10</time>
+        <a href="/2018/11/21/181121-TodayWhatILearned/" class="article-date">
+            <time datetime="2018-11-20T23:10:19.000Z" itemprop="datePublished">2018-11-21</time>
         </a>
     </div>
 
@@ -181,18 +181,21 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="181110-TWIL"><a href="#181110-TWIL" class="headerlink" title="181110 TWIL"></a>181110 TWIL</h1><hr>
+            <h1 id="181121-TWIL"><a href="#181121-TWIL" class="headerlink" title="181121 TWIL"></a>181121 TWIL</h1><hr>
 <h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol>
-<li>Prediction main project data 탐색</li>
+<li>A* Alogorithm : Pseudo Code  작성</li>
+<li>~ PACF 공부</li>
 </ol>
 <hr>
 <h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol>
-<li>Project 모임<br><br></li>
+<li>시계열 모형의 추정 부분 나머지 공부</li>
+<li>NLTK, KoNLPY 메소드 정리<br><br></li>
 </ol>
 <hr>
 <h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul>
-<li>어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로 기준시점에서 지난 초 수 로 scale 과 unit 을 바꿔준디 돌렸더니, 돌아는간다…</li>
-<li>문제는 전혀 예측했던 모형이 아니었다. scatter plot 의 외형만 보고 판단했다는 것을 마지막에 깨달은 것 같다. 모델을 하기위해 묶어보고 새로운 feature 라고 생각되는 것도 빼보지만 아직 경향성이나 공통적인 특정 같은 것은 보이지 않는다.</li>
+<li>A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지<br>파악했다. 기초적인 알고리즘들은 체계적으로 정리되어있는 자료들이 많지만, 이렇게 응용이 된 알고리즘들은<br>업계와 학계에서 사용하면서 점차 개발됨에 따라 다양하고, 어느 방면에 효율성을 맞추느냐에 따라서 정말 다양하게<br>파생된 것들이 많다. 그 중에서도 가장 간단하고 기본적인 원리가 설명되어있는 documentation 을 찾고,<br>이해하려고 하다보니 시간이 많이 걸린 것 같다.</li>
+<li>이렇게 기본적인 이해를하고, 다양한 응용된 문서를 보니, 그 각각이 추구하고 있는 방향도 읽혀지는 것 같다.<br>내일부터는 이렇게 파악된 것을 바탕으로 본격적인 코드 구현을 해보아야할 것 같다. 오늘 잠깐 생각한 바로는,<br>우리가 배웠던 자료구조를 사용하는 것이 효율적인지, 파이썬에 내장되어있는 자료구조를 사용 할 것인지 간에<br>효율을 결정하는데, 어떤 factor 를 기준으로 정해야 할지 모르겠다. 스터디 때 이 부분도 물어보고, 이야기를<br>나눠보면 좋을 것 같다.</li>
+<li>AR, MA 가 p, q 차로 되었을 때, k에 따른 PACF 함수의 모양을 증명해 보면서, AR, MA 의 ACF,<br>COV general form 을 계속 찾아보면서 증명하게 되었다. 사실은 이 부분까지 다시한번더 증명하고 이를<br>참조하는 방향으로 증명을 써 내려가야하는 것이 맞지만, 이전에 했다는 핑계로 참조했는데, 찜찜하다.<br>증명은 어렵지 않았으나, 외워야 한다는 것이 좀 압박이다.</li>
 </ul>
 <hr>
 
@@ -301,20 +304,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/11/11/181111-TodayWhatILearned/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            181111-TodayWhatILearned
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/11/09/181109-TodayWhatILearned/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/11/20/181120-TodayWhatILearned/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">181109-TodayWhatILearned</p>
+        <p class="article-nav-title">181120-TodayWhatILearned</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -378,7 +371,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'emjaygithubpage';
     
     
-    var disqus_url = 'https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/';
+    var disqus_url = 'https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/';
     
     (function() {
     var dsq = document.createElement('script');

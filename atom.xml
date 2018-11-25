@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-23T14:20:44.067Z</updated>
+  <updated>2018-11-25T14:04:14.127Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181125-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/25/181125-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/25/181125-TodayWhatILearned/</id>
+    <published>2018-11-25T13:53:06.000Z</published>
+    <updated>2018-11-25T14:04:14.127Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181125-TWIL"><a href="#181125-TWIL" class="headerlink" title="181125 TWIL"></a>181125 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(스터디) A* Alogorithm git 정리</li><li>(프로젝트) 프로젝트 리뷰</li><li>(프로젝트) 깃허브 다루4</li><li>(개인공부) 판다스 공부</li><li>(개인공부) 자연어 처리 메서드 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(개인공부) 자연어 처리 메서드 마저 정리</li><li>(개인공부) AWS 정리</li><li>(개인공부) 연속확률분포 정리(수식 꼼꼼하게)<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>지난주 프로젝트 리뷰 시간에 박사님께서 주신 Comment를 바탕으로 지난 프로젝트 했던 것을 복기하는 시간을 가졌다. 그 중 오늘 집중해서 탐구 했던 것은, Partial Regression 에서 경향이 보였을 때, 이를 구체적으로 어떻게 다루는지 연구하였다. 우리가 Partial Regression plot 을 보고 두가지 경향이 있을때, 한 경향에 대해 뽑아 냈고, 이 뽑아낸 경향을 바탕으로 다시한번 본 Feature 들이 어떤 특성을 가지고 있는지 알 수 있었다.</li><li>여기서 필요한 것은 Partial Regression 을 해석 할 수 있는 개념과 이를 바탕으로 다시한번 DataFrame 을 정렬하고, 여기서 Data 들의 특성을 뽑아 낼수 있는 판단력이 필요했다. 당연히 이를 구현하기 위해 Pandas를 다루는데 능숙함 역시 필요했다.</li><li>커멘트 받은 것을 이렇게 다시 구현했다는 것에 큰 보람을 느끼며, 프로젝트 진행 당시 좀더 꼼꼼하게 이런것을 생각 할 수 있었으면 좋았을 것이라는 아쉬움도 함꼐 느낀다.</li><li>퍼포먼스에 치중하는 것이 아니라 데이터 자체에 어떤 특성이 있는지 파악하려고 노력하는것이 무엇보다도 중요함을 느낀다.</li><li>판단을 위해서는 Data 를 보기 편하게 정렬하고, 시각화 하는 것이 매우 중요하다. 앞으로 이를 위해 알고 있는, 알아야되는, 한번 봤는데 잘 기억 안나는 것이 어쩌면 다행이기에, method 들을 간단하게 나마 정리하려고 한다.</li><li>개인적인 기록으로 git, github 를 사용하는 것은 어렵지 않았다. 하지만 팀 협업을 하려고보니, git 을 다루는게 아직 능숙지 않았다는 것을 깨달았다. 오늘은 git과 github 에 대해 가볍게 공부했고, 이를 바탕으로 어떤식으로 협업해야하는 것인지 간단하게 나마 알게 된것 같다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181125-TWIL&quot;&gt;&lt;a href=&quot;#181125-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181125 TWIL&quot;&gt;&lt;/a&gt;181125 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>math_cheatsheet</title>
@@ -454,29 +478,6 @@
     <summary type="html">
     
     </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql</title>
-    <link href="https://emjayahn.github.io/2018/11/01/MySQL/"/>
-    <id>https://emjayahn.github.io/2018/11/01/MySQL/</id>
-    <published>2018-11-01T03:20:44.000Z</published>
-    <updated>2018-11-06T01:17:51.764Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h2 id="1-Install-MySQL"><a href="#1-Install-MySQL" class="headerlink" title="1. Install MySQL"></a>1. Install MySQL</h2><ul><li><p><a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/5.7.html#downloads</a> 에서<br>DMG 파일 다운로드</p></li><li><p>시스템 환경설정에서 MySQL -&gt; Start MySQL Server : server 시작</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> usr/<span class="built_in">local</span>/mysql/bin</span><br></pre></td></tr></table></figure><p>위 경로에서</p><ul><li>MySQL 서버에 접속<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ./mysql -p</span><br></pre></td></tr></table></figure></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql &gt;</span><br></pre></td></tr></table></figure><ul><li>패스워드 변경<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt;ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'바꾸고싶은 비밀번호'</span>;</span><br><span class="line">mysql&gt;FLUSH PRIVILEGES;</span><br><span class="line">mysql&gt;quit;</span><br></pre></td></tr></table></figure></li></ul><h2 id="2-MySQL-Shell-Command"><a href="#2-MySQL-Shell-Command" class="headerlink" title="2. MySQL Shell Command"></a>2. MySQL Shell Command</h2><h3 id="1-DATABASE-생성-접속-삭제"><a href="#1-DATABASE-생성-접속-삭제" class="headerlink" title="(1) DATABASE 생성, 접속, 삭제"></a>(1) DATABASE 생성, 접속, 삭제</h3><ul><li><p>현재 상태 보기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; STATUS</span><br></pre></td></tr></table></figure></li><li><p>DB 목록 보기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SHOW DATABASES;</span><br></pre></td></tr></table></figure></li><li><p>DB 만들기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE DATABASE DBNAME</span><br></pre></td></tr></table></figure></li><li><p>DB 접속하기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; USE DBNAME;</span><br></pre></td></tr></table></figure></li><li><p>현재 접속중인 DB 확인하기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT DATABASE();</span><br></pre></td></tr></table></figure></li><li><p>DB 지우기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; DROP DATABASE DBNAME;</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-TABLE-생성-추가-삭제"><a href="#2-TABLE-생성-추가-삭제" class="headerlink" title="(2) TABLE 생성, 추가, 삭제"></a>(2) TABLE 생성, 추가, 삭제</h3><ul><li><p>table 만들기</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name(</span><br><span class="line">  column_name_1 column_data_type_1 column_constraint_1,</span><br><span class="line">  column_name_2 column_data_type_2 column_constraint_2,</span><br><span class="line">  .</span><br><span class="line">  .</span><br><span class="line">  .</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li><li><p><strong>column_constraint</strong> 는 Optional 이다. (unique 와 같은 제약조건)<br><br></p></li></ul><h4 id="user-라는-table에-name-email-age-컬럼-생성"><a href="#user-라는-table에-name-email-age-컬럼-생성" class="headerlink" title="user 라는 table에 name, email, age 컬럼 생성"></a>user 라는 table에 name, email, age 컬럼 생성</h4><ul><li><p>example1 : constraint 가 없을 떄,</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE TABLE user(</span><br><span class="line">  name CHAR(20),</span><br><span class="line">  email CHAR(40),</span><br><span class="line">  age INT(3)</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li><li><p>example2 : constraint가 있을 때,</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE TABLE user2(</span><br><span class="line">  user_id INT PRIMARY KEY AUTO_INCREMENT,</span><br><span class="line">  name VARCHAR(20) NOT NULL,</span><br><span class="line">  email VARCHAR(30) UNIQUE NOT NULL,</span><br><span class="line">  age INT(3) DEFAULT<span class="string">'30'</span>,</span><br><span class="line">  rdate TIMESTAMP</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li></ul><p><br><br><br></p><h2 id="3-수정"><a href="#3-수정" class="headerlink" title="(3) 수정"></a>(3) 수정</h2><h3 id="3-1-DATABASE-수정"><a href="#3-1-DATABASE-수정" class="headerlink" title="(3)-1. DATABASE 수정"></a>(3)-1. DATABASE 수정</h3><ul><li>DATABASE 의 <strong>encoding</strong> 수정<br><br><br><br></li><li><p>현재 문자열 encoding 확인</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SHOW VARIABLES LIKE <span class="string">"CHARACTER_SET_DATABASE"</span>;</span><br></pre></td></tr></table></figure></li><li><p>mydb 데이터베이스의 문자열 인코딩을 <code>utf8</code> 로 변경</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER DATABASE mydb CHARACTER_SET = utf8;</span><br></pre></td></tr></table></figure></li><li><p>user 데이터베이스의 문자열 인코딩을 <code>ascii</code> 로 변경</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER DATABASE user CHARACTER_SET=ascii</span><br></pre></td></tr></table></figure></li></ul><h3 id="3-2-TABLE-수정"><a href="#3-2-TABLE-수정" class="headerlink" title="(3)-2. TABLE 수정"></a>(3)-2. TABLE 수정</h3><ul><li><code>user</code> 테이블에 <code>tmp</code>라는 컬럼명, <code>TEXT</code> 데이터 타입 컬럼을 추가<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; ALTER TABLE user ADD tmp TEXT;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;MySQL&quot;&gt;&lt;a href=&quot;#MySQL&quot; class=&quot;headerlink&quot; title=&quot;MySQL&quot;&gt;&lt;/a&gt;MySQL&lt;/h1&gt;&lt;h2 id=&quot;1-Install-MySQL&quot;&gt;&lt;a href=&quot;#1-Install-MySQL&quot; class=&quot;he
-      
-    
-    </summary>
-    
-      <category term="Database" scheme="https://emjayahn.github.io/categories/Database/"/>
     
     
   </entry>

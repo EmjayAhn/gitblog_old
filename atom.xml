@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-25T14:04:14.127Z</updated>
+  <updated>2018-11-26T14:11:56.956Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>181126-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/26/181126-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/26/181126-TodayWhatILearned/</id>
+    <published>2018-11-26T02:20:14.000Z</published>
+    <updated>2018-11-26T14:11:56.956Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181126-TWIL"><a href="#181126-TWIL" class="headerlink" title="181126 TWIL"></a>181126 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>이미지 데이터 처리, 사운드 데이터 처리 공부</li><li>Shell script 정리</li><li>Pandas - 50page</li><li>수학 8장-2절</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Shell script 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>알고리즘 복습</li><li>Shell scipt cheatsheet 작성</li><li>Pandas - 100 page</li><li>수학 9장-2절</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>RedBlack tree 를 배우면서, 왜 color violation 을 해결하고, 색을 기준으로 정렬했을 때,<br>O(logN) 으로 장점이 되는지에 관해 궁금하다. 자세한 수학적 증명보다, <b>color 와 알고리즘의 효율이<br>어디서 연결</b> 되는지 궁금하다. 이런 궁금증들은 이렇게 메모 해두었다가, 여유가 생길 때 꼭 찾아 보아야 겠다.</li><li><p>shell script 기본 문법을 공부하면서, Python 이 얼마나 직관적인 언어인지 느꼈다. 직접 해보면서,<br>while, if 조건문 등을 쓸때, 띄어쓰기에 예민했고, DO ~ DONE 의 couple 이 중요했다. 또한, if , case 가<br>끝날 때는, 직관대로 done 이 아니라 fi, esac 등으로 닫아 줘야 하는 것이 위트 있지만서도,<br>쉽게 기억될 것은 아님을 알게 되었다.</p></li><li><p>DO 도 OD 였다는데, 지금 OD 는 안되네.. DO 는 DONE 으로 쓰자 !!!!</p></li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181126-TWIL&quot;&gt;&lt;a href=&quot;#181126-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181126 TWIL&quot;&gt;&lt;/a&gt;181126 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>181125-TodayWhatILearned</title>
     <link href="https://emjayahn.github.io/2018/11/25/181125-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/11/25/181125-TodayWhatILearned/</id>
     <published>2018-11-25T13:53:06.000Z</published>
-    <updated>2018-11-25T14:04:14.127Z</updated>
+    <updated>2018-11-26T02:21:28.276Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="181125-TWIL"><a href="#181125-TWIL" class="headerlink" title="181125 TWIL"></a>181125 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(스터디) A* Alogorithm git 정리</li><li>(프로젝트) 프로젝트 리뷰</li><li>(프로젝트) 깃허브 다루4</li><li>(개인공부) 판다스 공부</li><li>(개인공부) 자연어 처리 메서드 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(개인공부) 자연어 처리 메서드 마저 정리</li><li>(개인공부) AWS 정리</li><li>(개인공부) 연속확률분포 정리(수식 꼼꼼하게)<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>지난주 프로젝트 리뷰 시간에 박사님께서 주신 Comment를 바탕으로 지난 프로젝트 했던 것을 복기하는 시간을 가졌다. 그 중 오늘 집중해서 탐구 했던 것은, Partial Regression 에서 경향이 보였을 때, 이를 구체적으로 어떻게 다루는지 연구하였다. 우리가 Partial Regression plot 을 보고 두가지 경향이 있을때, 한 경향에 대해 뽑아 냈고, 이 뽑아낸 경향을 바탕으로 다시한번 본 Feature 들이 어떤 특성을 가지고 있는지 알 수 있었다.</li><li>여기서 필요한 것은 Partial Regression 을 해석 할 수 있는 개념과 이를 바탕으로 다시한번 DataFrame 을 정렬하고, 여기서 Data 들의 특성을 뽑아 낼수 있는 판단력이 필요했다. 당연히 이를 구현하기 위해 Pandas를 다루는데 능숙함 역시 필요했다.</li><li>커멘트 받은 것을 이렇게 다시 구현했다는 것에 큰 보람을 느끼며, 프로젝트 진행 당시 좀더 꼼꼼하게 이런것을 생각 할 수 있었으면 좋았을 것이라는 아쉬움도 함꼐 느낀다.</li><li>퍼포먼스에 치중하는 것이 아니라 데이터 자체에 어떤 특성이 있는지 파악하려고 노력하는것이 무엇보다도 중요함을 느낀다.</li><li>판단을 위해서는 Data 를 보기 편하게 정렬하고, 시각화 하는 것이 매우 중요하다. 앞으로 이를 위해 알고 있는, 알아야되는, 한번 봤는데 잘 기억 안나는 것이 어쩌면 다행이기에, method 들을 간단하게 나마 정리하려고 한다.</li><li>개인적인 기록으로 git, github 를 사용하는 것은 어렵지 않았다. 하지만 팀 협업을 하려고보니, git 을 다루는게 아직 능숙지 않았다는 것을 깨달았다. 오늘은 git과 github 에 대해 가볍게 공부했고, 이를 바탕으로 어떤식으로 협업해야하는 것인지 간단하게 나마 알게 된것 같다.</li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="181125-TWIL"><a href="#181125-TWIL" class="headerlink" title="181125 TWIL"></a>181125 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(스터디) A* Alogorithm git 정리</li><li>(프로젝트) 프로젝트 리뷰</li><li>(프로젝트) 깃허브 다루기</li><li>(개인공부) 판다스 공부</li><li>(개인공부) 자연어 처리 메서드 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(개인공부) 자연어 처리 메서드 마저 정리</li><li>(개인공부) AWS 정리</li><li>(개인공부) 연속확률분포 정리(수식 꼼꼼하게)<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>지난주 프로젝트 리뷰 시간에 박사님께서 주신 Comment를 바탕으로 지난 프로젝트 했던 것을 복기하는 시간을 가졌다. 그 중 오늘 집중해서 탐구 했던 것은, Partial Regression 에서 경향이 보였을 때, 이를 구체적으로 어떻게 다루는지 연구하였다. 우리가 Partial Regression plot 을 보고 두가지 경향이 있을때, 한 경향에 대해 뽑아 냈고, 이 뽑아낸 경향을 바탕으로 다시한번 본 Feature 들이 어떤 특성을 가지고 있는지 알 수 있었다.</li><li>여기서 필요한 것은 Partial Regression 을 해석 할 수 있는 개념과 이를 바탕으로 다시한번 DataFrame 을 정렬하고, 여기서 Data 들의 특성을 뽑아 낼수 있는 판단력이 필요했다. 당연히 이를 구현하기 위해 Pandas를 다루는데 능숙함 역시 필요했다.</li><li>커멘트 받은 것을 이렇게 다시 구현했다는 것에 큰 보람을 느끼며, 프로젝트 진행 당시 좀더 꼼꼼하게 이런것을 생각 할 수 있었으면 좋았을 것이라는 아쉬움도 함꼐 느낀다.</li><li>퍼포먼스에 치중하는 것이 아니라 데이터 자체에 어떤 특성이 있는지 파악하려고 노력하는것이 무엇보다도 중요함을 느낀다.</li><li>판단을 위해서는 Data 를 보기 편하게 정렬하고, 시각화 하는 것이 매우 중요하다. 앞으로 이를 위해 알고 있는, 알아야되는, 한번 봤는데 잘 기억 안나는 것이 어쩌면 다행이기에, method 들을 간단하게 나마 정리하려고 한다.</li><li>개인적인 기록으로 git, github 를 사용하는 것은 어렵지 않았다. 하지만 팀 협업을 하려고보니, git 을 다루는게 아직 능숙지 않았다는 것을 깨달았다. 오늘은 git과 github 에 대해 가볍게 공부했고, 이를 바탕으로 어떤식으로 협업해야하는 것인지 간단하게 나마 알게 된것 같다.</li></ul><hr>]]></content>
     
     <summary type="html">
     
@@ -464,20 +488,6 @@
     </summary>
     
       <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>miniproject</title>
-    <link href="https://emjayahn.github.io/2018/11/01/miniproject/"/>
-    <id>https://emjayahn.github.io/2018/11/01/miniproject/</id>
-    <published>2018-11-01T07:04:30.000Z</published>
-    <updated>2018-11-01T07:04:30.613Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
     
     
   </entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-26T14:11:56.956Z</updated>
+  <updated>2018-11-27T14:42:30.796Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181127-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/27/181127-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/27/181127-TodayWhatILearned/</id>
+    <published>2018-11-26T22:12:01.000Z</published>
+    <updated>2018-11-27T14:42:30.796Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181127-TWIL"><a href="#181127-TWIL" class="headerlink" title="181127 TWIL"></a>181127 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>알고리즘 복습</li><li>Shell script cheatsheet 작성</li><li>Pandas - 100page</li><li>수학 9장-2절</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>알고리즘 복습</li><li>Shell script cheatsheet 작성</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas - 100page</li><li>수학 9장-2절</li><li>Classification Intro, Scikit-Learn 의 전처리 부분 code 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>알고리즘 복습이 계획했던 것 보다 훨씬더 오래 걸려서, 기존에 계획했던 Pandas 와 수학은 보지 못했다. 오늘 공부한 분류도 다시 공부해야하는 만큼, 내일 공부할 양은 매우 많을 것 같다.</li><li>정리하는 내용들을 내가 보기 편하고, 쉽게 사용 할 수 있도록 하는 방법을 많이 고민해보아야겠다. 파일들이 누적되고 쌓이면서, 이제는 효율적으로 검색하거나 찾아서 볼 수 있는 것이 매우 중요한 것 같다. 어떻게 정리하거나 검색할 수 있는 Tool이 있을지 틈나는대로 생각해봐야겠다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181127-TWIL&quot;&gt;&lt;a href=&quot;#181127-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181127 TWIL&quot;&gt;&lt;/a&gt;181127 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181126-TodayWhatILearned</title>
@@ -458,30 +482,6 @@
       
       
         &lt;h1 id=&quot;181102-TWIL&quot;&gt;&lt;a href=&quot;#181102-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181102 TWIL&quot;&gt;&lt;/a&gt;181102 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181101-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/01/181101-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/01/181101-TodayWhatILearned/</id>
-    <published>2018-11-01T14:10:02.000Z</published>
-    <updated>2018-11-01T14:20:02.441Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181101-TWIL"><a href="#181101-TWIL" class="headerlink" title="181101 TWIL"></a>181101 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Project 모임</li><li>Data 일부 전처리</li><li>Crawling 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Database - MySQL 공부</li><li>Pandas 라이브러리 살펴보기</li><li>miniProject Crawling 주제 선정, 코드짜기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>프로젝트 모임에서 우리가 예측할 Data (Departure Delay)를 정의하고, 나는 오늘 시각 data 의 전처리를 하였다. Data 들이 의미없는 값들을 가지고 있을 때 어떻게 처리해야 할지 고민하다가 확실한 답은 못얻은 채, 우선 시각 데이터의 formatting 만 바꾸었다. data들을 어떻게 채워넣어주어야 할지는 조금더 공부해 보아야 할 것 같다.</li><li>첫 프로젝트 모임의 느낌이 매우 좋았다. 모임을 하기 전까지는 내가 했던 것들이 맞는가 하는 의구심과 project를 하기에는 아직 부족한 지식과 실력이라는 걱정이 앞섰다. 오늘 모임을 하면서 각자 살펴보았던 data 의 특징들과 앞으로 어떻게 data 를 다듬을 것인지 얘기하면서, 더 좋은 방향과 몰랐던 것들, 알았던 것들을 서로 나누면서 발전적인 대화가 되었다는게 매우 뿌듯하다.</li><li>모임에서 받은 좋은 느낌을 이어서, 오늘 내가 맡기로한 부분을 해결하기 위해 앉았고, 또 나름 해결한 부분이 있는 것 같아 작은 성취감을 맛보았다.</li><li>협업을 하기 위해 git에 관해 좀더 공부하고 나눌 필요성이 느껴졌다. 특히나 code conflict 가 실제로 발생하기 전에 어떻게 다루어야 하는 것인지 좀더 깊게 공부할 필요성을 느꼈다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181101-TWIL&quot;&gt;&lt;a href=&quot;#181101-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181101 TWIL&quot;&gt;&lt;/a&gt;181101 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

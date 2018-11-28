@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-27T14:42:30.796Z</updated>
+  <updated>2018-11-28T14:35:26.989Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181128-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/28/181128-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/11/28/181128-TodayWhatILearned/</id>
+    <published>2018-11-28T12:24:06.000Z</published>
+    <updated>2018-11-28T14:35:26.989Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181128-TWIL"><a href="#181128-TWIL" class="headerlink" title="181128 TWIL"></a>181128 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>~ Classification 성능평가</li><li>수학 9장 2절</li><li>Pandas ~ 100pages</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>~ Classification 성능평가</li><li>수학 9장 2절</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas 100page<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>프로젝트를 한번 해서 그런지, 지금 공부하는 내용도 앞으로 프로젝트에서 어떻게 활용해야할지 염두? 걱정?<br>하며 공부를 하게 되는 것 같다. 메소드를 정리할 필요가 있고, 배우는 각 개념들이 어떤 판단을 바탕으로 사용해야<br>하는지 생각하며 공부하게 되는 것 같다.</li><li>시간이 부족하여, 메소드들을 좀더 디테일하게 보지 못하는 아쉬움이 있지만, 이런 것들을 주말 등을 통하여<br>보충할 필요가 있다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181128-TWIL&quot;&gt;&lt;a href=&quot;#181128-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181128 TWIL&quot;&gt;&lt;/a&gt;181128 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181127-TodayWhatILearned</title>
@@ -458,30 +482,6 @@
       
       
         &lt;h1 id=&quot;181103-TWIL&quot;&gt;&lt;a href=&quot;#181103-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181103 TWIL&quot;&gt;&lt;/a&gt;181103 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181102-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/02/181102-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/02/181102-TodayWhatILearned/</id>
-    <published>2018-11-02T12:48:52.000Z</published>
-    <updated>2018-11-02T13:01:45.304Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181102-TWIL"><a href="#181102-TWIL" class="headerlink" title="181102 TWIL"></a>181102 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Database - MySQL 공부</li><li>A * 알고리즘 스터디</li><li>NaN 값 처리에관한 자료 서칭</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임</li><li>Pandas 라이브러리 정리</li><li>miniProject Crawling 코드짜기</li><li>A * 알고리즘 짜기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘 스터디에서 A* 알고리즘를 주제로 얘기를 좀더 나누었다. 각자 공부해오신 내용을 바탕으로 알고리즘의<br>흐름이 어떻게 되어가는가 좀더 구체적으로 생각해보고자 했다. 좀더 해결법에 가까워진 느낌을 받았으나,<br>이제는 좀더 구체적으로 구현해보면서 다가오는 문제들을 해결해보고자 했다. 모든걸 완벽하게 이해하고 실현하는<br>것만이 답은 아니기 때문이라고 생각한다.</li><li>주말동안은 프로젝트, 미니프로젝트, 알고리즘 적용 코딩, 수학 공부, DB공부.. 산더미지만 하나씩 그어나가<br>야겠다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181102-TWIL&quot;&gt;&lt;a href=&quot;#181102-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181102 TWIL&quot;&gt;&lt;/a&gt;181102 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

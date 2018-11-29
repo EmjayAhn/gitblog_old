@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-28T14:35:26.989Z</updated>
+  <updated>2018-11-29T14:00:09.249Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NGINX</title>
+    <link href="https://emjayahn.github.io/2018/11/29/NGINX/"/>
+    <id>https://emjayahn.github.io/2018/11/29/NGINX/</id>
+    <published>2018-11-29T13:57:28.000Z</published>
+    <updated>2018-11-29T14:00:09.249Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><h2 id="0-What-is-nginx"><a href="#0-What-is-nginx" class="headerlink" title="0. What is nginx?"></a>0. What is nginx?</h2><ul><li>client 가 외부 IP와 그 포트를 통해 server 에 접근하면,</li><li>그 때부터는 request 를 내부 IP 와 port 로 연결을 해주어야 한다.</li><li>일종의 <code>proxy server</code> 역할을 해주는 것이 <code>nginx</code></li></ul><h2 id="1-Install-Nginx"><a href="#1-Install-Nginx" class="headerlink" title="1. Install Nginx"></a>1. Install Nginx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install nginx</span><br></pre></td></tr></table></figure><h2 id="2-Manage-the-Nginx-Process"><a href="#2-Manage-the-Nginx-Process" class="headerlink" title="2. Manage the Nginx Process"></a>2. Manage the Nginx Process</h2><ul><li>nginx Process<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#start Nginx</span></span><br><span class="line">$ sudo systemctl start nginx</span><br><span class="line"></span><br><span class="line"><span class="comment">#stop nginx</span></span><br><span class="line">$ sudo systemctl stop nginx</span><br><span class="line"></span><br><span class="line"><span class="comment">#restart nginx</span></span><br><span class="line">$ sudo systemctl restart nginx</span><br><span class="line"></span><br><span class="line"><span class="comment">#check status nginx</span></span><br><span class="line">$ sudo systemctl status nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># reload nginx</span></span><br><span class="line">$ sudo systemctl reload nginx</span><br></pre></td></tr></table></figure></li></ul><h2 id="3-Structure"><a href="#3-Structure" class="headerlink" title="3. Structure"></a>3. Structure</h2><ul><li><code>/etc/nginx</code><ul><li>Nginx의 설정에 관련된 directory</li></ul></li><li><code>/etc/nginx/nginx.conf</code><ul><li>nginx의 <code>기본설정</code> 파일, <code>global</code>설정은 이 파일에서</li></ul></li><li><code>/etc/nginx/sites-available/</code><ul><li>포트 접속시 개별 설정하는 directory</li><li>여기 안에 <code>default</code> 파일 변경</li></ul></li></ul><h2 id="4-Nginx-Configuration"><a href="#4-Nginx-Configuration" class="headerlink" title="4. Nginx Configuration"></a>4. Nginx Configuration</h2><h3 id="4-1-static-file-serving"><a href="#4-1-static-file-serving" class="headerlink" title="4.1 static file serving"></a>4.1 static file serving</h3><p><code>/etc/nginx/sites-available/default</code> 파일 수정</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  location / &#123;</span><br><span class="line">    root /path/to/html ;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  location /images/ &#123;</span><br><span class="line">    root /path/to/image;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="4-2-proxy-server"><a href="#4-2-proxy-server" class="headerlink" title="4.2 proxy server"></a>4.2 proxy server</h3><ul><li><p>port 별로 설정이 가능하다</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  # default 는 80 port (http default)</span><br><span class="line">  # 8080 port 에 대해서</span><br><span class="line">  listen 8080;</span><br><span class="line">  location / &#123;</span><br><span class="line">    proxy_pass http://localhost:8080;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>여러개의 포트를 연결<br><code>`</code><br>server {<br>listen 8080;<br>listen 80;</p><p>location / {<br>  proxy_pass <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a>;<br>}<br>}</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Nginx&quot;&gt;&lt;a href=&quot;#Nginx&quot; class=&quot;headerlink&quot; title=&quot;Nginx&quot;&gt;&lt;/a&gt;Nginx&lt;/h1&gt;&lt;h2 id=&quot;0-What-is-nginx&quot;&gt;&lt;a href=&quot;#0-What-is-nginx&quot; class=&quot;he
+      
+    
+    </summary>
+    
+      <category term="wiki" scheme="https://emjayahn.github.io/categories/wiki/"/>
+    
+      <category term="NGINX" scheme="https://emjayahn.github.io/categories/wiki/NGINX/"/>
+    
+    
+      <category term="nginx, proxy" scheme="https://emjayahn.github.io/tags/nginx-proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>181129-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/11/29/181129-TodayWhatILearned-1/"/>
+    <id>https://emjayahn.github.io/2018/11/29/181129-TodayWhatILearned-1/</id>
+    <published>2018-11-28T23:12:09.000Z</published>
+    <updated>2018-11-29T14:11:41.165Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181129-TWIL"><a href="#181129-TWIL" class="headerlink" title="181129 TWIL"></a>181129 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>Pandas ~ 150page</li><li>wiki 구성 방안</li><li>REST API, NGINX, AWS 공부</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Pandas 80page</li><li>wiki 구성</li><li>REST API, NGINX, AWS 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas 150page 마무리</li><li>복습</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>지금껏 구성해온 개인 wiki 혹은 cheatsheet등을 로컬 서버등을 이용해 wiki page 를 이용하고 싶었다.<br>가장 많이 사용한다는 gollum api 를 설치해보았지만, 생각보다 편하지 않았다. gitlab이나 github 등은<br>온라인에서 작성이 가능하지만, 로컬에서 그 해당 파일을 갖기가 불편했다. 또 검색기능도 중요했다.</li><li>결국, 지금 작성하고 있는 git blog 에 wiki tab 관리로 하기로 했다.</li><li>돌고돌아 gitblog 의 tab 을 활용해서 wiki 하기로 했다. 앞으로 좀더 깔끔하게 정리 파일을 관리하고,</li><li>직접 참고할 자료이니, 무엇보다도 내가 보기 편해야 할 것이다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181129-TWIL&quot;&gt;&lt;a href=&quot;#181129-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181129 TWIL&quot;&gt;&lt;/a&gt;181129 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>181128-TodayWhatILearned</title>
@@ -45,7 +94,7 @@
     <link href="https://emjayahn.github.io/2018/11/27/181127-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/11/27/181127-TodayWhatILearned/</id>
     <published>2018-11-26T22:12:01.000Z</published>
-    <updated>2018-11-27T14:42:30.796Z</updated>
+    <updated>2018-11-28T23:11:52.448Z</updated>
     
     <content type="html"><![CDATA[<h1 id="181127-TWIL"><a href="#181127-TWIL" class="headerlink" title="181127 TWIL"></a>181127 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>알고리즘 복습</li><li>Shell script cheatsheet 작성</li><li>Pandas - 100page</li><li>수학 9장-2절</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>알고리즘 복습</li><li>Shell script cheatsheet 작성</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas - 100page</li><li>수학 9장-2절</li><li>Classification Intro, Scikit-Learn 의 전처리 부분 code 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>알고리즘 복습이 계획했던 것 보다 훨씬더 오래 걸려서, 기존에 계획했던 Pandas 와 수학은 보지 못했다. 오늘 공부한 분류도 다시 공부해야하는 만큼, 내일 공부할 양은 매우 많을 것 같다.</li><li>정리하는 내용들을 내가 보기 편하고, 쉽게 사용 할 수 있도록 하는 방법을 많이 고민해보아야겠다. 파일들이 누적되고 쌓이면서, 이제는 효율적으로 검색하거나 찾아서 볼 수 있는 것이 매우 중요한 것 같다. 어떻게 정리하거나 검색할 수 있는 Tool이 있을지 틈나는대로 생각해봐야겠다.</li></ul><hr>]]></content>
     
@@ -117,7 +166,7 @@
     <link href="https://emjayahn.github.io/2018/11/23/math-cheatsheet/"/>
     <id>https://emjayahn.github.io/2018/11/23/math-cheatsheet/</id>
     <published>2018-11-23T13:14:19.000Z</published>
-    <updated>2018-11-23T14:20:44.067Z</updated>
+    <updated>2018-11-29T14:04:01.940Z</updated>
     
     <content type="html"><![CDATA[<h1 id="이산확률분포"><a href="#이산확률분포" class="headerlink" title="이산확률분포"></a>이산확률분포</h1><h2 id="베르누이-분포-bernoulli-distribution"><a href="#베르누이-분포-bernoulli-distribution" class="headerlink" title="베르누이 분포 (bernoulli distribution)"></a>베르누이 분포 (bernoulli distribution)</h2><ul><li>동전 생각하기</li><li><p>결과가 두가지 중 하나</p></li><li><p>확률변수를 1 or 0 으루 주었을 때,<br>$$<br>\text{Bern}(x;\mu) = \mu^x(1-\mu)^{(1-x)}<br>$$</p></li><li><p>확률변수를 1 or -1 로 주었을 때,<br>$$<br>\text{Bern}(x; \mu) = \mu^{(1+x)/2} (1-\mu)^{(1-x)/2}<br>$$</p></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#예제코드</span></span><br><span class="line"><span class="comment">#베르누이 분포 SciPy</span></span><br><span class="line"><span class="comment">#100개 sampling</span></span><br><span class="line">sp.stats.bernoulli(mu).rvs(<span class="number">100</span>, random_state=<span class="number">0</span>)</span><br></pre></td></tr></table></figure><h2 id="이항분포-binomial-distribution"><a href="#이항분포-binomial-distribution" class="headerlink" title="이항분포 (binomial distribution)"></a>이항분포 (binomial distribution)</h2><ul><li>동전을 N번 던졌다</li><li>성공확률이 $\mu$ 인 베르누이 시도를 $N$ 번 반복 할 때, 성공 횟수를 $X$ 라 하면,</li></ul><p>$$ X \sim \text{Bin}(x;N,\mu)  $$ <br></p><p>$$ \text{Bin}(x;N,\mu) = \binom N x  \mu^x(1-\mu)^{N-x} $$ <br></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sp.stats.binom(N, mu).rvs(<span class="number">100</span>, random_state=<span class="number">0</span>)</span><br></pre></td></tr></table></figure><h2 id="카테고리-분포-Categorical-distribution"><a href="#카테고리-분포-Categorical-distribution" class="headerlink" title="카테고리 분포 (Categorical distribution)"></a>카테고리 분포 (Categorical distribution)</h2><ul><li>주사위 생각해!</li><li>$K$ 개의 카테고리가 있을 때,<br>$$ x = (x_1, x_2, x_3, x_4, … , x_k)  $$ <br></li></ul><p>각 원소 x_i 가 1이 나올 수 있는 확률 ($i$번쨰 원소의 성공확률)을 $\mu_i$ 라 하면, <br></p><p>$$ \text{Cat}(x;\mu) = \mu_1^{x_1} \mu_2^{x_2}  \cdots \mu_K^{x_K}  =  \prod_{k=1}^K \mu_k^{x_k} $$ <br></p><p>이 표현은 One-Hot-Encoding 으로 카테고리 분포를 표현 했기에 가능하다. <br></p><p>단, <br><br>$$ 0 \leq \mu_i \leq 1 $$ <br></p><p>$$ \sum_{k=1}^K \mu_k = 1 $$ <br></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#카테고리 분포는 SciPy 의 메소드가 없으므로, 다항분포의 N을 1로 준다.</span></span><br><span class="line"><span class="comment">#mu 는 각 term 이 나올 수 있는 확률 vector</span></span><br><span class="line">sp.stats.multinomial(<span class="number">1</span>, mu)</span><br></pre></td></tr></table></figure><h2 id="다항-분포-Multinomial-distribution"><a href="#다항-분포-Multinomial-distribution" class="headerlink" title="다항 분포 (Multinomial distribution)"></a>다항 분포 (Multinomial distribution)</h2><ul><li>주사위를 여러번 던졌다.</li><li>카테고리 시도를 $N$ 번 반복하여 $k$ $(k=1,…,K)$ 가 $x_k$ 번 나올 확률분포.</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#N : number of trial</span></span><br><span class="line"><span class="comment">#mu 는 각 term 이 나올 수 있는 확률 vector</span></span><br><span class="line">sp.stats.multinomial(N, mu)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -130,7 +179,7 @@
     
     </summary>
     
-      <category term="CheatSheet" scheme="https://emjayahn.github.io/categories/CheatSheet/"/>
+      <category term="Math" scheme="https://emjayahn.github.io/categories/Math/"/>
     
     
   </entry>
@@ -140,7 +189,7 @@
     <link href="https://emjayahn.github.io/2018/11/23/numpy-cheatsheet/"/>
     <id>https://emjayahn.github.io/2018/11/23/numpy-cheatsheet/</id>
     <published>2018-11-23T10:33:39.000Z</published>
-    <updated>2018-11-23T10:46:57.011Z</updated>
+    <updated>2018-11-29T14:01:11.843Z</updated>
     
     <content type="html"><![CDATA[<h3 id="np-arange-start-end"><a href="#np-arange-start-end" class="headerlink" title="np.arange(start, end)"></a>np.arange(start, end)</h3><ul><li>start 에서 end-1 까지의 행렬(array) return</li></ul><h3 id="np-linspace-start-end-number-of-dots"><a href="#np-linspace-start-end-number-of-dots" class="headerlink" title="np.linspace(start, end, number_of_dots)"></a>np.linspace(start, end, number_of_dots)</h3><ul><li>number_of_dots : 범위 안의 점 갯수</li></ul><h3 id="np-zeros-like-x"><a href="#np-zeros-like-x" class="headerlink" title="np.zeros_like(x)"></a>np.zeros_like(x)</h3><ul><li>0으로 채운 x 와 같은 크기의 행렬</li></ul>]]></content>
     
@@ -153,7 +202,7 @@
     
     </summary>
     
-      <category term="CheatSheet" scheme="https://emjayahn.github.io/categories/CheatSheet/"/>
+      <category term="wiki" scheme="https://emjayahn.github.io/categories/wiki/"/>
     
     
   </entry>
@@ -435,54 +484,6 @@
       
         &lt;h1 id=&quot;181105-TWIL&quot;&gt;&lt;a href=&quot;#181105-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181105 TWIL&quot;&gt;&lt;/a&gt;181105 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;프로젝트-STEP&quot;&gt;&lt;a href=&quot;#프로젝
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181104-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/04/181104-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/04/181104-TodayWhatILearned/</id>
-    <published>2018-11-04T14:07:51.000Z</published>
-    <updated>2018-11-04T14:10:26.054Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181104-TWIL"><a href="#181104-TWIL" class="headerlink" title="181104 TWIL"></a>181104 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>회기 부분 공부</li><li>Project Data 회기 돌려보기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임</li><li>회기 부분 정리</li><li>크롤링 프로젝트 개선 사항 고민</li><li>(시간이 되면) A* 알고리즘 코드 짜보기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>다리를 다치고 통증으로 인해 집중해서 코드를 짜기 힘들었다. 수학 이론을 공부하면서 내일 있을 프로젝트<br>모임을 준비했고, 팀원들께서 만든 코드를 정리하며 데이터를 다시 추출하였다. 이 데이터들을 통해 회기의 몇몇<br>가지를 돌려보았다. 이것을 토대로 내일 팀원들과 함께 이야기를 나눠보며 좀더 어떻게 할 수 있을지 고민해봐야<br>겠다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181104-TWIL&quot;&gt;&lt;a href=&quot;#181104-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181104 TWIL&quot;&gt;&lt;/a&gt;181104 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181103-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/03/181103-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/03/181103-TodayWhatILearned/</id>
-    <published>2018-11-03T13:27:46.000Z</published>
-    <updated>2018-11-03T13:39:37.686Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181103-TWIL"><a href="#181103-TWIL" class="headerlink" title="181103 TWIL"></a>181103 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Crawling miniProject 코드 작성</li><li>Pandas 라이브러리 정리</li><li>Project 주말동안 할일 정하기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project Data 회기 돌려보기</li><li>회기 부분 공부</li><li>크롤링 프로젝트 개선 사항 고민</li><li>(시간이 되면) A* 알고리즘 코드 짜보기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>whoscored 사이트의 Player 정보를 크롤링 하는 miniProject 의 코드를 작성하였다. Selenium을<br>통해서 크롤링하는데, headless 적용을 하면 에러가 나는 부분을 어떻게 처리해야할지 고민해보아야 한다.<br>Chrome webdriver 를 열어놓는 환경과 headless 환경의 차이가 있는 것 같은데, 이 부분은 document<br>를 살펴보아야 할 것같다. window창을 열어놓는것 과 그렇지 않은 것의 차이점이 있는지 확인해야한다.</li><li>함수로 짠 코드를 class 화 시킬 때는 다루는 범위가 커져야 한다는 강박관념이 있다. class 화 시켰을<br>때의 편의성 부분을 고민하면서 위 생각으로 흐름이 이어지는 것 같은데, 그렇지 않기 위해 class의 장점을<br>좀더 체감해볼 필요가 있다.</li><li>Linear Regression 강의를 들으면서, LineByLine 수식을 이해하는데는 문제가 없으나 이야기의 큰 그림<br>을 놓치는 경향이 있는 것 같다. 내일은 이 부분을 중점적으로 공부해보고, 메인 프로젝트에 적용해보는 것 까지<br>해봐야겠다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181103-TWIL&quot;&gt;&lt;a href=&quot;#181103-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181103 TWIL&quot;&gt;&lt;/a&gt;181103 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     
     </summary>

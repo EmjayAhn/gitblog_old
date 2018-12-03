@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-11-29T14:00:09.249Z</updated>
+  <updated>2018-12-03T14:34:34.729Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181203-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/03/181203-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/03/181203-TodayWhatILearned/</id>
+    <published>2018-12-02T23:04:56.000Z</published>
+    <updated>2018-12-03T14:34:34.729Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181203-TWIL"><a href="#181203-TWIL" class="headerlink" title="181203 TWIL"></a>181203 TWIL</h1><hr><h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>Pandas Cookbook 2장 복습, 3장</li><li>ROC 커브, Logistic Regression</li><li>시간 날 때, 새로운 데이터셋 EDA</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>ROC, AUC, Logistic Regression 정리</li><li>Flask_app : classification model application 코드 해석</li><li>Pandas 2장 복습</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Heap, Graph 부분 복습</li><li>Pandas 3장, 4장</li><li>새로운 데이터셋 EDA, Regression 함수 적용</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Pandas를 조금씩 정리하고, 새로운 것들을 알게 되면서 이전에는 몰랐던 편리한 기능들이 많이 있음을 알게 되었다.<br>손에 익히게 되면서 아주 조금씩 판다스에대해서 편해지기 시작하였다. Pandas 를 심도 있고 공부해보고자 했던 처음 이유인<br>‘데이터셋을 보고 먼저 손이 나가도록 하자’는 목표에는 아직도 멀었지만, 하루하루 조금씩 노력해온 1주 반동안,<br>이전보다 조금더 편해졌다는 것이 느껴진다.</li><li>이렇게 체감적으로, 한파트 한파트씩 아주 더디지만 조금씩 편해지고, 손에 익는 다는 것을 느끼면서, 점점더<br>재미있어 질것이라 믿는다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181203-TWIL&quot;&gt;&lt;a href=&quot;#181203-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181203 TWIL&quot;&gt;&lt;/a&gt;181203 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>NGINX</title>
@@ -460,30 +482,6 @@
       
         &lt;h1 id=&quot;181107-TWIL&quot;&gt;&lt;a href=&quot;#181107-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181107 TWIL&quot;&gt;&lt;/a&gt;181107 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181105-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/05/181105-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/05/181105-TodayWhatILearned/</id>
-    <published>2018-11-05T03:15:36.000Z</published>
-    <updated>2018-11-05T13:35:12.039Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181105-TWIL"><a href="#181105-TWIL" class="headerlink" title="181105 TWIL"></a>181105 TWIL</h1><hr><h2 id="프로젝트-STEP"><a href="#프로젝트-STEP" class="headerlink" title="프로젝트 STEP"></a>프로젝트 STEP</h2><ol><li>전처리 Nan 값 처리 해결</li><li>Partial Regression Plot 그려보기</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>프로젝트 모임</li><li>Crawling miniProject 와 mainProject 진행</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>프로젝트, 오늘까지 진행사항 코드 정리</li><li>수학 회기 전체 정리</li><li>프로젝트 생각하기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘은 프로젝트 모임을 통해서, 많은 것을 얻었다. OLS function 을 실제로 돌림에 있어서 많은 제약조건이<br>필요함을 알게되었고, 그만큼 데이터전처리가 매우 중요하다는 것을 알게 되었다.</li><li>다양한 feature 들마다 다양한 방법으로 전처리를 해주어야 한다. 처음엔 NaN값의 처리 방식에 대해 고민했으나,<br>이제는 각 feature 의 특성들마다 전처리 해주는 방식이 달라져야 하고, 또 이번 고비가 넘어가게 되면<br>좋은 prediction 결과를 얻기 위해 다양한 feature 의 조합이 필요함이 피부에 와닿았다.</li><li>만족스런 결과물을 얻기 위해선, 아는게 많은 것 보다, 그 결과물을 만들고자 하는 구성원이 중요함을 느꼈다.<br>알고있는 지식은 해결해야할 문제보다 항상 작기 마련이다. 또한 알고있는 지식이 완벽한지는 계속 스스로 의문을<br>던지며 업데이트 해야만한다. 하지만 이보다 더 중요한 것은 문제에 부딪힐 때마다 의욕적이고, 해결해보고자 하는 팀원들<br>덕분에 오늘의 보람과 뿌듯함을 얻을 수 있었던 것 같다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181105-TWIL&quot;&gt;&lt;a href=&quot;#181105-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181105 TWIL&quot;&gt;&lt;/a&gt;181105 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;프로젝트-STEP&quot;&gt;&lt;a href=&quot;#프로젝
       
     
     </summary>

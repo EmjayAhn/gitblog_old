@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-03T14:34:34.729Z</updated>
+  <updated>2018-12-04T14:49:35.999Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181204-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/04/181204-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/04/181204-TodayWhatILearned/</id>
+    <published>2018-12-04T02:10:00.000Z</published>
+    <updated>2018-12-04T14:49:35.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181204-TWIL"><a href="#181204-TWIL" class="headerlink" title="181204 TWIL"></a>181204 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Heap 구조 공부, 코드 짜보기</li><li>Logistic Regression method 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>QDA, LDA, 나이브 베이지안 모델 복습, 정리</li></ol><ul><li>특히, 수식들 정리 + Method보다는 predict 결과가 나오는 데까지 확률계산, 흐름 중점적으로 공부</li></ul><ol start="2"><li>(Study) A* 알고리즘 구현</li><li>Pandas 3장<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Heap 구조를 공부하면서, class 단위로 짜져 있는 코드들을 혼자서 구현하려면 어디서부터 계획을 세워야<br>되는가에 대해 고민했다. 또한, 어떤 이슈가 있을 때, 어떤 알고리즘과 자료구조를 선택해야하는지에 대한 판단<br>근거 역시 앞으로 정리 해야할 필요성을 느낀다.</li><li>우선 간단하게 알고 있는 데이터 구조 전체에 대해 서로 비교하여 장, 단점 정도를 빠른시일 내에 정리해야겠다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181204-TWIL&quot;&gt;&lt;a href=&quot;#181204-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181204 TWIL&quot;&gt;&lt;/a&gt;181204 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>181203-TodayWhatILearned</title>
@@ -457,30 +479,6 @@
       
       
         &lt;h1 id=&quot;181108-TWIL&quot;&gt;&lt;a href=&quot;#181108-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181108 TWIL&quot;&gt;&lt;/a&gt;181108 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181107-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/07/181107-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/07/181107-TodayWhatILearned/</id>
-    <published>2018-11-07T10:42:45.000Z</published>
-    <updated>2018-11-08T11:19:43.338Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181107-TWIL"><a href="#181107-TWIL" class="headerlink" title="181107 TWIL"></a>181107 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Crawling Project 정리 및 제출</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Prediction Project</li></ol><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181107-TWIL&quot;&gt;&lt;a href=&quot;#181107-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181107 TWIL&quot;&gt;&lt;/a&gt;181107 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

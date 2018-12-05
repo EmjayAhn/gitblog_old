@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-04T14:49:35.999Z</updated>
+  <updated>2018-12-05T00:21:28.338Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Generative Model</title>
+    <link href="https://emjayahn.github.io/2018/12/05/Generative-Model/"/>
+    <id>https://emjayahn.github.io/2018/12/05/Generative-Model/</id>
+    <published>2018-12-04T23:48:55.000Z</published>
+    <updated>2018-12-05T00:21:28.338Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="확률론적-생성모형-Generative-Model"><a href="#확률론적-생성모형-Generative-Model" class="headerlink" title="확률론적 생성모형 (Generative Model)"></a>확률론적 생성모형 (Generative Model)</h1><h2 id="확률론적-생성모형의-기본-개념"><a href="#확률론적-생성모형의-기본-개념" class="headerlink" title="확률론적 생성모형의 기본 개념"></a>확률론적 생성모형의 기본 개념</h2><ul><li><p>우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.</p></li><li><p>베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.<br>$$<br>P(y = C_k \mid x) = \dfrac{P(x \mid y = C_k)\; P(y = C_k)}{P(x)}<br>$$</p></li><li><p>이 때, $ P(x \mid y = C_k) $<br>== <strong>Likelihood</strong><br>== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건</p></li></ul><h2 id="Likelihood-추정의-알고리즘"><a href="#Likelihood-추정의-알고리즘" class="headerlink" title="Likelihood 추정의 알고리즘"></a>Likelihood 추정의 알고리즘</h2><ol><li>$ P(x \mid y = C_k) $ 가 <strong> 어떤 </strong> 확률분포를 따를 것이다라고 가정<br><br><br></li><li>x의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정<br><br><br></li><li>Class k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.<br><br><br></li><li>모수값을 안다 == $ P(x \mid y = C_k) $ 의 pdf 를 알고 있다.<br><br><br></li><li>test set x 가 들어오면 $ P(x \mid y = C_k) $ 를 구할 수 있다.</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;확률론적-생성모형-Generative-Model&quot;&gt;&lt;a href=&quot;#확률론적-생성모형-Generative-Model&quot; class=&quot;headerlink&quot; title=&quot;확률론적 생성모형 (Generative Model)&quot;&gt;&lt;/a&gt;확률론적 생
+      
+    
+    </summary>
+    
+      <category term="Math" scheme="https://emjayahn.github.io/categories/Math/"/>
+    
+    
+      <category term="Classification, 확률론적생성모형, Generative, 생성모형, 분류모델" scheme="https://emjayahn.github.io/tags/Classification-%ED%99%95%EB%A5%A0%EB%A1%A0%EC%A0%81%EC%83%9D%EC%84%B1%EB%AA%A8%ED%98%95-Generative-%EC%83%9D%EC%84%B1%EB%AA%A8%ED%98%95-%EB%B6%84%EB%A5%98%EB%AA%A8%EB%8D%B8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>181204-TodayWhatILearned</title>
     <link href="https://emjayahn.github.io/2018/12/04/181204-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/12/04/181204-TodayWhatILearned/</id>
     <published>2018-12-04T02:10:00.000Z</published>
-    <updated>2018-12-04T14:49:35.999Z</updated>
+    <updated>2018-12-05T00:18:58.519Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="181204-TWIL"><a href="#181204-TWIL" class="headerlink" title="181204 TWIL"></a>181204 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Heap 구조 공부, 코드 짜보기</li><li>Logistic Regression method 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>QDA, LDA, 나이브 베이지안 모델 복습, 정리</li></ol><ul><li>특히, 수식들 정리 + Method보다는 predict 결과가 나오는 데까지 확률계산, 흐름 중점적으로 공부</li></ul><ol start="2"><li>(Study) A* 알고리즘 구현</li><li>Pandas 3장<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Heap 구조를 공부하면서, class 단위로 짜져 있는 코드들을 혼자서 구현하려면 어디서부터 계획을 세워야<br>되는가에 대해 고민했다. 또한, 어떤 이슈가 있을 때, 어떤 알고리즘과 자료구조를 선택해야하는지에 대한 판단<br>근거 역시 앞으로 정리 해야할 필요성을 느낀다.</li><li>우선 간단하게 알고 있는 데이터 구조 전체에 대해 서로 비교하여 장, 단점 정도를 빠른시일 내에 정리해야겠다.</li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="181204-TWIL"><a href="#181204-TWIL" class="headerlink" title="181204 TWIL"></a>181204 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Heap 구조 공부, 코드 짜보기</li><li>Logistic Regression method 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>QDA, LDA, 나이브 베이지안 모델 복습, 정리</li></ol><ul><li>특히, 수식들 정리 + Method보다는 predict 결과가 나오는 데까지 확률계산, 흐름 중점적으로 공부</li></ul><ol start="2"><li>(Study) A* 알고리즘 구현</li><li>Pandas 3장<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Heap 구조를 공부하면서, class 단위로 짜져 있는 코드들을 혼자서 구현하려면 어디서부터 계획을 세워야<br>되는가에 대해 고민했다. 또한, 어떤 이슈가 있을 때, 어떤 알고리즘과 자료구조를 선택해야하는지에 대한 판단<br>근거 역시 앞으로 정리 해야할 필요성을 느낀다.</li><li>우선 간단하게 알고 있는 데이터 구조 전체에 대해 서로 비교하여 장, 단점 정도 빠른시일 내에 정리해야겠다.</li></ul><hr>]]></content>
     
     <summary type="html">
     
@@ -34,6 +59,8 @@
       
     
     </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
     
     
   </entry>
@@ -455,30 +482,6 @@
       
       
         &lt;h1 id=&quot;181109-TWIL&quot;&gt;&lt;a href=&quot;#181109-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181109 TWIL&quot;&gt;&lt;/a&gt;181109 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181108-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/08/181108-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/08/181108-TodayWhatILearned/</id>
-    <published>2018-11-08T13:18:33.000Z</published>
-    <updated>2018-11-08T13:20:45.978Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181108-TWIL"><a href="#181108-TWIL" class="headerlink" title="181108 TWIL"></a>181108 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Project Data EDA, OLS 돌려보기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project Data EDA, OLS 돌려보기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>프로젝트 과정에서 Performance 가 안나오는 이유에 대해 알게된 계기였다. EDA 는 계속 하더라도 부족함이 많은것이고,<br>데이터를 처리할 때 line by line 근거가 있어야 한다고 느꼈다.</li><li>처음부터 전 과정을 진행하는데 있어 매우 시행착오가 많았고, 또 앞으로도 많을 것이지만 계속 반복해서 시행해보는 것이 중요할 것 같다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181108-TWIL&quot;&gt;&lt;a href=&quot;#181108-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181108 TWIL&quot;&gt;&lt;/a&gt;181108 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

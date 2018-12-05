@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-05T00:21:28.338Z</updated>
+  <updated>2018-12-05T14:28:00.992Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181205-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/05/181205-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/05/181205-TodayWhatILearned/</id>
+    <published>2018-12-05T14:27:50.000Z</published>
+    <updated>2018-12-05T14:28:00.992Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="To-do-list-오늘-할일"><a href="#To-do-list-오늘-할일" class="headerlink" title="To-do-list : 오늘 할일"></a>To-do-list : 오늘 할일</h2><ol><li>QDA, LDA, 나이브 베이지안 모델 복습, 정리<ul><li>수식, Predict 과정 중심적으로 공부</li></ul></li><li>(Study) A* 알고리즘 구현</li><li>Pandas 3장</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(Study) A* 알고리즘 손코딩</li><li>QDA, LDA, 나이브 베이지안 모델 복습, 정리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(Study) A* 알고리즘 구현</li><li>Pandas 3장</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>스터디에서 다같이 알고리즘을 파악하고, 이를 바탕으로 손코딩을 진행했다. Class 단위로 짜는 거였고,<br>우리끼리 자료들을 바탕으로 알고리즘을 공부하고, 이를 구현하는 것까지 개인적으로 매우 Challenging<br>했다. 오늘 손코딩을 마무리 하면서, 머릿속에 있는 알고리즘을 어떻게 풀어내는지, 설계부터 각각의 함수까지<br>계획을 세우는데 매우 큰 보람과 배움이 있었다.</li><li>내일부터는 스터디원들과 함께 오늘 작성한 것을 바탕으로 실제 코딩을 들어갈 계획이다. 아직 미숙한 점이 많기에,<br>손코딩을 진행한 것들에 대해 Debugging 이 많이 필요하겠지만, 너무 재미있는 시간이었다.</li><li>오후 남은 시간에는 QDA 부터 나이브 베이지안 모델까지(gaussain, bernoulli, multinomial) 수식과<br>그 메소드들을 하나하나 뜯어보고 분석하는 시간을 가졌다. 단순히 패키지의 메소드를 돌리면 되겠지가 아니라, 메소드를 돌리기전에<br>간단한 data에 대해 결과를 얻기까지 직접 손으로 풀어보고 계산하여, 메소드를 돌렸을 때 결과와 비슷한지 확인 하는 시간을<br>통해, 각 분포가 모델링 되는데까지 과정을 이해하는데 도움이 많이 되었다.</li><li>또한 자료에 나오는 다양한 시각화 메소드, 시각화 하는데 필요한 domain 설정, Numpy와 Seaborn 의 메소드들을<br>파악해보면서, 시각자료의 의도를 생각해보기도 하였다.</li><li>많지 않은 범위를 이렇게 공부하다보니, 꽤많은 시간이 필요하여 오늘의 다른 목표들을 채우지는 못했지만,<br>스터디와 개인 공부 두가지를 통해, 하루를 매우 생산적으로 보낸 것 같아 뿌듯하다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;To-do-list-오늘-할일&quot;&gt;&lt;a href=&quot;#To-do-list-오늘-할일&quot; class=&quot;headerlink&quot; title=&quot;To-do-list : 오늘 할일&quot;&gt;&lt;/a&gt;To-do-list : 오늘 할일&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;QDA,
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Generative Model</title>
@@ -458,30 +482,6 @@
       
       
         &lt;h1 id=&quot;181110-TWIL&quot;&gt;&lt;a href=&quot;#181110-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181110 TWIL&quot;&gt;&lt;/a&gt;181110 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181109-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/</id>
-    <published>2018-11-09T14:14:01.000Z</published>
-    <updated>2018-11-09T14:23:02.860Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181109-TWIL"><a href="#181109-TWIL" class="headerlink" title="181109 TWIL"></a>181109 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Crawling miniproject 발표</li><li>Prediction main project data 탐색</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Crawling miniproject 의 troubleshooting 시간이 있었다. 발표를 끝내고 나서는 하나를 마쳤다는 시원한 감이 있었지만, comment 들을 듣고 많이 부족함을 느낀 시간이었다. 코드를 작성할 때, 공통된 요소의 추상화가 선택적이 아니라 필수적임을 알게되었다. 간단한 것이라도 반복적으로 작성하는 것은 python convention 에도, 또 프로그래밍의 근본적인 취지에도 어긋나는 것이다. 처음부터 일반화된 포맷으로 작성하기엔 아직 실력이 많이 부족하다. 간단한 구현에서 module 화까지 내가 짜는 대부분의 코드를 연습하다 보면 늘겠지…</li><li>메인 프로젝트의 data 간의 연관성이 잘 보이지 않는다. 지난 시간에 알게된 하루 주기로의 delay가 반복됨을 알고 있었으나, datetime 형식으로, 혹은 int나 float 형식으로 ols 에 집어 넣으면 주기성을 잡아내지 못하는 것 같다. 시간 단위로 X feature 로 들어가면 좋을 것 같은데, ols formula 에 시간을 집어넣으면 계속 category 화 된다. 이렇기 때문에 그 해당 정확한 시간이 있지 않으면 coefficient 가 먹지 않지….</li><li>시간을 표현하기 위해 60진법도 찾아보고, 1분 단위로 int 숫자에 mapping 할까도 생각해보았으나, 결국 mapping 해서 ols 에 돌리면 2400 이후 값은 없는데도 x 축에 들어가게 된다….</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181109-TWIL&quot;&gt;&lt;a href=&quot;#181109-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181109 TWIL&quot;&gt;&lt;/a&gt;181109 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

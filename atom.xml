@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-05T14:54:22.274Z</updated>
+  <updated>2018-12-07T14:42:08.422Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181207_TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/07/181207-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/07/181207-TodayWhatILearned/</id>
+    <published>2018-12-07T14:41:49.000Z</published>
+    <updated>2018-12-07T14:42:08.422Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181207-TWIL"><a href="#181207-TWIL" class="headerlink" title="181207 TWIL"></a>181207 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Pandas 3장, 4장(일부)</li><li>(Project) 데이터셋 정하기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>MySQL 복습, QUIZ 풀기</li><li>새로운 데이터셋 EDA, Regression</li><li>Pandas 4장, 7장</li><li>지난 프로젝트(Flight_Delay Regression) Update</li><li>알고리즘 추가과제 하나씩 풀기</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>와.. 오늘은 그간의 파이썬과 알고리즘, 데이터 구조의 공부한 것을 평가받는 첫 시간이었다. 시간내에 주어진 문제를<br>효율적으로 푸는 것이 생각보다 어려웠다. pandas의 method 나 numpy method 를 자주 사용하면서, 기본적인 내장 method 는 오히려 더 어색했다. 함수를 짜서, 테스트 케이스를 통과하다가 중간에 발생한 에러는 debugging을 하지 못했다.<br>또한, 코드 역시 비효율적이고 못생겼다. pyint 의 PEP 8 점수 역시 매우 낮았다.</li><li>다시한번 많이 부족함을 느꼈고, 더 공부해야되고 알아야 하는 것이 한참이나 많다.</li><li>쌓이고 쌓이는 ToDoList 에서 우선순위를 매번 잘 매기고, 너무 한 issue 에만 묻혀있지 말아야하며, 동시에<br>다양한 주제를 공부해야하므로 정리를 잘해야하고, 그 정리를 다음번에 참조할 수 있게 잘 기록해야하며, scheduling 을 효율적으로 해야하고, 무엇보다 그 순간에 매우 집중해야한다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181207-TWIL&quot;&gt;&lt;a href=&quot;#181207-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181207 TWIL&quot;&gt;&lt;/a&gt;181207 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181205-TodayWhatILearned</title>
@@ -458,30 +482,6 @@
       
       
         &lt;h1 id=&quot;181111-TWIL&quot;&gt;&lt;a href=&quot;#181111-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181111 TWIL&quot;&gt;&lt;/a&gt;181111 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181110-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/10/181110-TodayWhatILearned/</id>
-    <published>2018-11-10T13:20:02.000Z</published>
-    <updated>2018-11-10T13:24:15.964Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181110-TWIL"><a href="#181110-TWIL" class="headerlink" title="181110 TWIL"></a>181110 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Prediction main project data 탐색</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Project 모임<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>어제 고민했던, 시간을 사용하여 Regression 을 돌리는데는 성공하였다. 단위를 바꿔주는 방법으로 60진법도 생각하고, radian 으로 바꾸는 방법도 생각해보다가 epoch 방법으로 기준시점에서 지난 초 수 로 scale 과 unit 을 바꿔준디 돌렸더니, 돌아는간다…</li><li>문제는 전혀 예측했던 모형이 아니었다. scatter plot 의 외형만 보고 판단했다는 것을 마지막에 깨달은 것 같다. 모델을 하기위해 묶어보고 새로운 feature 라고 생각되는 것도 빼보지만 아직 경향성이나 공통적인 특정 같은 것은 보이지 않는다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181110-TWIL&quot;&gt;&lt;a href=&quot;#181110-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181110 TWIL&quot;&gt;&lt;/a&gt;181110 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

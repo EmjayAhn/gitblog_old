@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-08T14:08:54.393Z</updated>
+  <updated>2018-12-09T14:45:11.229Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181209-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/09/181209-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/09/181209-TodayWhatILearned/</id>
+    <published>2018-12-09T14:39:51.000Z</published>
+    <updated>2018-12-09T14:45:11.229Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181209-TWIL"><a href="#181209-TWIL" class="headerlink" title="181209 TWIL"></a>181209 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Classification 복습 (Entropy, DecisionTree)</li><li>MySQL Query Code Imporvement, CodeReview</li><li>Insurance Data regression</li><li>Algorithm 추가 과제 (2진수, 8진수, 16진수)</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>MySQl, NOSQL 복습, 정리</li><li>Insurance Regression 과정 정리, 알게된 것들 정리</li><li>Pandas 4장, 7장, 9장 정리</li><li>Algorithm 추가 과제 마무리</li><li>수학 12-5장까지 복습</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Insuracne Data regression 을 진행하면서, 지난 프로젝트에서는 다가가지 못한 Step 들을 수행하였다. 잔차의 정규성을 검토하면서, 이를 발전 시킬 수 있는 방법에 대해 코드를 작성하였고, EDA 과정을 꼼꼼히 한 덕분인지, regression  formula 를 돌리는데 있어 각 스텝마다, 작은 근거들이 생겨났다.</li><li>아직은 수업 자료에서 모든 내용을 담을 만큼 Performance 와 스텝간의 근거들이 명확하지 않기 때문에 공부할 것이 한참남았지만, 오늘 새로운 데이터셋을 좀더 꼼꼼히 EDA 를 하면서, 새롭게 알게되고, 적용할 수 있는 것들이 생겨 뿌듯했다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181209-TWIL&quot;&gt;&lt;a href=&quot;#181209-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181209 TWIL&quot;&gt;&lt;/a&gt;181209 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181208-TodayWhatILearned</title>
@@ -466,28 +490,6 @@
     </summary>
     
       <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181112-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/12/181112-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/12/181112-TodayWhatILearned/</id>
-    <published>2018-11-12T07:47:46.000Z</published>
-    <updated>2018-11-12T14:49:02.762Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181112-TWIL"><a href="#181112-TWIL" class="headerlink" title="181112 TWIL"></a>181112 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>프로젝트 발표 및 Feedback</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>프로젝트 모임 &amp; 시계열 공부<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>메인프로젝트를 다루는 기간동안의 중간결과를 발표하는 시간을 가졌다. 전달력이 충분하지 못한 느낌을 많이 받았다. 내 머릿속에 있는 것을 다른 사람에게 전달하는 능력 역시 많이 필요함을 깨달은 시간이었다.</li><li>프로젝트 내용에 있어서는, 아직 부족한것이 많다. 퍼포먼스도 눈에 띄게 나오는 것이 없다. 원인은 아마도 눈에 띄는 데이터들의 경향성을 보지 못한 탓이 아닐까 싶다. 가지고 있는 train 데이터 전체를 두고는 뚜렷한 경향성을 보지 못하고 있다. 여러가지 제한 조건을 두면서 쪼개서 봐야하는 작업이 더 필요한 것 같다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181112-TWIL&quot;&gt;&lt;a href=&quot;#181112-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181112 TWIL&quot;&gt;&lt;/a&gt;181112 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
     
     
   </entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-11T14:46:12.951Z</updated>
+  <updated>2018-12-15T14:32:54.559Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>181215-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/15/181215-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/15/181215-TodayWhatILearned/</id>
+    <published>2018-12-15T14:32:26.000Z</published>
+    <updated>2018-12-15T14:32:54.559Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181210-TWIL"><a href="#181210-TWIL" class="headerlink" title="181210 TWIL"></a>181210 TWIL</h1><hr><h2 id="To-Do-list"><a href="#To-Do-list" class="headerlink" title="To-Do-list"></a>To-Do-list</h2><ol><li>DataThon 발표 준비</li><li>Pandas 4장 공부</li><li>알고리즘 문제풀기</li><li>(Study) 프로젝트 미니(웹어플리케이션) 준비</li><li>(Project) Classification Project Data EDA</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Datathon 발표준비</li><li>알고리즘 문제 풀기</li><li>(Study) 프로젝트 미니(웹어플리케이션) 준비</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas 4장 공부</li><li>Support Vector Machine 공부</li><li>알고리즘 문제풀기</li><li>NoSQL, MySQL syntax 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>데이터톤 발표를 준비하면서, 제출했던 코드와 과정을 다시 살펴보니 Markdown 이나<br>주석이 부족함을 느꼈다. 다시 볼 때 좀더 편할 수 있도록, 코드와 과정을 다시 이어 나가는데 시간을 덜 소비하도록 나름 신경써서 작성하며 진행했는데, 다시 보려고 하니 머릿속에 있었던 것들이 다 작성되어 있지 않았다. 지금은 데이터톤에서 얼마 지나지 않았기 때문에, 기억에 남는 것이겠다. 하지만 추후에 다시 볼때는 기억이 나지 않아, 내가 작성한 코드와 문서임에도 불구하고 그 맥락을 이해하기 위해 처음부터 읽어 볼 것이다.</li><li>앞으로는 좀더 주석과 마크다운 문서에 신경을 많이 써야겠다. 짤막하게라도, 데이터 분석과정 중에 들었던 생각들을 작성해 놓아야, 그 시간이 지난뒤에 Develop 을 하던, 복기를 하던 계속 생각의 흐름을 이어 나갈 수 있을 것이다.</li><li><code>일일코딩</code>, <code>DailyCommit</code> 등에 관한 글을 읽었다. 개인의 다짐과도 비슷하고, 개인 프로젝트로 개발자들이 많이 하는 것 같다. 글을 읽은 직후에는 나도 하고 싶다는 생각을 했지만, 과연 할 수 있을 것인가 하며 반문을 하였다. 다짐의 문제라고 하기엔, 너무 정신 없는 나날을 보내고 있기에.. 도전할 것인지 하루만 더 고민해봐야겠다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181210-TWIL&quot;&gt;&lt;a href=&quot;#181210-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181210 TWIL&quot;&gt;&lt;/a&gt;181210 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;To-Do-list&quot;&gt;&lt;a href=&quot;#To
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>181211-TodayWhatILearned</title>
     <link href="https://emjayahn.github.io/2018/12/11/181211-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/12/11/181211-TodayWhatILearned/</id>
     <published>2018-12-11T14:45:57.000Z</published>
-    <updated>2018-12-11T14:46:12.951Z</updated>
+    <updated>2018-12-12T00:47:42.456Z</updated>
     
     <content type="html"><![CDATA[<h1 id="181210-TWIL"><a href="#181210-TWIL" class="headerlink" title="181210 TWIL"></a>181210 TWIL</h1><hr><h2 id="To-Do-list"><a href="#To-Do-list" class="headerlink" title="To-Do-list"></a>To-Do-list</h2><ol><li>Insurance EDA 정리</li><li>Pandas</li><li>12-5장까지 수학복습</li><li>MST 복습<h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2></li><li>Insurance EDA 정리</li><li>(STUDY) A* 알고리즘 시각화</li><li>선형회귀 개념 복습</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>데이터톤<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>파이썬으로 작성한 A*알고리즘의 시각화코드를 작성하였다. 제일 빠른 길을 찾아 주었으나, 이것을 시각화하는<br>것이 생각보다 어렵다. 그리고 좀더 동적으로 시각화를 해주고 싶은데, 좀더 삽질을 많이해봐야겠다.<br>결과데이터를 보여주면 되겠지 했지만, 답을 얻는 과정을 세세하게 시각화하여 보여주는 것 역시 어려운 문제였다.<br>비단 알고리즘을 보여주는 것만이 아니라, 지금 공부하는 모든 것이 아마 그럴 것이다.</li><li>A* 알고리즘을 적용해서 주어진 미로의 최적의 길을 찾는 것은 미로의 크기가 커질수록 검증이 어렵다. 우리가<br>작성한 알고리즘으로 풀어준 path가 진짜 제일 빠른 길인지 확인하는 방법이 무엇인가 하는 생각이 든다. 크기가<br>작은 미로에서 우리가 한길 한길 찾아가는 정답과 맞아서, 알고리즘이 제대로 작동하고 있다고 생각했다. 하지만,<br>점차 크기가 커지면서 정답이 맞는가 확인하는 것은 어려웠다. 작은단위에서 맞는 것이라고 해서, 큰 단위에서 내놓은 답이 과연 정답일 것인지는 어떻게 검증해야하는가. 우리가 소단위에서 다 맞춘 알고리즘이라고 해서 전부 믿어야 하는 것인가라는 생각이든다.</li><li>내일은 데이터톤이다. 여태까지 공부한 것을 적용해보고, 실제로 제한시간내에 데이터를 분석해야한다. 아직도 많이 모르고,<br>아는 것도 확신하기 어려운데, 잘 할 수 있을지 걱정된다.</li></ul><hr>]]></content>
     
@@ -460,30 +484,6 @@
       
       
         &lt;h1 id=&quot;181120-TWIL&quot;&gt;&lt;a href=&quot;#181120-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181120 TWIL&quot;&gt;&lt;/a&gt;181120 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181119-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/19/181119-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/19/181119-TodayWhatILearned/</id>
-    <published>2018-11-19T00:29:31.000Z</published>
-    <updated>2018-11-19T13:48:49.367Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181119-TWIL"><a href="#181119-TWIL" class="headerlink" title="181119 TWIL"></a>181119 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>시계열 공부</li><li>MA, AR, ARMA 공부 및 수식 꼼꼼히 전개</li><li>스터디 모임 : 프로그래밍 구현계획짜기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>ARIMA, SARIMA 수식 정리</li><li>DataStructure 코드 정리</li><li>A* 알고리즘 공부</li><li>회기분석 리뷰<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>할게 산더미인듯한 느낌이지만, 하나씩 그어나가다보면 되겠지라는 마음으로…<br>체력적으로 힘듬이 느껴진다.. </li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181119-TWIL&quot;&gt;&lt;a href=&quot;#181119-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181119 TWIL&quot;&gt;&lt;/a&gt;181119 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

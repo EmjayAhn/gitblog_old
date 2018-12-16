@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-15T14:32:54.559Z</updated>
+  <updated>2018-12-16T13:23:02.493Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>181216-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/16/181216-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/16/181216-TodayWhatILearned/</id>
+    <published>2018-12-16T13:01:09.000Z</published>
+    <updated>2018-12-16T13:23:02.493Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181216-TWIL"><a href="#181216-TWIL" class="headerlink" title="181216 TWIL"></a>181216 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>DataThon 발표</li><li>Perceptron 공부</li><li>(Project) Quara Dataset EDA<ul><li>question_text 에서 vectorize 하기전에 특징값들을 뽑아내기</li><li>나이브 베이지안 돌려보기</li></ul></li><li>(Study) 스터디때 나눌 WebApplication 의 구조, MVC model 나누기</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(Study) 스터디원 블로그 개설, Flask에 비유한 WebApplication, MVC model 공부하기</li><li>(Stydy) PROJECTmini WebApplication 계획 세우기</li><li>(Project) EDA 짬짬히 계속하기</li><li>SVM 공부<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Datathon에서 분석했던 내용을 발표하는 시간을 가졌다. 발표를 하면서 부족하다고 생각했던 점과 comment 를<br>잊기 전에 정리해본다.<ol><li>후기 및 생각과 느낌<ol><li>프레젠테이션 능력이 부족하다.<ul><li>긴장, 생각의 흐름을 말로 표현하는 것이 부족했다. 나름대로 이야기 할 것을 리스트업해갔지만, 잘 눈에 들어오지 않았다.</li><li>스크립트를 다 작성해가는 것이 좋은 것일까?</li></ul></li><li>프레젠테이션 혹은 데이터를 모르는 사람도 읽을 수 있는 마크다운 정리가 부족했다.<ul><li>데이터톤 당시 시간에 쫓기는 것도 있었고, 데이터를 분석하고 코드를 작성하면서 <code>나중에 하면 되겠지</code> 라고 생각했다.</li><li>결과는 제대로 마무리와 정리를 하지 못한 채로 제출했고, 이는 발표할 때 쓰는 자료로서는 0점에 가까웠다.</li><li>프로젝트나, 코드를 작성할 때 comment 를 좀더 세세하게 작성하도록 노력해야겠다.</li></ul></li></ol></li><li>지적해주신 comment<ol><li>Regression 에서 intercept 의 의미<ul><li>실제로 모델링한 결과를 현실 데이터에서 사용하기 위해서는 intercept 를 꼭 추가해야한다고 말씀해주셨다.</li><li>comment 를 듣자 마자, 조금 찾아봤을 때, intercept 가 error 의 mean 값을 잡아준다고 한다.</li><li>이 부분은 좀더 보충이 필요하다.</li><li>더미변수를 사용하지만, Intercept 의 효과에 대해서.. 단지 해석의 의미로만 상수항을 생각하였는데, 좀더 본질적인 이유가 있는 것 같다.</li><li>꼭 보충할 것!</li></ul></li><li>데이터를 분석하는 과정에서 insight를 얻었을 때, 이를 꼭 알기 쉽게 기록하라.<ul><li>개인적으로 느꼈던 후기와 생각에서와 비슷한 취지의 말씀이었다. 자신과 다른사람이 알 수 있게 insight 를 꼭 기록하라고 말씀하셨다.</li></ul></li><li>R square 를 기준으로 분석을 진행할 때는 조심하여야 한다.</li></ol></li></ol></li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181216-TWIL&quot;&gt;&lt;a href=&quot;#181216-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181216 TWIL&quot;&gt;&lt;/a&gt;181216 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>181215-TodayWhatILearned</title>
     <link href="https://emjayahn.github.io/2018/12/15/181215-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/12/15/181215-TodayWhatILearned/</id>
     <published>2018-12-15T14:32:26.000Z</published>
-    <updated>2018-12-15T14:32:54.559Z</updated>
+    <updated>2018-12-16T13:08:01.140Z</updated>
     
     <content type="html"><![CDATA[<h1 id="181210-TWIL"><a href="#181210-TWIL" class="headerlink" title="181210 TWIL"></a>181210 TWIL</h1><hr><h2 id="To-Do-list"><a href="#To-Do-list" class="headerlink" title="To-Do-list"></a>To-Do-list</h2><ol><li>DataThon 발표 준비</li><li>Pandas 4장 공부</li><li>알고리즘 문제풀기</li><li>(Study) 프로젝트 미니(웹어플리케이션) 준비</li><li>(Project) Classification Project Data EDA</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Datathon 발표준비</li><li>알고리즘 문제 풀기</li><li>(Study) 프로젝트 미니(웹어플리케이션) 준비</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Pandas 4장 공부</li><li>Support Vector Machine 공부</li><li>알고리즘 문제풀기</li><li>NoSQL, MySQL syntax 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>데이터톤 발표를 준비하면서, 제출했던 코드와 과정을 다시 살펴보니 Markdown 이나<br>주석이 부족함을 느꼈다. 다시 볼 때 좀더 편할 수 있도록, 코드와 과정을 다시 이어 나가는데 시간을 덜 소비하도록 나름 신경써서 작성하며 진행했는데, 다시 보려고 하니 머릿속에 있었던 것들이 다 작성되어 있지 않았다. 지금은 데이터톤에서 얼마 지나지 않았기 때문에, 기억에 남는 것이겠다. 하지만 추후에 다시 볼때는 기억이 나지 않아, 내가 작성한 코드와 문서임에도 불구하고 그 맥락을 이해하기 위해 처음부터 읽어 볼 것이다.</li><li>앞으로는 좀더 주석과 마크다운 문서에 신경을 많이 써야겠다. 짤막하게라도, 데이터 분석과정 중에 들었던 생각들을 작성해 놓아야, 그 시간이 지난뒤에 Develop 을 하던, 복기를 하던 계속 생각의 흐름을 이어 나갈 수 있을 것이다.</li><li><code>일일코딩</code>, <code>DailyCommit</code> 등에 관한 글을 읽었다. 개인의 다짐과도 비슷하고, 개인 프로젝트로 개발자들이 많이 하는 것 같다. 글을 읽은 직후에는 나도 하고 싶다는 생각을 했지만, 과연 할 수 있을 것인가 하며 반문을 하였다. 다짐의 문제라고 하기엔, 너무 정신 없는 나날을 보내고 있기에.. 도전할 것인지 하루만 더 고민해봐야겠다.</li></ul><hr>]]></content>
     
@@ -45,7 +69,7 @@
     <link href="https://emjayahn.github.io/2018/12/11/181211-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/12/11/181211-TodayWhatILearned/</id>
     <published>2018-12-11T14:45:57.000Z</published>
-    <updated>2018-12-12T00:47:42.456Z</updated>
+    <updated>2018-12-16T13:08:06.994Z</updated>
     
     <content type="html"><![CDATA[<h1 id="181210-TWIL"><a href="#181210-TWIL" class="headerlink" title="181210 TWIL"></a>181210 TWIL</h1><hr><h2 id="To-Do-list"><a href="#To-Do-list" class="headerlink" title="To-Do-list"></a>To-Do-list</h2><ol><li>Insurance EDA 정리</li><li>Pandas</li><li>12-5장까지 수학복습</li><li>MST 복습<h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2></li><li>Insurance EDA 정리</li><li>(STUDY) A* 알고리즘 시각화</li><li>선형회귀 개념 복습</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>데이터톤<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>파이썬으로 작성한 A*알고리즘의 시각화코드를 작성하였다. 제일 빠른 길을 찾아 주었으나, 이것을 시각화하는<br>것이 생각보다 어렵다. 그리고 좀더 동적으로 시각화를 해주고 싶은데, 좀더 삽질을 많이해봐야겠다.<br>결과데이터를 보여주면 되겠지 했지만, 답을 얻는 과정을 세세하게 시각화하여 보여주는 것 역시 어려운 문제였다.<br>비단 알고리즘을 보여주는 것만이 아니라, 지금 공부하는 모든 것이 아마 그럴 것이다.</li><li>A* 알고리즘을 적용해서 주어진 미로의 최적의 길을 찾는 것은 미로의 크기가 커질수록 검증이 어렵다. 우리가<br>작성한 알고리즘으로 풀어준 path가 진짜 제일 빠른 길인지 확인하는 방법이 무엇인가 하는 생각이 든다. 크기가<br>작은 미로에서 우리가 한길 한길 찾아가는 정답과 맞아서, 알고리즘이 제대로 작동하고 있다고 생각했다. 하지만,<br>점차 크기가 커지면서 정답이 맞는가 확인하는 것은 어려웠다. 작은단위에서 맞는 것이라고 해서, 큰 단위에서 내놓은 답이 과연 정답일 것인지는 어떻게 검증해야하는가. 우리가 소단위에서 다 맞춘 알고리즘이라고 해서 전부 믿어야 하는 것인가라는 생각이든다.</li><li>내일은 데이터톤이다. 여태까지 공부한 것을 적용해보고, 실제로 제한시간내에 데이터를 분석해야한다. 아직도 많이 모르고,<br>아는 것도 확신하기 어려운데, 잘 할 수 있을지 걱정된다.</li></ul><hr>]]></content>
     
@@ -93,9 +117,9 @@
     <link href="https://emjayahn.github.io/2018/12/08/181208-TodayWhatILearned/"/>
     <id>https://emjayahn.github.io/2018/12/08/181208-TodayWhatILearned/</id>
     <published>2018-12-08T13:54:20.000Z</published>
-    <updated>2018-12-08T14:08:54.393Z</updated>
+    <updated>2018-12-16T13:16:17.165Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="181208-TWIL"><a href="#181208-TWIL" class="headerlink" title="181208 TWIL"></a>181208 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Decision Tree 연습문제 18.4.2 풀기</li><li>Imporve Flights_Delay Regression Project</li><li>Insurance Cost dataset EDA</li><li>MySQL Quiz 마무리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Classification 복습</li><li>MySQL 복습</li><li>MySQL Query Code Imporvement</li><li>Insurance Data EDA</li><li>Pandas 정리</li><li>Regression 수학 12-5장 복습</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Query 문을 작성하면서, 다양한 방법으로 같은 결과를 얻을 수 있음을 알게 되었다. 같은 결과를 뽑아내는 Query 문의 비교에서, 오늘은 간결하고, 깔끔한 코드를 작성하려고 노력을 하였다. 하지만, 결국 가장 중요한 것은 Query 문이 얼마나 빠르게 동작 하느냐의 문제인 것 같다. 내일은 간결하면서도, 빠르게 동작하는 코드를 작성하는데 좀더 고민해봐야겠다.</li><li>지난 Flights_delay regression project 를 개선하는데 있어, 코드적으로, 기술적으로 부분회기 plot 를 바탕으로 다시 모델링을 하는 방법에 대해 알게 되었다. 여기까지 알게 된 것을 바탕으로, 새로운 Medical cost(Insurance) data 를 regression 으로 모델링 해보려고 한다. 오늘 간단한 EDA 를 진행하였으나, 조금더 데이터를 자세하게 보는 방법론에 대해 공부를 하면서 진행해 보려고 한다. </li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="181208-TWIL"><a href="#181208-TWIL" class="headerlink" title="181208 TWIL"></a>181208 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Decision Tree 연습문제 18.4.2 풀기</li><li>Imporve Flights_Delay Regression Project</li><li>Insurance Cost dataset EDA</li><li>MySQL Quiz 마무리</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Classification 복습</li><li>MySQL 복습</li><li>MySQL Query Code Imporvement</li><li>Insurance Data EDA</li><li>Pandas 정리</li><li>Regression 수학 12-5장 복습</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>Query 문을 작성하면서, 다양한 방법으로 같은 결과를 얻을 수 있음을 알게 되었다. 같은 결과를 뽑아내는 Query 문의 비교에서, 오늘은 간결하고, 깔끔한 코드를 작성하려고 노력을 하였다. 하지만, 결국 가장 중요한 것은 Query 문이 얼마나 빠르게 동작 하느냐의 문제인 것 같다. 내일은 간결하면서도, 빠르게 동작하는 코드를 작성하는데 좀더 고민해봐야겠다.</li><li>지난 Flights_delay regression project 를 개선하는데 있어, 코드적으로, 기술적으로 부분회기 plot 를 바탕으로 다시 모델링을 하는 방법에 대해 알게 되었다. 여기까지 알게 된 것을 바탕으로, 새로운 Medical cost(Insurance) data 를 regression 으로 모델링 해보려고 한다. 오늘 간단한 EDA 를 진행하였으나, 조금더 데이터를 자세하게 보는 방법론에 대해 공부를 하면서 진행해 보려고 한다.</li></ul><hr>]]></content>
     
     <summary type="html">
     
@@ -460,30 +484,6 @@
       
       
         &lt;h1 id=&quot;181121-TWIL&quot;&gt;&lt;a href=&quot;#181121-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181121 TWIL&quot;&gt;&lt;/a&gt;181121 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181120-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/20/181120-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/20/181120-TodayWhatILearned/</id>
-    <published>2018-11-20T14:03:55.000Z</published>
-    <updated>2018-11-20T14:13:14.388Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181120-TWIL"><a href="#181120-TWIL" class="headerlink" title="181120 TWIL"></a>181120 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>시계열 공부(SARIMA)</li><li>BST 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>A* 알고리즘 공부</li><li>회기분석 리뷰<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>오늘 시계열을 강의가 마무리 되면서, 가장 중요한 교훈은 ‘세상의 모든 시계열 데이터를 현재 배운 모델로<br>구현할 수 없다’인 것 같다. 회기 분석보다 훨씬더 어려웠던, 수식 전개들이 많았는데 모델링 할 수 있는 실제<br>데이터가 많이 없다는 것이 안타까웠다.</li><li>그럼에도 불구하고 이전 프로젝트에서 다루었던 데이터를 ARIMA 등을 적용할 수 있을지 다시한번 프로젝트<br>파일을 열어봐야겠다.</li><li>내일은 Projectmini 에서 하기로한 A* 알고리즘을 구현하는 것을 고민해 봐야한다. 프로젝트 기간동안<br>미뤄두었던 것을 하는 것이라, 의지는 충만하지만, 이전에 막혔던 부분에서 다시 어디서부터 봐야할지 복기 하는<br>시간이 오래 걸릴 것 같다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181120-TWIL&quot;&gt;&lt;a href=&quot;#181120-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181120 TWIL&quot;&gt;&lt;/a&gt;181120 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     

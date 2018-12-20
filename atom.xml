@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-16T13:23:02.493Z</updated>
+  <updated>2018-12-20T14:40:01.203Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181220-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/20/181220-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/20/181220-TodayWhatILearned/</id>
+    <published>2018-12-20T14:34:46.000Z</published>
+    <updated>2018-12-20T14:40:01.203Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181220-TWIL"><a href="#181220-TWIL" class="headerlink" title="181220 TWIL"></a>181220 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(Project) Classification Project 모임</li><li>딥러닝 엔지니어 현업자 특강</li><li>Celery 복습</li><li>간단한 알고리즘 문제 풀기</li><li>Linear Algebra(Gilbert) 1강</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>Linear Algebra(Gilbert) 2강</li><li>(Project) Classification Project</li><li>Classification 개념 다시 보기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>즐기자</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181220-TWIL&quot;&gt;&lt;a href=&quot;#181220-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181220 TWIL&quot;&gt;&lt;/a&gt;181220 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181216-TodayWhatILearned</title>
@@ -461,30 +485,6 @@
       
         &lt;h1 id=&quot;181123-TWIL&quot;&gt;&lt;a href=&quot;#181123-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181123 TWIL&quot;&gt;&lt;/a&gt;181123 TWIL&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;Today’s-To-Do-List&quot;&gt;&lt;a h
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181121-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/21/181121-TodayWhatILearned/</id>
-    <published>2018-11-20T23:10:19.000Z</published>
-    <updated>2018-11-21T14:49:49.833Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181121-TWIL"><a href="#181121-TWIL" class="headerlink" title="181121 TWIL"></a>181121 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>A* Alogorithm : Pseudo Code  작성</li><li>~ PACF 공부</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>시계열 모형의 추정 부분 나머지 공부</li><li>NLTK, KoNLPY 메소드 정리<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>A* 알고리즘에 관련된 많은 자료들을 읽어보고, 정리하면서 어떻게 구체적으로 이 알고리즘이 흘러가는지<br>파악했다. 기초적인 알고리즘들은 체계적으로 정리되어있는 자료들이 많지만, 이렇게 응용이 된 알고리즘들은<br>업계와 학계에서 사용하면서 점차 개발됨에 따라 다양하고, 어느 방면에 효율성을 맞추느냐에 따라서 정말 다양하게<br>파생된 것들이 많다. 그 중에서도 가장 간단하고 기본적인 원리가 설명되어있는 documentation 을 찾고,<br>이해하려고 하다보니 시간이 많이 걸린 것 같다.</li><li>이렇게 기본적인 이해를하고, 다양한 응용된 문서를 보니, 그 각각이 추구하고 있는 방향도 읽혀지는 것 같다.<br>내일부터는 이렇게 파악된 것을 바탕으로 본격적인 코드 구현을 해보아야할 것 같다. 오늘 잠깐 생각한 바로는,<br>우리가 배웠던 자료구조를 사용하는 것이 효율적인지, 파이썬에 내장되어있는 자료구조를 사용 할 것인지 간에<br>효율을 결정하는데, 어떤 factor 를 기준으로 정해야 할지 모르겠다. 스터디 때 이 부분도 물어보고, 이야기를<br>나눠보면 좋을 것 같다.</li><li>AR, MA 가 p, q 차로 되었을 때, k에 따른 PACF 함수의 모양을 증명해 보면서, AR, MA 의 ACF,<br>COV general form 을 계속 찾아보면서 증명하게 되었다. 사실은 이 부분까지 다시한번더 증명하고 이를<br>참조하는 방향으로 증명을 써 내려가야하는 것이 맞지만, 이전에 했다는 핑계로 참조했는데, 찜찜하다.<br>증명은 어렵지 않았으나, 외워야 한다는 것이 좀 압박이다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181121-TWIL&quot;&gt;&lt;a href=&quot;#181121-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181121 TWIL&quot;&gt;&lt;/a&gt;181121 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
       
     
     </summary>

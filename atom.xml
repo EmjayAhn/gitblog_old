@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-20T14:40:01.203Z</updated>
+  <updated>2018-12-25T16:32:57.028Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>181225-TodayWhatILearned</title>
+    <link href="https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/</id>
+    <published>2018-12-25T16:15:58.000Z</published>
+    <updated>2018-12-25T16:32:57.028Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="181225-TWIL"><a href="#181225-TWIL" class="headerlink" title="181225 TWIL"></a>181225 TWIL</h1><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(Project) Text Preprocessing</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>(Project) Project 모임</li><li>Linear Algebra 강의 2강, 3강 듣기<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>모든 전처리가 그렇겠지만, 텍스트 데이터의 전처리는 유독 할게 많다. 실제 사람이 사용하는 언어 데이터이다 보니,<br>예외사항들이 많고 모델 성능에 이 전처리들이 큰 영향을 미친다고 하기에, 열심히 전처리를 하고 있다.</li><li>오늘은 embedding 데이터를 활용해 줄임말들 (I’d, We’re 등) 늘려주는 작업을(I would, We are 등) 해줬다.<br>기존에 짰던 영어이냐 아니냐를 분류하려고 만든 알고리즘의 성능이 위 작업을 통해 좀 더 좋아질 것이라 예상된다. 또한<br>오늘 한 작업이 main modeling 을 하기 위해 진행할 Tokenizing 에도 좋은 영향을 줄 것이다. Stopwords 들을<br>빼거나 더할 때도, What’s 보다는 What is 로 늘려주었을 때, 훨씬더 세밀해 질 것이다.</li><li>내일은 spelling 체크, 띄어쓰기 체크해서 올바르게 고쳐주는 작업을 해야한다. 그리고, Baseline 모델을<br>잡기 위해 본격적인 modeling 에 들어가야한다.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;181225-TWIL&quot;&gt;&lt;a href=&quot;#181225-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181225 TWIL&quot;&gt;&lt;/a&gt;181225 TWIL&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;오늘-한-일은-무엇인가&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181220-TodayWhatILearned</title>
@@ -466,30 +490,6 @@
     </summary>
     
       <category term="wiki" scheme="https://emjayahn.github.io/categories/wiki/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>181123-TodayWhatILearned</title>
-    <link href="https://emjayahn.github.io/2018/11/23/181123-TodayWhatILearned/"/>
-    <id>https://emjayahn.github.io/2018/11/23/181123-TodayWhatILearned/</id>
-    <published>2018-11-23T04:56:25.000Z</published>
-    <updated>2018-11-23T14:30:53.637Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="181123-TWIL"><a href="#181123-TWIL" class="headerlink" title="181123 TWIL"></a>181123 TWIL</h1><hr><h2 id="Today’s-To-Do-List"><a href="#Today’s-To-Do-List" class="headerlink" title="Today’s To-Do-List"></a>Today’s To-Do-List</h2><ol><li>(스터디) 스터디 원들과 A* Alogorithm 개념 정립</li><li>(스터디) 스터디 원들과 함께할 깃 레포 설정, Code Convention 정하기</li><li>(개인공부) AWS EC2, crontab, shell-script 공부</li><li>(개인공부) 기본 통계량 복습</li><li>(개인공부) KoNLPY, NLTK 훑어보기</li></ol><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>(스터디) A* Alogorithm 공부</li><li>(스터디) A* 구현, Class 단위로 윤곽 잡기</li><li>(개인공부) 확률분포, 기본 통계량 꼼꼼히 보기</li><li>(개인공부) shell-script</li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>확률분포, 기본 통계량 스터디</li><li>main프로젝트 Review (Procedure 정리, 시계열 적용 고민)</li><li>AWS 복습</li><li>(스터디) git repo 설정, A* Algorithm 코드 작성<br><br></li></ol><hr><h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul><li>열심히 개념을 정립하는 것도 중요하지만, 계속 해서 정리하고 스스로에게 Feedback 을 주는 것이 중요하다. 어떤 Procedure 중에 있는 것인가를 아는 것이 가장 중요하다. 앞으로의 적용을 항상 고민해야한다.</li><li>회기분석 프로젝트를 마친 것을 다시한번 복기할 필요가 있기에, 이번 주말을 통해 개인적으로 복기를 해보려고 한다. 이에 앞서 이번주부터 시작한 기본 통계량 부터의 복습을 같이 하면서 프로젝트 과정중 잊었던 개념들을 적용하는 연습을 주말동안 다시한번 차근차근 해보아야 한다.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;181123-TWIL&quot;&gt;&lt;a href=&quot;#181123-TWIL&quot; class=&quot;headerlink&quot; title=&quot;181123 TWIL&quot;&gt;&lt;/a&gt;181123 TWIL&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;Today’s-To-Do-List&quot;&gt;&lt;a h
-      
-    
-    </summary>
-    
-      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
     
     
   </entry>

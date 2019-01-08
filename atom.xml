@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://emjayahn.github.io/"/>
-  <updated>2018-12-25T16:32:57.028Z</updated>
+  <updated>2019-01-08T11:41:04.351Z</updated>
   <id>https://emjayahn.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>REBOOT</title>
+    <link href="https://emjayahn.github.io/2019/01/08/190108-TodayWhatILearned/"/>
+    <id>https://emjayahn.github.io/2019/01/08/190108-TodayWhatILearned/</id>
+    <published>2019-01-08T02:35:35.000Z</published>
+    <updated>2019-01-08T11:41:04.351Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> REBOOT </strong></p><ul><li>Text Classification Project 를 한다는 핑계로 그간 TodayWhatILearned의 작성을 하지 못했다.<br>프로젝트를 하는 동안은 매일 어떤 것을 공부할 계획이고, 어떤 공부를 했는지 남길 만한 내용이 없었던 것도 사실이다.<br>프로젝트 동안 미뤄뒀던 공부들, 보고싶었던 주제들을 이제 다시 새로운 마음가짐을 가지고 시작할 것이다.<br>새해가 밝은 만큼 블로그를 만들기 시작하면서 다짐했던 초심을 상기하자.</li></ul><h2 id="To-Do-List"><a href="#To-Do-List" class="headerlink" title="To-Do-List"></a>To-Do-List</h2><ol><li>Graph모형, 네트워크 추론 공부 (수식) - 새로운 패키지, 코드 정리하면서 공부</li><li>LinearAlgebra 1강, 2강 다시 시작</li></ol><hr><h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol><li>Graph모형 공부</li><li>LinearAlgebra 1강, 2강<br><br></li></ol><hr><h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol><li>네트워크 추론 공부(수식 위주로 공부)</li></ol><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt; REBOOT &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Text Classification Project 를 한다는 핑계로 그간 TodayWhatILearned의 작성을 하지 못했다.&lt;br&gt;프로젝트를 하는 동안은 매일 어떤 것을 공
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://emjayahn.github.io/categories/Diary/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>181225-TodayWhatILearned</title>
@@ -467,29 +492,6 @@
     </summary>
     
       <category term="Math" scheme="https://emjayahn.github.io/categories/Math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>numpy_cheatsheet</title>
-    <link href="https://emjayahn.github.io/2018/11/23/numpy-cheatsheet/"/>
-    <id>https://emjayahn.github.io/2018/11/23/numpy-cheatsheet/</id>
-    <published>2018-11-23T10:33:39.000Z</published>
-    <updated>2018-11-29T14:01:11.843Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="np-arange-start-end"><a href="#np-arange-start-end" class="headerlink" title="np.arange(start, end)"></a>np.arange(start, end)</h3><ul><li>start 에서 end-1 까지의 행렬(array) return</li></ul><h3 id="np-linspace-start-end-number-of-dots"><a href="#np-linspace-start-end-number-of-dots" class="headerlink" title="np.linspace(start, end, number_of_dots)"></a>np.linspace(start, end, number_of_dots)</h3><ul><li>number_of_dots : 범위 안의 점 갯수</li></ul><h3 id="np-zeros-like-x"><a href="#np-zeros-like-x" class="headerlink" title="np.zeros_like(x)"></a>np.zeros_like(x)</h3><ul><li>0으로 채운 x 와 같은 크기의 행렬</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;np-arange-start-end&quot;&gt;&lt;a href=&quot;#np-arange-start-end&quot; class=&quot;headerlink&quot; title=&quot;np.arange(start, end)&quot;&gt;&lt;/a&gt;np.arange(start, end)&lt;/h3&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="wiki" scheme="https://emjayahn.github.io/categories/wiki/"/>
     
     
   </entry>

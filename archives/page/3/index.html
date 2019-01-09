@@ -227,6 +227,86 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="/2018/11/23/math-cheatsheet/">
+                            math_cheatsheet
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2018-11-23T22:14:19+09:00">
+	
+		    Nov 23, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Math/">Math</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="이산확률분포"><a href="#이산확률분포" class="headerlink" title="이산확률분포"></a>이산확률분포</h1><h2 id="베르누이-분포-bernoulli-distribution"><a href="#베르누이-분포-bernoulli-distribution" class="headerlink" title="베르누이 분포 (bernoulli distribution)"></a>베르누이 분포 (bernoulli distribution)</h2><ul>
+<li>동전 생각하기</li>
+<li><p>결과가 두가지 중 하나</p>
+</li>
+<li><p>확률변수를 1 or 0 으루 주었을 때,<br>$$<br>\text{Bern}(x;\mu) = \mu^x(1-\mu)^{(1-x)}<br>$$</p>
+</li>
+<li><p>확률변수를 1 or -1 로 주었을 때,<br>$$<br>\text{Bern}(x; \mu) = \mu^{(1+x)/2} (1-\mu)^{(1-x)/2}<br>$$</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#예제코드</span></span><br><span class="line"><span class="comment">#베르누이 분포 SciPy</span></span><br><span class="line"><span class="comment">#100개 sampling</span></span><br><span class="line">sp.stats.bernoulli(mu).rvs(<span class="number">100</span>, random_state=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="이항분포-binomial-distribution"><a href="#이항분포-binomial-distribution" class="headerlink" title="이항분포 (binomial distribution)"></a>이항분포 (binomial distribution)</h2><ul>
+<li>동전을 N번 던졌다</li>
+<li>성공확률이 $\mu$ 인 베르누이 시도를 $N$ 번 반복 할 때, 성공 횟수를 $X$ 라 하면,</li>
+</ul>
+<p>$$ X \sim \text{Bin}(x;N,\mu)  $$ <br></p>
+<p>$$ \text{Bin}(x;N,\mu) = \binom N x  \mu^x(1-\mu)^{N-x} $$ <br></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sp.stats.binom(N, mu).rvs(<span class="number">100</span>, random_state=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="카테고리-분포-Categorical-distribution"><a href="#카테고리-분포-Categorical-distribution" class="headerlink" title="카테고리 분포 (Categorical distribution)"></a>카테고리 분포 (Categorical distribution)</h2><ul>
+<li>주사위 생각해!</li>
+<li>$K$ 개의 카테고리가 있을 때,<br>$$ x = (x_1, x_2, x_3, x_4, … , x_k)  $$ <br></li>
+</ul>
+<p>각 원소 x_i 가 1이 나올 수 있는 확률 ($i$번쨰 원소의 성공확률)을 $\mu_i$ 라 하면, <br></p>
+<p>$$ \text{Cat}(x;\mu) = \mu_1^{x_1} \mu_2^{x_2}  \cdots \mu_K^{x_K}  =  \prod_{k=1}^K \mu_k^{x_k} $$ <br></p>
+<p>이 표현은 One-Hot-Encoding 으로 카테고리 분포를 표현 했기에 가능하다. <br></p>
+<p>단, <br><br>$$ 0 \leq \mu_i \leq 1 $$ <br></p>
+<p>$$ \sum_{k=1}^K \mu_k = 1 $$ <br></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#카테고리 분포는 SciPy 의 메소드가 없으므로, 다항분포의 N을 1로 준다.</span></span><br><span class="line"><span class="comment">#mu 는 각 term 이 나올 수 있는 확률 vector</span></span><br><span class="line">sp.stats.multinomial(<span class="number">1</span>, mu)</span><br></pre></td></tr></table></figure>
+<h2 id="다항-분포-Multinomial-distribution"><a href="#다항-분포-Multinomial-distribution" class="headerlink" title="다항 분포 (Multinomial distribution)"></a>다항 분포 (Multinomial distribution)</h2><ul>
+<li>주사위를 여러번 던졌다.</li>
+<li>카테고리 시도를 $N$ 번 반복하여 $k$ $(k=1,…,K)$ 가 $x_k$ 번 나올 확률분포.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#N : number of trial</span></span><br><span class="line"><span class="comment">#mu 는 각 term 이 나올 수 있는 확률 vector</span></span><br><span class="line">sp.stats.multinomial(N, mu)</span><br></pre></td></tr></table></figure>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2018/11/23/math-cheatsheet/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="/2018/11/23/numpy-cheatsheet/">
                             numpy_cheatsheet
                         </a>
@@ -793,70 +873,6 @@
         
     </article>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/11/09/181109-TodayWhatILearned/">
-                            181109-TodayWhatILearned
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-11-09T23:14:01+09:00">
-	
-		    Nov 09, 2018
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Diary/">Diary</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="181109-TWIL"><a href="#181109-TWIL" class="headerlink" title="181109 TWIL"></a>181109 TWIL</h1><hr>
-<h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol>
-<li>Crawling miniproject 발표</li>
-<li>Prediction main project data 탐색</li>
-</ol>
-<hr>
-<h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol>
-<li>Project 모임<br><br></li>
-</ol>
-<hr>
-<h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul>
-<li>Crawling miniproject 의 troubleshooting 시간이 있었다. 발표를 끝내고 나서는 하나를 마쳤다는 시원한 감이 있었지만, comment 들을 듣고 많이 부족함을 느낀 시간이었다. 코드를 작성할 때, 공통된 요소의 추상화가 선택적이 아니라 필수적임을 알게되었다. 간단한 것이라도 반복적으로 작성하는 것은 python convention 에도, 또 프로그래밍의 근본적인 취지에도 어긋나는 것이다. 처음부터 일반화된 포맷으로 작성하기엔 아직 실력이 많이 부족하다. 간단한 구현에서 module 화까지 내가 짜는 대부분의 코드를 연습하다 보면 늘겠지…</li>
-<li>메인 프로젝트의 data 간의 연관성이 잘 보이지 않는다. 지난 시간에 알게된 하루 주기로의 delay가 반복됨을 알고 있었으나, datetime 형식으로, 혹은 int나 float 형식으로 ols 에 집어 넣으면 주기성을 잡아내지 못하는 것 같다. 시간 단위로 X feature 로 들어가면 좋을 것 같은데, ols formula 에 시간을 집어넣으면 계속 category 화 된다. 이렇기 때문에 그 해당 정확한 시간이 있지 않으면 coefficient 가 먹지 않지….</li>
-<li>시간을 표현하기 위해 60진법도 찾아보고, 1분 단위로 int 숫자에 mapping 할까도 생각해보았으나, 결국 mapping 해서 ols 에 돌리면 2400 이후 값은 없는데도 x 축에 들어가게 된다….</li>
-</ul>
-<hr>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/11/09/181109-TodayWhatILearned/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
     <div class="pagination-bar">
     <ul class="pagination">
         
@@ -923,7 +939,24 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 

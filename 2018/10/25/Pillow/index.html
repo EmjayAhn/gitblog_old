@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"Pillow\n공부한 내용을 스스로 보기 쉽게 정리한 글입니다.\n\n\nPillow 는 Python에서 이미지를 핸들링 하기위한 라이브러리이다. 스크린 샷, 이미지 크롭, 썸네일등을 만들 수 있다.\n또한, 다양한 이미지 확장자를 다룰수 있다. (예, jpg, png)\n\nPillow install1pip install Pillow\n1. Import Convention\nPillow 를 사용하기에 앞서, Import 해야한다.1from PIL import Image\n\n\n2. Pillow 메소드(1) open()\n이름 그대로, 경로와 파일 이름을 적어주면, 해당 이미지리턴하여 Variable 에 할당한다.\n1image = Image.open(\"imagefile_name\")\n(2) crop()\n이름 그대로, image 를 잘라준다. 이 때 Parameter 는 box형태로 들어가게 된다.\nbox 는 (left, upper, right, lower) 로 들어가게 된든데, pixel 단위로 들어가면 된다\n이미지의 가장 왼쪽과 위쪽 라인을 기준으로, \n\nleft px 만큼\nupper px 만큼\n(왼쪽을 기준으로) right px 만큼\n(위쪽을 기준으로) bottom px 만큼 잘라, box 로 만들어 준다.123box = (10, 10, 110, 110)image.crop(box)### 이렇게 되면 가로세로 100px 만큼의 이미지가 만들어진다.\n\n\n(3) thumbnail()\n썸네일을 만들어준다.\n썸네일의 활용 방안은 한 가지 사진을 어플리케이션 곳곳에서 사용한다고 할 때, 데이터 사이즈가 큰 원본 사진을 계속 해서 들고 다니며 사용하면 어플리케이션에 따라 메모리 낭비, 서버용량 낭비, 트래픽 낭비 등으로 이어질 수 있다. 따라서, 이미지의 데이터 크기와 해상도를 낮춰 사용할 수 있다.12image.thumbnail((pixel, pixel))#thumbnail 메소드를 사용하여, 원하는 pixel 수로 줄일 수 있다.\n\n\n","dateCreated":"2018-10-25T21:22:20+09:00","dateModified":"2018-11-29T23:01:32+09:00","datePublished":"2018-10-25T21:22:20+09:00","description":"","headline":"Pillow","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/10/25/Pillow/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/10/25/Pillow/","keywords":"pillow, Pillow, image"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"articleBody":"Pillow\n공부한 내용을 스스로 보기 쉽게 정리한 글입니다.\n\n\nPillow 는 Python에서 이미지를 핸들링 하기위한 라이브러리이다. 스크린 샷, 이미지 크롭, 썸네일등을 만들 수 있다.\n또한, 다양한 이미지 확장자를 다룰수 있다. (예, jpg, png)\n\nPillow install1pip install Pillow\n1. Import Convention\nPillow 를 사용하기에 앞서, Import 해야한다.1from PIL import Image\n\n\n2. Pillow 메소드(1) open()\n이름 그대로, 경로와 파일 이름을 적어주면, 해당 이미지리턴하여 Variable 에 할당한다.\n1image = Image.open(\"imagefile_name\")\n(2) crop()\n이름 그대로, image 를 잘라준다. 이 때 Parameter 는 box형태로 들어가게 된다.\nbox 는 (left, upper, right, lower) 로 들어가게 된든데, pixel 단위로 들어가면 된다\n이미지의 가장 왼쪽과 위쪽 라인을 기준으로, \n\nleft px 만큼\nupper px 만큼\n(왼쪽을 기준으로) right px 만큼\n(위쪽을 기준으로) bottom px 만큼 잘라, box 로 만들어 준다.123box = (10, 10, 110, 110)image.crop(box)### 이렇게 되면 가로세로 100px 만큼의 이미지가 만들어진다.\n\n\n(3) thumbnail()\n썸네일을 만들어준다.\n썸네일의 활용 방안은 한 가지 사진을 어플리케이션 곳곳에서 사용한다고 할 때, 데이터 사이즈가 큰 원본 사진을 계속 해서 들고 다니며 사용하면 어플리케이션에 따라 메모리 낭비, 서버용량 낭비, 트래픽 낭비 등으로 이어질 수 있다. 따라서, 이미지의 데이터 크기와 해상도를 낮춰 사용할 수 있다.12image.thumbnail((pixel, pixel))#thumbnail 메소드를 사용하여, 원하는 pixel 수로 줄일 수 있다.\n\n\n","dateCreated":"2018-10-25T21:22:20+09:00","dateModified":"2018-11-29T23:01:32+09:00","datePublished":"2018-10-25T21:22:20+09:00","description":"","headline":"Pillow","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/10/25/Pillow/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"url":"https://emjayahn.github.io/2018/10/25/Pillow/","keywords":"pillow, Pillow, image"}</script>
     <meta name="description" content="Pillow 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.   Pillow 는 Python에서 이미지를 핸들링 하기위한 라이브러리이다. 스크린 샷, 이미지 크롭, 썸네일등을 만들 수 있다. 또한, 다양한 이미지 확장자를 다룰수 있다. (예, jpg, png)  Pillow install1pip install Pillow 1. Import Conventi">
 <meta name="keywords" content="pillow, Pillow, image">
 <meta property="og:type" content="blog">
@@ -147,15 +147,6 @@
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
-                    
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             

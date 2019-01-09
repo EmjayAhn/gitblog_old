@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념\n우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \\mid x) $의 모형을 알아내야 한다.\n\n베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.$$P(y = C_k \\mid x) = \\dfrac{P(x \\mid y = C_k)\\; P(y = C_k)}{P(x)}$$\n\n이 때, $ P(x \\mid y = C_k) $== Likelihood== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건\n\n\nLikelihood 추정의 알고리즘\n$ P(x \\mid y = C_k) $ 가  어떤  확률분포를 따를 것이다라고 가정\nx의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정\nClass k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.\n모수값을 안다 == $ P(x \\mid y = C_k) $ 의 pdf 를 알고 있다.\ntest set x 가 들어오면 $ P(x \\mid y = C_k) $ 를 구할 수 있다.\n\n","dateCreated":"2018-12-05T08:48:55+09:00","dateModified":"2018-12-05T09:21:28+09:00","datePublished":"2018-12-05T08:48:55+09:00","description":"","headline":"Generative Model","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/05/Generative-Model/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/12/05/Generative-Model/","keywords":"Classification, 확률론적생성모형, Generative, 생성모형, 분류모델"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"articleBody":"확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념\n우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \\mid x) $의 모형을 알아내야 한다.\n\n베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.$$P(y = C_k \\mid x) = \\dfrac{P(x \\mid y = C_k)\\; P(y = C_k)}{P(x)}$$\n\n이 때, $ P(x \\mid y = C_k) $== Likelihood== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건\n\n\nLikelihood 추정의 알고리즘\n$ P(x \\mid y = C_k) $ 가  어떤  확률분포를 따를 것이다라고 가정\nx의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정\nClass k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.\n모수값을 안다 == $ P(x \\mid y = C_k) $ 의 pdf 를 알고 있다.\ntest set x 가 들어오면 $ P(x \\mid y = C_k) $ 를 구할 수 있다.\n\n","dateCreated":"2018-12-05T08:48:55+09:00","dateModified":"2018-12-05T09:21:28+09:00","datePublished":"2018-12-05T08:48:55+09:00","description":"","headline":"Generative Model","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/05/Generative-Model/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"url":"https://emjayahn.github.io/2018/12/05/Generative-Model/","keywords":"Classification, 확률론적생성모형, Generative, 생성모형, 분류모델"}</script>
     <meta name="description" content="확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념 우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.  베이즈 정리를 이용하여, $ y=C_">
 <meta name="keywords" content="Classification, 확률론적생성모형, Generative, 생성모형, 분류모델">
 <meta property="og:type" content="blog">
@@ -147,15 +147,6 @@
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
-                    
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             

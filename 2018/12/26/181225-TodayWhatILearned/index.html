@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"181225 TWIL\n오늘 한 일은 무엇인가\n(Project) Text Preprocessing\n\n\n내일 할 일은 무엇인가\n(Project) Project 모임\nLinear Algebra 강의 2강, 3강 듣기\n\n\n무엇을 느꼈는가\n모든 전처리가 그렇겠지만, 텍스트 데이터의 전처리는 유독 할게 많다. 실제 사람이 사용하는 언어 데이터이다 보니,예외사항들이 많고 모델 성능에 이 전처리들이 큰 영향을 미친다고 하기에, 열심히 전처리를 하고 있다.\n오늘은 embedding 데이터를 활용해 줄임말들 (I’d, We’re 등) 늘려주는 작업을(I would, We are 등) 해줬다.기존에 짰던 영어이냐 아니냐를 분류하려고 만든 알고리즘의 성능이 위 작업을 통해 좀 더 좋아질 것이라 예상된다. 또한오늘 한 작업이 main modeling 을 하기 위해 진행할 Tokenizing 에도 좋은 영향을 줄 것이다. Stopwords 들을빼거나 더할 때도, What’s 보다는 What is 로 늘려주었을 때, 훨씬더 세밀해 질 것이다.\n내일은 spelling 체크, 띄어쓰기 체크해서 올바르게 고쳐주는 작업을 해야한다. 그리고, Baseline 모델을잡기 위해 본격적인 modeling 에 들어가야한다.\n\n\n","dateCreated":"2018-12-26T01:15:58+09:00","dateModified":"2018-12-26T01:32:57+09:00","datePublished":"2018-12-26T01:15:58+09:00","description":"","headline":"181225-TodayWhatILearned","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"articleBody":"181225 TWIL\n오늘 한 일은 무엇인가\n(Project) Text Preprocessing\n\n\n내일 할 일은 무엇인가\n(Project) Project 모임\nLinear Algebra 강의 2강, 3강 듣기\n\n\n무엇을 느꼈는가\n모든 전처리가 그렇겠지만, 텍스트 데이터의 전처리는 유독 할게 많다. 실제 사람이 사용하는 언어 데이터이다 보니,예외사항들이 많고 모델 성능에 이 전처리들이 큰 영향을 미친다고 하기에, 열심히 전처리를 하고 있다.\n오늘은 embedding 데이터를 활용해 줄임말들 (I’d, We’re 등) 늘려주는 작업을(I would, We are 등) 해줬다.기존에 짰던 영어이냐 아니냐를 분류하려고 만든 알고리즘의 성능이 위 작업을 통해 좀 더 좋아질 것이라 예상된다. 또한오늘 한 작업이 main modeling 을 하기 위해 진행할 Tokenizing 에도 좋은 영향을 줄 것이다. Stopwords 들을빼거나 더할 때도, What’s 보다는 What is 로 늘려주었을 때, 훨씬더 세밀해 질 것이다.\n내일은 spelling 체크, 띄어쓰기 체크해서 올바르게 고쳐주는 작업을 해야한다. 그리고, Baseline 모델을잡기 위해 본격적인 modeling 에 들어가야한다.\n\n\n","dateCreated":"2018-12-26T01:15:58+09:00","dateModified":"2018-12-26T01:32:57+09:00","datePublished":"2018-12-26T01:15:58+09:00","description":"","headline":"181225-TodayWhatILearned","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"url":"https://emjayahn.github.io/2018/12/26/181225-TodayWhatILearned/"}</script>
     <meta name="description" content="181225 TWIL 오늘 한 일은 무엇인가 (Project) Text Preprocessing   내일 할 일은 무엇인가 (Project) Project 모임 Linear Algebra 강의 2강, 3강 듣기   무엇을 느꼈는가 모든 전처리가 그렇겠지만, 텍스트 데이터의 전처리는 유독 할게 많다. 실제 사람이 사용하는 언어 데이터이다 보니,예외사항들이 많">
 <meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
@@ -147,15 +147,6 @@
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
-                    
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             

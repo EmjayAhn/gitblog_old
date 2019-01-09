@@ -1,20 +1,22 @@
+
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-
+<html lang="en">
     
-
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Emjay&#39;s DailyCommit Blog">
+    <title>Scrapy - Emjay&#39;s DailyCommit Blog</title>
+    <meta name="author" content="EmjayAhn(Minjae Ahn)">
     
-    <title>Scrapy | Emjay&#39;s DailyCommit Blog</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="scrapy, crawling, web">
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"Scrapy\n공부한 내용을 스스로 보기 쉽게 정리한 글입니다.\n\n\nScrapy 라이브러리는 파이썬에서 제공하는 라이브러리로써, 대량의 페이지들의 Crawling을 손쉽게 해주는 라이브러리이다.\n\n1. Install\n파이썬의 라이브러리 이므로 pip 으로 설치 할 수 있다.1pip3 install scrapy\n\n\n2. 실습\n실습을 위해 import 할 것들\n\n123import scrapyimport requestsfrom scrapy.http import TextResponse\n\nrequests 를 통해 url 정보를 받아온다.\nTextResponse 를 통해 받아온 html 파일을 encoding 과 text형식으로 return\n\n12req = requests.get(\"url_name\")response = TextResponse(req.url, body=req.text, encoding=\"utf-8\")\n123456a = response.xpath('xpath')# xpath 로 지정한 엘리먼트를 가져온다.a_text = reponse.xpath('xpath/text()')# 엘리먼트의 text data 를 가져온다.a_text.extract()# 엘리먼트의 text data들을 말그대로 extract 하여, list 형태로 return 해준다\n3. Scrapy 사용하기(1) scrapy 프로젝트 생성\nshell command1scrapy startproject crawler\n\n\n1!scrapy startproject crawler\nNew Scrapy project &apos;crawler&apos;, using template directory &apos;/Users/emjayahn/.pyenv/versions/3.7.0/envs/dss/lib/python3.7/site-packages/scrapy/templates/project&apos;, created in:\n    /Users/emjayahn/Dev/DSS/TIL(markdown)/crawler\n\nYou can start your first spider with:\n    cd crawler\n    scrapy genspider example example.com\n1!tree crawler\ncrawler\n├── crawler\n│   ├── __init__.py\n│   ├── __pycache__\n│   ├── items.py\n│   ├── middlewares.py\n│   ├── pipelines.py\n│   ├── settings.py\n│   └── spiders\n│       ├── __init__.py\n│       └── __pycache__\n└── scrapy.cfg\n\n4 directories, 7 files\n(2) Scrapy 기본 구조\nSpider\n\n크롤링 절차 정하기\n어떤 웹사이트들을 어떻게 크롤링 할 것인지 선언\n각각의 웹페이지의 어떤 부분을 스크래핑 할 것 인지 명시하는 클래스\n\n\nitems.py\n\nspider 가 크롤링한 data 들을 저장할 때, 사용자 정의 자료구조 클래스\nMVC : 중 Model 부분에 해당\nFeature 라고 생각\n\n\npipeline.py\n\n스크래핑한 데이터를 어떻게 처리할지 정의\n데이터에 한글이 포함되어 있을 때는 encoding=’utf-8’ utf-8인코딩이 필요\n\n\nsettings.py\n\nSpider, item, pipeline 의 세부 사항을 설정\n(예) 크롤링 빈도 등\n(예) robots.txt - ROBOTSTXT_OBEY=True\n\n\n\n","dateCreated":"2018-10-26T23:04:20+09:00","dateModified":"2018-11-29T23:02:39+09:00","datePublished":"2018-10-26T23:04:20+09:00","description":"","headline":"Scrapy","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/10/26/Scrapy/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/10/26/Scrapy/","keywords":"scrapy, crawling, web"}</script>
     <meta name="description" content="Scrapy 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.   Scrapy 라이브러리는 파이썬에서 제공하는 라이브러리로써, 대량의 페이지들의 Crawling을 손쉽게 해주는 라이브러리이다.  1. Install 파이썬의 라이브러리 이므로 pip 으로 설치 할 수 있다.1pip3 install scrapy   2. 실습 실습을 위해 import 할 것들">
 <meta name="keywords" content="scrapy, crawling, web">
-<meta property="og:type" content="article">
+<meta property="og:type" content="blog">
 <meta property="og:title" content="Scrapy">
 <meta property="og:url" content="https://emjayahn.github.io/2018/10/26/Scrapy/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
@@ -25,167 +27,227 @@
 <meta name="twitter:title" content="Scrapy">
 <meta name="twitter:description" content="Scrapy 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.   Scrapy 라이브러리는 파이썬에서 제공하는 라이브러리로써, 대량의 페이지들의 Crawling을 손쉽게 해주는 라이브러리이다.  1. Install 파이썬의 라이브러리 이므로 pip 으로 설치 할 수 있다.1pip3 install scrapy   2. 실습 실습을 위해 import 할 것들">
     
-
     
-        <link rel="alternate" href="/atom.xml" title="Emjay&#39;s DailyCommit Blog" type="application/atom+xml">
-    
-
-    
-
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
-    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
-
-    <link rel="stylesheet" href="/css/style.css">
-
-    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    
-        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-        <script type="text/javascript">
-(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-128251719-1', 'auto');
-ga('send', 'pageview');
-
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
-    
-
-
-</head>
-</html>
-<body>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="wrap">
-        <header id="header">
-    <div id="header-outer" class="outer">
-        <div class="container">
-            <div class="container-inner">
-                <div id="header-title">
-                    <h1 class="logo-wrap">
-                        <a href="/" class="logo"></a>
-                    </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Emjay&#39;s DataScience &amp; Development</p>
-                        </h2>
-                    
-                </div>
-                <div id="header-inner" class="nav-container">
-                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-                    <div class="nav-container-inner">
-                        <ul id="main-nav">
-                            
-                                <li class="main-nav-list-item">
-                                    <a class="main-nav-list-link" href="/">Home</a>
-                                </li>
-                            
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DataStructure/">DataStructure</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Diary/">Diary</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Math/">Math</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/">wiki</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/MySQL/">MySQL</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/NGINX/">NGINX</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Pillow/">Pillow</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Requests/">Requests</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Scrapy/">Scrapy</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Selenium/">Selenium</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Xpath/">Xpath</a></li></ul></li></ul>
-                                    
-                                <li class="main-nav-list-item">
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
-                                </li>
-                            
-                        </ul>
-                        <nav id="sub-nav">
-                            <div id="search-form-wrap">
-
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-        <div class="container">
-            <div class="main-body container-inner">
-                <div class="main-body-inner">
-                    <section id="main">
-                        <div class="main-body-header">
-    <h1 class="header">
-    
-    <a class="page-title-link" href="/categories/wiki/">wiki</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/wiki/Scrapy/">Scrapy</a>
-    </h1>
-</div>
-
-                        <div class="main-body-content">
-                            <article id="post-Scrapy" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
         
-            <header class="article-header">
-                
     
-        <h1 class="article-title" itemprop="name">
-        Scrapy
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-c4ozcsklz4kht2pebhp44xorvyverh23toayhn7i6ubrpyedak24hv1v0hyd.min.css">
+    <!--STYLES END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+
+    
+</head>
+
+    <body>
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Emjay&#39;s DailyCommit Blog</a>
+    </div>
+    
+        
+            <a class="header-right-picture " href="#about">
+        
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/ " title="Home">
+                    
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-categories" title="Categories">
+                    
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-tags" title="Tags">
+                    
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-archives" title="Archives">
+                    
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link open-algolia-search" href="#search" title="Search">
+                    
+                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="#about" title="About">
+                    
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                    
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
+                    
+                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Stack Overflow</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
+                    
+                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                    
+                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
+                    
+                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Google +</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
+                    
+                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">LinkedIn</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                    
+                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/atom.xml" title="RSS">
+                    
+                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Scrapy
         </h1>
     
-
-            </header>
+    
+        <div class="post-meta">
+    <time datetime="2018-10-26T23:04:20+09:00">
+	
+		    Oct 26, 2018
+    	
+    </time>
+    
+        <span>in </span>
         
-        
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <a href="/2018/10/26/Scrapy/" class="article-date">
-            <time datetime="2018-10-26T14:04:20.000Z" itemprop="datePublished">2018-10-26</time>
-        </a>
-    </div>
+    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Scrapy/">Scrapy</a>
 
-		
 
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/scrapy-crawling-web/">scrapy, crawling, web</a>
-    </div>
+    
+</div>
 
-            </div>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
             <h1 id="Scrapy"><a href="#Scrapy" class="headerlink" title="Scrapy"></a>Scrapy</h1><blockquote>
 <p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
 </blockquote>
@@ -262,245 +324,246 @@ You can start your first spider with:
 </li>
 </ol>
 
-        </div>
-        <footer class="article-footer">
             
 
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/scrapy-crawling-web/">scrapy, crawling, web</a>
 
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/10/27/181027-TodayWhatILearned/" data-tooltip="181027-TodayWhatILearned" aria-label="PREVIOUS: 181027-TodayWhatILearned">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/10/26/Xpath/" data-tooltip="Xpath" aria-label="NEXT: Xpath">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
 </div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
 
 
-        </footer>
+        
+        
+            
+        
     </div>
 </article>
 
-    <section id="comments">
-    
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2019 EmjayAhn(Minjae Ahn). All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/10/27/181027-TodayWhatILearned/" data-tooltip="181027-TodayWhatILearned" aria-label="PREVIOUS: 181027-TodayWhatILearned">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/10/26/Xpath/" data-tooltip="Xpath" aria-label="NEXT: Xpath">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/10/26/Scrapy/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
 
-    
-    </section>
 
-
-
-                        </div>
-                    </section>
-                    <aside id="sidebar">
-    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-    <div class="sidebar-top">
-        <p>follow:</p>
-        <ul class="social-links">
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
             
                 
-                <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/emjayahn" target="_blank" rel="noopener">
-                        <i class="icon fa fa-github"></i>
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/10/26/Scrapy/">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
                     </a>
                 </li>
-                
             
                 
-                <li>
-                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
-                        <i class="icon fa fa-rss"></i>
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/10/26/Scrapy/">
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                     </a>
                 </li>
+            
                 
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/10/26/Scrapy/">
+                        <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                    </a>
+                </li>
             
         </ul>
     </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2018/10/27/181027-TodayWhatILearned/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            181027-TodayWhatILearned
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-        <a href="/2018/10/26/Xpath/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Xpath</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
-    
-    <div class="widgets-container">
-        
-            
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">categories</h3>
-        <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DataStructure/">DataStructure</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">42</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Math/">Math</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/">wiki</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/NGINX/">NGINX</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Pillow/">Pillow</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Requests/">Requests</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Scrapy/">Scrapy</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Selenium/">Selenium</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Xpath/">Xpath</a><span class="category-list-count">1</span></li></ul></li></ul>
-        </div>
-    </div>
 
 
             
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
-        <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">20</span></li></ul>
         </div>
-    </div>
+        
 
 
-            
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <h4 id="about-card-name">EmjayAhn(Minjae Ahn)</h4>
+        
+            <div id="about-card-bio"><p>author.bio</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br>
+                <p>author.job</p>
+
+            </div>
+        
         
     </div>
-</aside>
-
-                </div>
-            </div>
-        </div>
-        <footer id="footer">
-    <div class="container">
-        <div class="container-inner">
-            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="/" class="logo"></a>
-                </h1>
-                <p>&copy; 2019 EmjayAhn(Minjae Ahn)</p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-            </div>
-            <div class="footer-plugins">
-              
-    
-
-
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
 
         
-    
-    <script>
-    var disqus_shortname = 'emjaygithubpage';
-    
-    
-    var disqus_url = 'https://emjayahn.github.io/2018/10/26/Scrapy/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
+<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-
-
-
-    
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
-    
-    
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-    
-    
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     
 
 
 
-<!-- Custom Scripts -->
-<script src="/js/main.js"></script>
-
-    </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
-</body>
+    </body>
 </html>

@@ -1,20 +1,22 @@
+
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-
+<html lang="en">
     
-
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Emjay&#39;s DailyCommit Blog">
+    <title>Generative Model - Emjay&#39;s DailyCommit Blog</title>
+    <meta name="author" content="EmjayAhn(Minjae Ahn)">
     
-    <title>Generative Model | Emjay&#39;s DailyCommit Blog</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Classification, 확률론적생성모형, Generative, 생성모형, 분류모델">
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념\n우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \\mid x) $의 모형을 알아내야 한다.\n\n베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.$$P(y = C_k \\mid x) = \\dfrac{P(x \\mid y = C_k)\\; P(y = C_k)}{P(x)}$$\n\n이 때, $ P(x \\mid y = C_k) $== Likelihood== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건\n\n\nLikelihood 추정의 알고리즘\n$ P(x \\mid y = C_k) $ 가  어떤  확률분포를 따를 것이다라고 가정\nx의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정\nClass k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.\n모수값을 안다 == $ P(x \\mid y = C_k) $ 의 pdf 를 알고 있다.\ntest set x 가 들어오면 $ P(x \\mid y = C_k) $ 를 구할 수 있다.\n\n","dateCreated":"2018-12-05T08:48:55+09:00","dateModified":"2018-12-05T09:21:28+09:00","datePublished":"2018-12-05T08:48:55+09:00","description":"","headline":"Generative Model","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/05/Generative-Model/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/12/05/Generative-Model/","keywords":"Classification, 확률론적생성모형, Generative, 생성모형, 분류모델"}</script>
     <meta name="description" content="확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념 우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.  베이즈 정리를 이용하여, $ y=C_">
 <meta name="keywords" content="Classification, 확률론적생성모형, Generative, 생성모형, 분류모델">
-<meta property="og:type" content="article">
+<meta property="og:type" content="blog">
 <meta property="og:title" content="Generative Model">
 <meta property="og:url" content="https://emjayahn.github.io/2018/12/05/Generative-Model/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
@@ -25,167 +27,227 @@
 <meta name="twitter:title" content="Generative Model">
 <meta name="twitter:description" content="확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념 우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.  베이즈 정리를 이용하여, $ y=C_">
     
-
     
-        <link rel="alternate" href="/atom.xml" title="Emjay&#39;s DailyCommit Blog" type="application/atom+xml">
-    
-
-    
-
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
-    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
-
-    <link rel="stylesheet" href="/css/style.css">
-
-    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    
-        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-        <script type="text/javascript">
-(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-128251719-1', 'auto');
-ga('send', 'pageview');
-
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
-    
-
-
-</head>
-</html>
-<body>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="wrap">
-        <header id="header">
-    <div id="header-outer" class="outer">
-        <div class="container">
-            <div class="container-inner">
-                <div id="header-title">
-                    <h1 class="logo-wrap">
-                        <a href="/" class="logo"></a>
-                    </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Emjay&#39;s DataScience &amp; Development</p>
-                        </h2>
-                    
-                </div>
-                <div id="header-inner" class="nav-container">
-                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-                    <div class="nav-container-inner">
-                        <ul id="main-nav">
-                            
-                                <li class="main-nav-list-item">
-                                    <a class="main-nav-list-link" href="/">Home</a>
-                                </li>
-                            
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DataStructure/">DataStructure</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Diary/">Diary</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Math/">Math</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/">wiki</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/MySQL/">MySQL</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/NGINX/">NGINX</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Pillow/">Pillow</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Requests/">Requests</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Scrapy/">Scrapy</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Selenium/">Selenium</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/wiki/Xpath/">Xpath</a></li></ul></li></ul>
-                                    
-                                <li class="main-nav-list-item">
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
-                                </li>
-                            
-                        </ul>
-                        <nav id="sub-nav">
-                            <div id="search-form-wrap">
-
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-        <div class="container">
-            <div class="main-body container-inner">
-                <div class="main-body-inner">
-                    <section id="main">
-                        <div class="main-body-header">
-    <h1 class="header">
-    
-    <a class="page-title-link" href="/categories/Math/">Math</a>
-    </h1>
-</div>
-
-                        <div class="main-body-content">
-                            <article id="post-Generative-Model" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
         
-            <header class="article-header">
-                
     
-        <h1 class="article-title" itemprop="name">
-        Generative Model
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-c4ozcsklz4kht2pebhp44xorvyverh23toayhn7i6ubrpyedak24hv1v0hyd.min.css">
+    <!--STYLES END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+
+    
+</head>
+
+    <body>
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Emjay&#39;s DailyCommit Blog</a>
+    </div>
+    
+        
+            <a class="header-right-picture " href="#about">
+        
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/ " title="Home">
+                    
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-categories" title="Categories">
+                    
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-tags" title="Tags">
+                    
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/all-archives" title="Archives">
+                    
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link open-algolia-search" href="#search" title="Search">
+                    
+                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="#about" title="About">
+                    
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                    
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
+                    
+                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Stack Overflow</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
+                    
+                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                    
+                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
+                    
+                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Google +</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
+                    
+                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">LinkedIn</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                    
+                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a class="sidebar-button-link " href="/atom.xml" title="RSS">
+                    
+                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Generative Model
         </h1>
     
-
-            </header>
+    
+        <div class="post-meta">
+    <time datetime="2018-12-05T08:48:55+09:00">
+	
+		    Dec 05, 2018
+    	
+    </time>
+    
+        <span>in </span>
         
-        
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <a href="/2018/12/05/Generative-Model/" class="article-date">
-            <time datetime="2018-12-04T23:48:55.000Z" itemprop="datePublished">2018-12-05</time>
-        </a>
-    </div>
+    <a class="category-link" href="/categories/Math/">Math</a>
 
-		
 
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Classification-확률론적생성모형-Generative-생성모형-분류모델/">Classification, 확률론적생성모형, Generative, 생성모형, 분류모델</a>
-    </div>
+    
+</div>
 
-            </div>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
             <h1 id="확률론적-생성모형-Generative-Model"><a href="#확률론적-생성모형-Generative-Model" class="headerlink" title="확률론적 생성모형 (Generative Model)"></a>확률론적 생성모형 (Generative Model)</h1><h2 id="확률론적-생성모형의-기본-개념"><a href="#확률론적-생성모형의-기본-개념" class="headerlink" title="확률론적 생성모형의 기본 개념"></a>확률론적 생성모형의 기본 개념</h2><ul>
 <li><p>우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.</p>
 </li>
@@ -202,229 +264,242 @@ ga('send', 'pageview');
 <li>test set x 가 들어오면 $ P(x \mid y = C_k) $ 를 구할 수 있다.</li>
 </ol>
 
-        </div>
-        <footer class="article-footer">
             
 
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Classification-확률론적생성모형-Generative-생성모형-분류모델/">Classification, 확률론적생성모형, Generative, 생성모형, 분류모델</a>
 
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/12/05/181205-TodayWhatILearned/" data-tooltip="181205-TodayWhatILearned" aria-label="PREVIOUS: 181205-TodayWhatILearned">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/12/04/181204-TodayWhatILearned/" data-tooltip="181204-TodayWhatILearned" aria-label="NEXT: 181204-TodayWhatILearned">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
 </div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
 
 
-        </footer>
+        
+        
+            
+        
     </div>
 </article>
 
-    <section id="comments">
-    
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2019 EmjayAhn(Minjae Ahn). All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/12/05/181205-TodayWhatILearned/" data-tooltip="181205-TodayWhatILearned" aria-label="PREVIOUS: 181205-TodayWhatILearned">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/12/04/181204-TodayWhatILearned/" data-tooltip="181204-TodayWhatILearned" aria-label="NEXT: 181204-TodayWhatILearned">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/12/05/Generative-Model/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
 
-    
-    </section>
 
-
-
-                        </div>
-                    </section>
-                    <aside id="sidebar">
-    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-    <div class="sidebar-top">
-        <p>follow:</p>
-        <ul class="social-links">
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
             
                 
-                <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/emjayahn" target="_blank" rel="noopener">
-                        <i class="icon fa fa-github"></i>
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2018/12/05/Generative-Model/">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
                     </a>
                 </li>
-                
             
                 
-                <li>
-                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
-                        <i class="icon fa fa-rss"></i>
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2018/12/05/Generative-Model/">
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                     </a>
                 </li>
+            
                 
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2018/12/05/Generative-Model/">
+                        <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                    </a>
+                </li>
             
         </ul>
     </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2018/12/05/181205-TodayWhatILearned/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            181205-TodayWhatILearned
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-        <a href="/2018/12/04/181204-TodayWhatILearned/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">181204-TodayWhatILearned</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
-    
-    <div class="widgets-container">
-        
-            
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">categories</h3>
-        <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DataStructure/">DataStructure</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">42</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Math/">Math</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/">wiki</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/NGINX/">NGINX</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Pillow/">Pillow</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Requests/">Requests</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Scrapy/">Scrapy</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Selenium/">Selenium</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/Xpath/">Xpath</a><span class="category-list-count">1</span></li></ul></li></ul>
-        </div>
-    </div>
 
 
             
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
-        <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">20</span></li></ul>
         </div>
-    </div>
+        
 
 
-            
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <h4 id="about-card-name">EmjayAhn(Minjae Ahn)</h4>
+        
+            <div id="about-card-bio"><p>author.bio</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br>
+                <p>author.job</p>
+
+            </div>
+        
         
     </div>
-</aside>
-
-                </div>
-            </div>
-        </div>
-        <footer id="footer">
-    <div class="container">
-        <div class="container-inner">
-            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="/" class="logo"></a>
-                </h1>
-                <p>&copy; 2019 EmjayAhn(Minjae Ahn)</p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-            </div>
-            <div class="footer-plugins">
-              
-    
-
-
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
 
         
-    
-    <script>
-    var disqus_shortname = 'emjaygithubpage';
-    
-    
-    var disqus_url = 'https://emjayahn.github.io/2018/12/05/Generative-Model/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-
-
-
-
-    
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
-    
-    
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-    
-    
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    
-
-
-
-<!-- Custom Scripts -->
-<script src="/js/main.js"></script>
-
-    </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
+<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -442,5 +517,10 @@ ga('send', 'pageview');
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-</body>
+
+    
+
+
+
+    </body>
 </html>

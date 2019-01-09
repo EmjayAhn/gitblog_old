@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"181109 TWIL\n오늘 한 일은 무엇인가\nCrawling miniproject 발표\nPrediction main project data 탐색\n\n\n내일 할 일은 무엇인가\nProject 모임\n\n\n무엇을 느꼈는가\nCrawling miniproject 의 troubleshooting 시간이 있었다. 발표를 끝내고 나서는 하나를 마쳤다는 시원한 감이 있었지만, comment 들을 듣고 많이 부족함을 느낀 시간이었다. 코드를 작성할 때, 공통된 요소의 추상화가 선택적이 아니라 필수적임을 알게되었다. 간단한 것이라도 반복적으로 작성하는 것은 python convention 에도, 또 프로그래밍의 근본적인 취지에도 어긋나는 것이다. 처음부터 일반화된 포맷으로 작성하기엔 아직 실력이 많이 부족하다. 간단한 구현에서 module 화까지 내가 짜는 대부분의 코드를 연습하다 보면 늘겠지…\n메인 프로젝트의 data 간의 연관성이 잘 보이지 않는다. 지난 시간에 알게된 하루 주기로의 delay가 반복됨을 알고 있었으나, datetime 형식으로, 혹은 int나 float 형식으로 ols 에 집어 넣으면 주기성을 잡아내지 못하는 것 같다. 시간 단위로 X feature 로 들어가면 좋을 것 같은데, ols formula 에 시간을 집어넣으면 계속 category 화 된다. 이렇기 때문에 그 해당 정확한 시간이 있지 않으면 coefficient 가 먹지 않지….\n시간을 표현하기 위해 60진법도 찾아보고, 1분 단위로 int 숫자에 mapping 할까도 생각해보았으나, 결국 mapping 해서 ols 에 돌리면 2400 이후 값은 없는데도 x 축에 들어가게 된다….\n\n\n","dateCreated":"2018-11-09T23:14:01+09:00","dateModified":"2018-11-09T23:23:02+09:00","datePublished":"2018-11-09T23:14:01+09:00","description":"","headline":"181109-TodayWhatILearned","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"181109 TWIL\n오늘 한 일은 무엇인가\nCrawling miniproject 발표\nPrediction main project data 탐색\n\n\n내일 할 일은 무엇인가\nProject 모임\n\n\n무엇을 느꼈는가\nCrawling miniproject 의 troubleshooting 시간이 있었다. 발표를 끝내고 나서는 하나를 마쳤다는 시원한 감이 있었지만, comment 들을 듣고 많이 부족함을 느낀 시간이었다. 코드를 작성할 때, 공통된 요소의 추상화가 선택적이 아니라 필수적임을 알게되었다. 간단한 것이라도 반복적으로 작성하는 것은 python convention 에도, 또 프로그래밍의 근본적인 취지에도 어긋나는 것이다. 처음부터 일반화된 포맷으로 작성하기엔 아직 실력이 많이 부족하다. 간단한 구현에서 module 화까지 내가 짜는 대부분의 코드를 연습하다 보면 늘겠지…\n메인 프로젝트의 data 간의 연관성이 잘 보이지 않는다. 지난 시간에 알게된 하루 주기로의 delay가 반복됨을 알고 있었으나, datetime 형식으로, 혹은 int나 float 형식으로 ols 에 집어 넣으면 주기성을 잡아내지 못하는 것 같다. 시간 단위로 X feature 로 들어가면 좋을 것 같은데, ols formula 에 시간을 집어넣으면 계속 category 화 된다. 이렇기 때문에 그 해당 정확한 시간이 있지 않으면 coefficient 가 먹지 않지….\n시간을 표현하기 위해 60진법도 찾아보고, 1분 단위로 int 숫자에 mapping 할까도 생각해보았으나, 결국 mapping 해서 ols 에 돌리면 2400 이후 값은 없는데도 x 축에 들어가게 된다….\n\n\n","dateCreated":"2018-11-09T23:14:01+09:00","dateModified":"2018-11-09T23:23:02+09:00","datePublished":"2018-11-09T23:14:01+09:00","description":"","headline":"181109-TodayWhatILearned","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/"}</script>
     <meta name="description" content="181109 TWIL 오늘 한 일은 무엇인가 Crawling miniproject 발표 Prediction main project data 탐색   내일 할 일은 무엇인가 Project 모임   무엇을 느꼈는가 Crawling miniproject 의 troubleshooting 시간이 있었다. 발표를 끝내고 나서는 하나를 마쳤다는 시원한 감이 있었지만,">
 <meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
@@ -134,7 +134,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                        <a class="sidebar-button-link " href="https://github.com/emjayahn" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -143,25 +143,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
-                    
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
-                    
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                        <a class="sidebar-button-link " href="https://facebook.com/jjminjae" target="_blank" rel="noopener" title="Facebook">
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
@@ -170,25 +152,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
-                    
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
-                    
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
                     
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Mail</span>
@@ -330,6 +294,12 @@
         
         
             
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
@@ -344,6 +314,10 @@
 
         
         
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
             
         
     </div>
@@ -415,6 +389,12 @@
             </li>
         
         
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
             
         
         <li class="post-action">
@@ -495,8 +475,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!--SCRIPTS END-->
 
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2018/11/09/181109-TodayWhatILearned/';
+                 
+                    this.page.identifier = '2018/11/09/181109-TodayWhatILearned/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 
 

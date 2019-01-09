@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"이산확률분포베르누이 분포 (bernoulli distribution)\n동전 생각하기\n결과가 두가지 중 하나\n\n확률변수를 1 or 0 으루 주었을 때,$$\\text{Bern}(x;\\mu) = \\mu^x(1-\\mu)^{(1-x)}$$\n\n확률변수를 1 or -1 로 주었을 때,$$\\text{Bern}(x; \\mu) = \\mu^{(1+x)/2} (1-\\mu)^{(1-x)/2}$$\n\n\n1234#예제코드#베르누이 분포 SciPy#100개 samplingsp.stats.bernoulli(mu).rvs(100, random_state=0)\n이항분포 (binomial distribution)\n동전을 N번 던졌다\n성공확률이 $\\mu$ 인 베르누이 시도를 $N$ 번 반복 할 때, 성공 횟수를 $X$ 라 하면,\n\n$$ X \\sim \\text{Bin}(x;N,\\mu)  $$ \n$$ \\text{Bin}(x;N,\\mu) = \\binom N x  \\mu^x(1-\\mu)^{N-x} $$ \n1sp.stats.binom(N, mu).rvs(100, random_state=0)\n카테고리 분포 (Categorical distribution)\n주사위 생각해!\n$K$ 개의 카테고리가 있을 때,$$ x = (x_1, x_2, x_3, x_4, … , x_k)  $$ \n\n각 원소 x_i 가 1이 나올 수 있는 확률 ($i$번쨰 원소의 성공확률)을 $\\mu_i$ 라 하면, \n$$ \\text{Cat}(x;\\mu) = \\mu_1^{x_1} \\mu_2^{x_2}  \\cdots \\mu_K^{x_K}  =  \\prod_{k=1}^K \\mu_k^{x_k} $$ \n이 표현은 One-Hot-Encoding 으로 카테고리 분포를 표현 했기에 가능하다. \n단, $$ 0 \\leq \\mu_i \\leq 1 $$ \n$$ \\sum_{k=1}^K \\mu_k = 1 $$ \n123#카테고리 분포는 SciPy 의 메소드가 없으므로, 다항분포의 N을 1로 준다.#mu 는 각 term 이 나올 수 있는 확률 vectorsp.stats.multinomial(1, mu)\n다항 분포 (Multinomial distribution)\n주사위를 여러번 던졌다.\n카테고리 시도를 $N$ 번 반복하여 $k$ $(k=1,…,K)$ 가 $x_k$ 번 나올 확률분포.\n\n123#N : number of trial#mu 는 각 term 이 나올 수 있는 확률 vectorsp.stats.multinomial(N, mu)\n","dateCreated":"2018-11-23T22:14:19+09:00","dateModified":"2018-11-29T23:04:01+09:00","datePublished":"2018-11-23T22:14:19+09:00","description":"","headline":"math_cheatsheet","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/23/math-cheatsheet/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/11/23/math-cheatsheet/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"이산확률분포베르누이 분포 (bernoulli distribution)\n동전 생각하기\n결과가 두가지 중 하나\n\n확률변수를 1 or 0 으루 주었을 때,$$\\text{Bern}(x;\\mu) = \\mu^x(1-\\mu)^{(1-x)}$$\n\n확률변수를 1 or -1 로 주었을 때,$$\\text{Bern}(x; \\mu) = \\mu^{(1+x)/2} (1-\\mu)^{(1-x)/2}$$\n\n\n1234#예제코드#베르누이 분포 SciPy#100개 samplingsp.stats.bernoulli(mu).rvs(100, random_state=0)\n이항분포 (binomial distribution)\n동전을 N번 던졌다\n성공확률이 $\\mu$ 인 베르누이 시도를 $N$ 번 반복 할 때, 성공 횟수를 $X$ 라 하면,\n\n$$ X \\sim \\text{Bin}(x;N,\\mu)  $$ \n$$ \\text{Bin}(x;N,\\mu) = \\binom N x  \\mu^x(1-\\mu)^{N-x} $$ \n1sp.stats.binom(N, mu).rvs(100, random_state=0)\n카테고리 분포 (Categorical distribution)\n주사위 생각해!\n$K$ 개의 카테고리가 있을 때,$$ x = (x_1, x_2, x_3, x_4, … , x_k)  $$ \n\n각 원소 x_i 가 1이 나올 수 있는 확률 ($i$번쨰 원소의 성공확률)을 $\\mu_i$ 라 하면, \n$$ \\text{Cat}(x;\\mu) = \\mu_1^{x_1} \\mu_2^{x_2}  \\cdots \\mu_K^{x_K}  =  \\prod_{k=1}^K \\mu_k^{x_k} $$ \n이 표현은 One-Hot-Encoding 으로 카테고리 분포를 표현 했기에 가능하다. \n단, $$ 0 \\leq \\mu_i \\leq 1 $$ \n$$ \\sum_{k=1}^K \\mu_k = 1 $$ \n123#카테고리 분포는 SciPy 의 메소드가 없으므로, 다항분포의 N을 1로 준다.#mu 는 각 term 이 나올 수 있는 확률 vectorsp.stats.multinomial(1, mu)\n다항 분포 (Multinomial distribution)\n주사위를 여러번 던졌다.\n카테고리 시도를 $N$ 번 반복하여 $k$ $(k=1,…,K)$ 가 $x_k$ 번 나올 확률분포.\n\n123#N : number of trial#mu 는 각 term 이 나올 수 있는 확률 vectorsp.stats.multinomial(N, mu)\n","dateCreated":"2018-11-23T22:14:19+09:00","dateModified":"2018-11-29T23:04:01+09:00","datePublished":"2018-11-23T22:14:19+09:00","description":"","headline":"math_cheatsheet","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/23/math-cheatsheet/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/11/23/math-cheatsheet/"}</script>
     <meta name="description" content="이산확률분포베르누이 분포 (bernoulli distribution) 동전 생각하기 결과가 두가지 중 하나  확률변수를 1 or 0 으루 주었을 때,$$\text{Bern}(x;\mu) = \mu^x(1-\mu)^{(1-x)}$$  확률변수를 1 or -1 로 주었을 때,$$\text{Bern}(x; \mu) = \mu^{(1+x)/2} (1-\mu)^{(">
 <meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
@@ -134,7 +134,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                        <a class="sidebar-button-link " href="https://github.com/emjayahn" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -143,25 +143,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
-                    
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
-                    
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                        <a class="sidebar-button-link " href="https://facebook.com/jjminjae" target="_blank" rel="noopener" title="Facebook">
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
@@ -170,25 +152,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
-                    
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
-                    
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
                     
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Mail</span>
@@ -346,6 +310,12 @@
         
         
             
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
@@ -360,6 +330,10 @@
 
         
         
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
             
         
     </div>
@@ -431,6 +405,12 @@
             </li>
         
         
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
             
         
         <li class="post-action">
@@ -511,7 +491,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2018/11/23/math-cheatsheet/';
+                 
+                    this.page.identifier = '2018/11/23/math-cheatsheet/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -529,7 +527,6 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-
     
 
 

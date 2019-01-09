@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"Nginx0. What is nginx?\nclient 가 외부 IP와 그 포트를 통해 server 에 접근하면,\n그 때부터는 request 를 내부 IP 와 port 로 연결을 해주어야 한다.\n일종의 proxy server 역할을 해주는 것이 nginx\n\n1. Install Nginx12$ sudo apt-get update$ sudo apt-get install nginx\n2. Manage the Nginx Process\nnginx Process1234567891011121314#start Nginx$ sudo systemctl start nginx#stop nginx$ sudo systemctl stop nginx#restart nginx$ sudo systemctl restart nginx#check status nginx$ sudo systemctl status nginx# reload nginx$ sudo systemctl reload nginx\n\n\n3. Structure\n/etc/nginx\nNginx의 설정에 관련된 directory\n\n\n/etc/nginx/nginx.conf\nnginx의 기본설정 파일, global설정은 이 파일에서\n\n\n/etc/nginx/sites-available/\n포트 접속시 개별 설정하는 directory\n여기 안에 default 파일 변경\n\n\n\n4. Nginx Configuration4.1 static file serving/etc/nginx/sites-available/default 파일 수정\n123456789server &#123;  location / &#123;    root /path/to/html ;  &#125;  location /images/ &#123;    root /path/to/image;  &#125;&#125;\n4.2 proxy server\nport 별로 설정이 가능하다\n12345678server &#123;  # default 는 80 port (http default)  # 8080 port 에 대해서  listen 8080;  location / &#123;    proxy_pass http://localhost:8080;  &#125;&#125;\n\n여러개의 포트를 연결`server {listen 8080;listen 80;\nlocation / {  proxy_pass http://localhost:8080;}}\n\n\n","dateCreated":"2018-11-29T22:57:28+09:00","dateModified":"2018-11-29T23:00:09+09:00","datePublished":"2018-11-29T22:57:28+09:00","description":"","headline":"NGINX","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/29/NGINX/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/11/29/NGINX/","keywords":"nginx, proxy"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"Nginx0. What is nginx?\nclient 가 외부 IP와 그 포트를 통해 server 에 접근하면,\n그 때부터는 request 를 내부 IP 와 port 로 연결을 해주어야 한다.\n일종의 proxy server 역할을 해주는 것이 nginx\n\n1. Install Nginx12$ sudo apt-get update$ sudo apt-get install nginx\n2. Manage the Nginx Process\nnginx Process1234567891011121314#start Nginx$ sudo systemctl start nginx#stop nginx$ sudo systemctl stop nginx#restart nginx$ sudo systemctl restart nginx#check status nginx$ sudo systemctl status nginx# reload nginx$ sudo systemctl reload nginx\n\n\n3. Structure\n/etc/nginx\nNginx의 설정에 관련된 directory\n\n\n/etc/nginx/nginx.conf\nnginx의 기본설정 파일, global설정은 이 파일에서\n\n\n/etc/nginx/sites-available/\n포트 접속시 개별 설정하는 directory\n여기 안에 default 파일 변경\n\n\n\n4. Nginx Configuration4.1 static file serving/etc/nginx/sites-available/default 파일 수정\n123456789server &#123;  location / &#123;    root /path/to/html ;  &#125;  location /images/ &#123;    root /path/to/image;  &#125;&#125;\n4.2 proxy server\nport 별로 설정이 가능하다\n12345678server &#123;  # default 는 80 port (http default)  # 8080 port 에 대해서  listen 8080;  location / &#123;    proxy_pass http://localhost:8080;  &#125;&#125;\n\n여러개의 포트를 연결`server {listen 8080;listen 80;\nlocation / {  proxy_pass http://localhost:8080;}}\n\n\n","dateCreated":"2018-11-29T22:57:28+09:00","dateModified":"2018-11-29T23:00:09+09:00","datePublished":"2018-11-29T22:57:28+09:00","description":"","headline":"NGINX","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/11/29/NGINX/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/11/29/NGINX/","keywords":"nginx, proxy"}</script>
     <meta name="description" content="Nginx0. What is nginx? client 가 외부 IP와 그 포트를 통해 server 에 접근하면, 그 때부터는 request 를 내부 IP 와 port 로 연결을 해주어야 한다. 일종의 proxy server 역할을 해주는 것이 nginx  1. Install Nginx12$ sudo apt-get update$ sudo apt-get ins">
 <meta name="keywords" content="nginx, proxy">
 <meta property="og:type" content="blog">
@@ -134,7 +134,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                        <a class="sidebar-button-link " href="https://github.com/emjayahn" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -143,25 +143,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
-                    
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
-                    
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                        <a class="sidebar-button-link " href="https://facebook.com/jjminjae" target="_blank" rel="noopener" title="Facebook">
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
@@ -170,25 +152,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
-                    
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
-                    
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
                     
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Mail</span>
@@ -356,6 +320,12 @@
         
         
             
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
@@ -370,6 +340,10 @@
 
         
         
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
             
         
     </div>
@@ -441,6 +415,12 @@
             </li>
         
         
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
             
         
         <li class="post-action">
@@ -521,7 +501,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2018/11/29/NGINX/';
+                 
+                    this.page.identifier = '2018/11/29/NGINX/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -539,7 +537,6 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-
     
 
 

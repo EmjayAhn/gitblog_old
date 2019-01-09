@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"xpath\n공부한 내용을 스스로 보기 쉽게 정리한 글입니다.\n\n1. xpath란?\nxpath = XML Path Language\nXML 문서의 element나 attribute의 value에 접근하기 위한 언어\nXML 문서를 해석하기 위한 언어이므로, 기본적으로 path expression 이 바탕이 되어있다.\n연산, 문자열 처리를 위한 라이브러리를 내장하고 있다.\n\n2. Location Path\nelement 를 찾으러 가는 것이므로, location을 나타내기 위한 연산자는 다음과 같다.\n\n\nelement_name : element_name 과 일치하는 모든 element를 선택한다.\n/ :\n가장 처음 쓰는 /는 절대경로를 의미한다.\nPath 중간에 쓰는 /는 조건에 맞는 바로 다음 하위 엘리먼트를 검색한다. (css selector에서 &gt;와 같다)\n\n\n// : 가장 상위 엘리먼트\n. : 현재 엘리먼트\n* : 조건에 맞는 전체 하위 엘리먼트를 검색한다(css selector 에서 한칸 띄우는 것 과 같다)\nelement[조건] : 엘리먼트에 조건에 해당되는 것을 검색한다\n(예) p[2] : p 엘리먼트 중 두번째 엘리먼트를 선택 주의:1부터 시작, 0이 아님 \n(예) [@(attribute_key=&quot;attribute_value&quot;)] : 속성값으로 엘리먼트를 선택[@id=&quot;main&quot;] : “main” 이라는 id 를 선택[@class=&quot;pp&quot;] : “pp” 라는 class 를 선택\n\n\nnot(조건) : 조건이 아닌 엘리먼트를 찾는다.\n/text() : 해당 엘리먼트의 text 데이터를 가져온다\n/@attribute_name : 해당 엘리먼트의 attribute_name 에 할당된 value 값을 가져옴\n/@href : 해당 엘리먼트의 href의 value 값을 가져옴\n\n\n\n","dateCreated":"2018-10-26T22:02:50+09:00","dateModified":"2018-11-29T23:03:48+09:00","datePublished":"2018-10-26T22:02:50+09:00","description":"","headline":"Xpath","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/10/26/Xpath/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/10/26/Xpath/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"xpath\n공부한 내용을 스스로 보기 쉽게 정리한 글입니다.\n\n1. xpath란?\nxpath = XML Path Language\nXML 문서의 element나 attribute의 value에 접근하기 위한 언어\nXML 문서를 해석하기 위한 언어이므로, 기본적으로 path expression 이 바탕이 되어있다.\n연산, 문자열 처리를 위한 라이브러리를 내장하고 있다.\n\n2. Location Path\nelement 를 찾으러 가는 것이므로, location을 나타내기 위한 연산자는 다음과 같다.\n\n\nelement_name : element_name 과 일치하는 모든 element를 선택한다.\n/ :\n가장 처음 쓰는 /는 절대경로를 의미한다.\nPath 중간에 쓰는 /는 조건에 맞는 바로 다음 하위 엘리먼트를 검색한다. (css selector에서 &gt;와 같다)\n\n\n// : 가장 상위 엘리먼트\n. : 현재 엘리먼트\n* : 조건에 맞는 전체 하위 엘리먼트를 검색한다(css selector 에서 한칸 띄우는 것 과 같다)\nelement[조건] : 엘리먼트에 조건에 해당되는 것을 검색한다\n(예) p[2] : p 엘리먼트 중 두번째 엘리먼트를 선택 주의:1부터 시작, 0이 아님 \n(예) [@(attribute_key=&quot;attribute_value&quot;)] : 속성값으로 엘리먼트를 선택[@id=&quot;main&quot;] : “main” 이라는 id 를 선택[@class=&quot;pp&quot;] : “pp” 라는 class 를 선택\n\n\nnot(조건) : 조건이 아닌 엘리먼트를 찾는다.\n/text() : 해당 엘리먼트의 text 데이터를 가져온다\n/@attribute_name : 해당 엘리먼트의 attribute_name 에 할당된 value 값을 가져옴\n/@href : 해당 엘리먼트의 href의 value 값을 가져옴\n\n\n\n","dateCreated":"2018-10-26T22:02:50+09:00","dateModified":"2018-11-29T23:03:48+09:00","datePublished":"2018-10-26T22:02:50+09:00","description":"","headline":"Xpath","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/10/26/Xpath/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/10/26/Xpath/"}</script>
     <meta name="description" content="xpath 공부한 내용을 스스로 보기 쉽게 정리한 글입니다.  1. xpath란? xpath = XML Path Language XML 문서의 element나 attribute의 value에 접근하기 위한 언어 XML 문서를 해석하기 위한 언어이므로, 기본적으로 path expression 이 바탕이 되어있다. 연산, 문자열 처리를 위한 라이브러리를 내장하">
 <meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
@@ -134,7 +134,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                        <a class="sidebar-button-link " href="https://github.com/emjayahn" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -143,25 +143,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
-                    
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
-                    
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                        <a class="sidebar-button-link " href="https://facebook.com/jjminjae" target="_blank" rel="noopener" title="Facebook">
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
@@ -170,25 +152,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
-                    
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
-                    
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
                     
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Mail</span>
@@ -348,6 +312,12 @@
         
         
             
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
@@ -362,6 +332,10 @@
 
         
         
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
             
         
     </div>
@@ -433,6 +407,12 @@
             </li>
         
         
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
             
         
         <li class="post-action">
@@ -513,8 +493,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!--SCRIPTS END-->
 
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2018/10/26/Xpath/';
+                 
+                    this.page.identifier = '2018/10/26/Xpath/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 
 

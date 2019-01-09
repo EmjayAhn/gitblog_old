@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념\n우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \\mid x) $의 모형을 알아내야 한다.\n\n베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.$$P(y = C_k \\mid x) = \\dfrac{P(x \\mid y = C_k)\\; P(y = C_k)}{P(x)}$$\n\n이 때, $ P(x \\mid y = C_k) $== Likelihood== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건\n\n\nLikelihood 추정의 알고리즘\n$ P(x \\mid y = C_k) $ 가  어떤  확률분포를 따를 것이다라고 가정\nx의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정\nClass k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.\n모수값을 안다 == $ P(x \\mid y = C_k) $ 의 pdf 를 알고 있다.\ntest set x 가 들어오면 $ P(x \\mid y = C_k) $ 를 구할 수 있다.\n\n","dateCreated":"2018-12-05T08:48:55+09:00","dateModified":"2018-12-05T09:21:28+09:00","datePublished":"2018-12-05T08:48:55+09:00","description":"","headline":"Generative Model","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/05/Generative-Model/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://emjayahn.github.io/2018/12/05/Generative-Model/","keywords":"Classification, 확률론적생성모형, Generative, 생성모형, 분류모델"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"articleBody":"확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념\n우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \\mid x) $의 모형을 알아내야 한다.\n\n베이즈 정리를 이용하여, $ y=C_k $일 때의 조건부 확률을 구할 수 있다.$$P(y = C_k \\mid x) = \\dfrac{P(x \\mid y = C_k)\\; P(y = C_k)}{P(x)}$$\n\n이 때, $ P(x \\mid y = C_k) $== Likelihood== y가 k라는 클래스 일 때, x의 확률을 구하는 것이 관건\n\n\nLikelihood 추정의 알고리즘\n$ P(x \\mid y = C_k) $ 가  어떤  확률분포를 따를 것이다라고 가정\nx의 특성에 따라 우리가 알고 있는 특정 확률분포를 따른다! 라고 가정\nClass k 를 만드는 data들을 통해 이 확률분포의 모수값을 구한다.\n모수값을 안다 == $ P(x \\mid y = C_k) $ 의 pdf 를 알고 있다.\ntest set x 가 들어오면 $ P(x \\mid y = C_k) $ 를 구할 수 있다.\n\n","dateCreated":"2018-12-05T08:48:55+09:00","dateModified":"2018-12-05T09:21:28+09:00","datePublished":"2018-12-05T08:48:55+09:00","description":"","headline":"Generative Model","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2018/12/05/Generative-Model/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae","emjay.data@gmail.com"]},"url":"https://emjayahn.github.io/2018/12/05/Generative-Model/","keywords":"Classification, 확률론적생성모형, Generative, 생성모형, 분류모델"}</script>
     <meta name="description" content="확률론적 생성모형 (Generative Model)확률론적 생성모형의 기본 개념 우리가 궁금한 것은 $ x $ (features) 들이 있을 떄, $ y $가 어떤 Class 인지 맞추는 것이다. 맞추기 위해서는 training set 으로 부터 각 Class 마다 $ P(y \mid x) $의 모형을 알아내야 한다.  베이즈 정리를 이용하여, $ y=C_">
 <meta name="keywords" content="Classification, 확률론적생성모형, Generative, 생성모형, 분류모델">
 <meta property="og:type" content="blog">
@@ -134,7 +134,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                        <a class="sidebar-button-link " href="https://github.com/emjayahn" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -143,25 +143,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="http://stackoverflow.com/users" target="_blank" rel="noopener" title="Stack Overflow">
-                    
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter">
-                    
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook">
+                        <a class="sidebar-button-link " href="https://facebook.com/jjminjae" target="_blank" rel="noopener" title="Facebook">
                     
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
@@ -170,25 +152,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a class="sidebar-button-link " href="https://plus.google.com/" target="_blank" rel="noopener" title="Google +">
-                    
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="https://www.linkedin.com/profile/" target="_blank" rel="noopener" title="LinkedIn">
-                    
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a class="sidebar-button-link " href="/mailto" title="Mail">
+                        <a class="sidebar-button-link " href="/emjay.data@gmail.com" title="Mail">
                     
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Mail</span>
@@ -336,6 +300,12 @@
         
         
             
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
@@ -350,6 +320,10 @@
 
         
         
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
             
         
     </div>
@@ -421,6 +395,12 @@
             </li>
         
         
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
             
         
         <li class="post-action">
@@ -501,7 +481,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2018/12/05/Generative-Model/';
+                 
+                    this.page.identifier = '2018/12/05/Generative-Model/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -519,7 +517,6 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-
     
 
 

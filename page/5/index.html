@@ -9,12 +9,15 @@
     <title>Emjay&#39;s DailyCommit Blog</title>
     <meta name="author" content="EmjayAhn(Minjae Ahn)">
     
+        <meta name="keywords" content="hexo,datascience,datascientist,">
+    
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://emjayahn.github.io","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"name":"Emjay's DailyCommit Blog","description":"매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.","url":"https://emjayahn.github.io"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://emjayahn.github.io","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"name":"Emjay's DailyCommit Blog","description":"매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.","url":"https://emjayahn.github.io","keywords":"hexo, datascience, datascientist"}</script>
     <meta name="description" content="매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.">
+<meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Emjay&#39;s DailyCommit Blog">
 <meta property="og:url" content="https://emjayahn.github.io/page/5/index.html">
@@ -818,8 +821,8 @@ You can start your first spider with:
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="/2018/10/24/Selenium/">
-                            Selenium
+                        <a class="link-unstyled" href="/2018/10/24/Thread/">
+                            Thread
                         </a>
                     
                 </h1>
@@ -832,7 +835,7 @@ You can start your first spider with:
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Selenium/">Selenium</a>
+    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Python/">Python</a>
 
 
     
@@ -841,85 +844,19 @@ You can start your first spider with:
             </div>
             
                 <div class="postShorten-content">
-                    <h1 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h1><blockquote>
+                    <h1 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h1><blockquote>
 <p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
 <ul>
-<li>자동화 할 수 있는 프로그램</li>
+<li>파이썬 기본 : Single Thread (Main Thread)</li>
+<li>threading 모듈 : main thread에서 subthread 를 생성하여 진행하는 방식</li>
+<li>multiprocessing 모듈 : double cpu</li>
 </ul>
 </blockquote>
-<h2 id="Install-Selenium"><a href="#Install-Selenium" class="headerlink" title="[ Install Selenium ]"></a>[ Install Selenium ]</h2><ol>
-<li><p>chrome driver 다운로드</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mv ~/Download/chromedriver /usr/<span class="built_in">local</span>/bin</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Selenium Python Package 설치</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo pip3 install selenium</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="1-셀레니움-사용해보기"><a href="#1-셀레니움-사용해보기" class="headerlink" title="1. 셀레니움 사용해보기"></a>1. 셀레니움 사용해보기</h2><ul>
-<li><p>import</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Open Browser (Chrome Driver)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver = webdriver.Chrome()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>페이지 이동</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.get(url)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>브라우져 상에서 자바 스크립트 실행</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.execute_script(<span class="string">"window.scrollTo(300, 400)"</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>지금 control하고 있는 window 객체 확인</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">main_window = driver.current_window_handle</span><br><span class="line">main_window</span><br><span class="line"><span class="comment">#현재 control 하고 있는 window 의 객체를 리턴한다.</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>열려 있는 전체 window 탭 모두 확인</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">windows = driver.window_handles</span><br><span class="line">windows</span><br><span class="line"><span class="comment">#현재 열려있는 모든 탭의 객체를 리스트 형태로 리턴한다.</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>열려있는 window 탭 중, control 대상 window 로 바꾸기</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">driver.switch_to_window(windows[<span class="number">0</span>])</span><br><span class="line"><span class="comment">#다시 원래 열었던 창으로 돌아가기</span></span><br><span class="line">driver.switch_to_window(main_window)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="2-Alert-와-Confirm-다루기"><a href="#2-Alert-와-Confirm-다루기" class="headerlink" title="2. Alert 와 Confirm 다루기"></a>2. Alert 와 Confirm 다루기</h2><ul>
-<li>웹을 자동화해서 다니다보면, Alert 창이나 Confirm 창이 의도치 않게 나올 수 있다. 이를 다루는 방법은 다음과 같다.</li>
-<li>Alert와 Confirm 창의 차이는, <br><br>Alert 는 확인 창 하나만 있고, Confirm은 확인과 취소가 같이 있는 창이다.</li>
-</ul>
-<h3 id="1-Alert"><a href="#1-Alert" class="headerlink" title="(1) Alert"></a>(1) Alert</h3><ul>
-<li><p>Alert 띄우기</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">drive.switch_to_window(main_window)</span><br><span class="line">drive.execute_script(<span class="string">"alert('이게 alert 로 뜰겁니다.');"</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Alert 확인 누르기</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alert = driver.switch_to.alert</span><br><span class="line">alert.accept()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Alert 창이 있으면 확인을 누르고, 없으면 없다고 리턴하기 (예외처리)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">  alert = driver.switch_to.alert</span><br><span class="line">  alert.accept()</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">  print(<span class="string">"alert 가 없습니다."</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-Confirm"><a href="#2-Confirm" class="headerlink" title="(2) Confirm"></a>(2) Confirm</h3><ul>
-<li><p>Confirm 띄우기</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.execute_script(<span class="string">"confirm('이게 Confirm 창입니다.');"</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Confirm 창 확인 누르기 or 취소 누르기</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">confirm = driver.switch_to.alert</span><br><span class="line"><span class="comment"># 확인</span></span><br><span class="line"><span class="comment"># confirm.accept()</span></span><br><span class="line"><span class="comment"># 취소</span></span><br><span class="line">confirm.dismiss()</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="3-입력창에-글씨-입력하기"><a href="#3-입력창에-글씨-입력하기" class="headerlink" title="3. 입력창에 글씨 입력하기"></a>3. 입력창에 글씨 입력하기</h2><ul>
-<li>이제부터 Selenium을 통해 특정 html 의 element 에 액션을 주려면,<br>각종 Selector 를 사용하여 html 상의 element을 셀렉팅 하고, 해당 element 에게 액션을 주어야한다.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(nameof cssselector).send_keys(<span class="string">"입력할 내용"</span>)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>.find_element_by_css_selector 와 <br><br>.find_<b>elements</b>_<br>by_css_selector 는 다르다.element 는 하나의 selector 만 선택하는 반면, elements 는 여러가지 element 를 셀렉팅 해서, 리스트 형식으로 Return 한다.</li>
-<li>따라서 이렇게 리스트 형식으로 Return 이 된 경우, List[0] 등과 같이 그 엘리먼트를 뒤에 지정해줘야된다. 즉,<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(nameof cssselector)</span><br><span class="line"><span class="comment">#위는 바로 selecting 이 된것이지만,</span></span><br><span class="line">driver.find_elements_by_css_selector(nameof cssselector)[<span class="number">0</span>]</span><br><span class="line"><span class="comment">#위는 뒤에 selecting 위해 list 의 요소를 선택 해주어야한다.</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>ThreadPoolExecutor : API - 멀티스레드와 멀티프로세스 동일한 형태로 디자인(Pool 클래스만 변경하면됨)</li>
 </ul>
-<h2 id="4-버튼-클릭하기"><a href="#4-버튼-클릭하기" class="headerlink" title="4. 버튼 클릭하기"></a>4. 버튼 클릭하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 위의 방법처럼, element 를 선택해준다.</span></span><br><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>).click()</span><br></pre></td></tr></table></figure>
-<h2 id="5-id-class-그-외의-attribute-값을-selecting-하는-법"><a href="#5-id-class-그-외의-attribute-값을-selecting-하는-법" class="headerlink" title="5. id, class, 그 외의 attribute 값을 selecting 하는 법"></a>5. id, class, 그 외의 attribute 값을 selecting 하는 법</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector."</span>).click()</span><br><span class="line"><span class="comment"># id 의 경우 : #idname</span></span><br><span class="line"><span class="comment"># class 의 경우 : .classname</span></span><br><span class="line"><span class="comment"># 다른 attribute 의 경우 : [attribute = 'value']</span></span><br></pre></td></tr></table></figure>
-<h2 id="6-selecting-한-element-의-attribute-value-를-얻는-방법"><a href="#6-selecting-한-element-의-attribute-value-를-얻는-방법" class="headerlink" title="6. selecting 한 element 의 attribute value 를 얻는 방법"></a>6. selecting 한 element 의 attribute value 를 얻는 방법</h2><ul>
-<li>CSS로 선택한 element에 html 태그에는 다양한 attribute 들이 있을 수 있다. 이 중<br>attribute의 value에 접근 하고 싶을 때는 .get_attribute()메소드를 사용할 수 있다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>).get_attribute(<span class="string">"attribute_name"</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="7-element-의-위치와-사이즈-구하기"><a href="#7-element-의-위치와-사이즈-구하기" class="headerlink" title="7. element 의 위치와, 사이즈 구하기"></a>7. element 의 위치와, 사이즈 구하기</h2><ul>
-<li>스크롤을 내리거나, 엘리먼트의 위치와 크기를 알고 싶을 때 사용할 수 있다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">element = driver.find_element_by_css_selector(<span class="string">"name of css selector"</span>)</span><br><span class="line">element.location</span><br><span class="line"><span class="comment">#element 의 좌측 상단의 위치가 pixel 단위로 x, y 값의 dictionary로 보여준다.</span></span><br><span class="line">element.size</span><br><span class="line"><span class="comment">#element 의 size 를 height, width를 pixel 단위로 dictionary로 보여준다.</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<h3 id="threading-Thread-arguement"><a href="#threading-Thread-arguement" class="headerlink" title="threading.Thread() arguement"></a>threading.Thread() arguement</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Thread(group=, target=, args= , kwargs=, *, daemon=<span class="keyword">None</span>)</span><br><span class="line"><span class="comment">#target= : 실제 스레드에서 돌아가게 될 함수</span></span><br><span class="line"><span class="comment">#args= : tuple 로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#kwargs= : dictionary로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#daemon : 데몬 스레드로 돌아갈지 여부</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Thread 의 메소드</span></span><br><span class="line">start(): <span class="comment">#스레드의 실행, self 의 run() 메소드를 호출</span></span><br><span class="line">run(): <span class="comment">#스레드가 실제로 수행하게될 작업</span></span><br><span class="line">name : <span class="comment">#스레드의 이름</span></span><br><span class="line">threading.locals() : <span class="comment">#해당 스레드 내부에서 사용할 로컬 변수 지정</span></span><br></pre></td></tr></table></figure>
 
                     
                         
@@ -927,7 +864,7 @@ You can start your first spider with:
                     
                     
                         <p>
-                            <a href="/2018/10/24/Selenium/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2018/10/24/Thread/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>

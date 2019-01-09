@@ -9,12 +9,15 @@
     <title>Archives: 2018 - Emjay&#39;s DailyCommit Blog</title>
     <meta name="author" content="EmjayAhn(Minjae Ahn)">
     
+        <meta name="keywords" content="hexo,datascience,datascientist,">
+    
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
     <script type="application/ld+json">{}</script>
     <meta name="description" content="매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.">
+<meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Emjay&#39;s DailyCommit Blog">
 <meta property="og:url" content="https://emjayahn.github.io/archives/2018/page/5/index.html">
@@ -754,6 +757,157 @@ You can start your first spider with:
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="/2018/10/24/Thread/">
+                            Thread
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2018-10-24T12:02:50+09:00">
+	
+		    Oct 24, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Python/">Python</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h1><blockquote>
+<p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
+<ul>
+<li>파이썬 기본 : Single Thread (Main Thread)</li>
+<li>threading 모듈 : main thread에서 subthread 를 생성하여 진행하는 방식</li>
+<li>multiprocessing 모듈 : double cpu</li>
+</ul>
+</blockquote>
+<ul>
+<li>ThreadPoolExecutor : API - 멀티스레드와 멀티프로세스 동일한 형태로 디자인(Pool 클래스만 변경하면됨)</li>
+</ul>
+<h3 id="threading-Thread-arguement"><a href="#threading-Thread-arguement" class="headerlink" title="threading.Thread() arguement"></a>threading.Thread() arguement</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Thread(group=, target=, args= , kwargs=, *, daemon=<span class="keyword">None</span>)</span><br><span class="line"><span class="comment">#target= : 실제 스레드에서 돌아가게 될 함수</span></span><br><span class="line"><span class="comment">#args= : tuple 로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#kwargs= : dictionary로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#daemon : 데몬 스레드로 돌아갈지 여부</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Thread 의 메소드</span></span><br><span class="line">start(): <span class="comment">#스레드의 실행, self 의 run() 메소드를 호출</span></span><br><span class="line">run(): <span class="comment">#스레드가 실제로 수행하게될 작업</span></span><br><span class="line">name : <span class="comment">#스레드의 이름</span></span><br><span class="line">threading.locals() : <span class="comment">#해당 스레드 내부에서 사용할 로컬 변수 지정</span></span><br></pre></td></tr></table></figure>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2018/10/24/Thread/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a class="link-unstyled" href="/2018/10/24/Requests/">
+                            Requests
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2018-10-24T12:02:50+09:00">
+	
+		    Oct 24, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Requests/">Requests</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="WEB-CRAWLING-1"><a href="#WEB-CRAWLING-1" class="headerlink" title="WEB CRAWLING 1"></a>WEB CRAWLING 1</h1><blockquote>
+<p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
+</blockquote>
+<h2 id="Requests"><a href="#Requests" class="headerlink" title="Requests "></a>Requests <br></h2><ul>
+<li>Requests 패키지는 크롤링 하고자 하는 페이지를 url 값을 통해 가져와 객체로 변환 해주는 기능을 가지고 있다. <br></li>
+</ul>
+<h3 id="1-Installation"><a href="#1-Installation" class="headerlink" title="1. Installation"></a>1. Installation</h3><ul>
+<li>Requests 를 이용하기 위해 package 를 설치해준다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install requests</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>request를 이용하면서, json 형식으로의 크롤링과, html 형식으로 css  selecting 을 위한 크롤링을 실습해 볼 것이므로, BeautifulSoup Package 역시 같이 설치해준다. (BeautifulSoup은 html parser 를 이용해보기 위함이다.)</li>
+<li><p>python-forecastio 는 dark sky 의 api를 활용해 날씨 데이터를 받아올때 사용해보기 위해 설치한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install bs4</span><br><span class="line">$ pip3 install python-forecastio</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>import 할 것들</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> forecastio</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> pandas.io.json <span class="keyword">import</span> json_normalize</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-jSON-Dark-Sky-api-활용-날씨정보-가져오기"><a href="#2-jSON-Dark-Sky-api-활용-날씨정보-가져오기" class="headerlink" title="2. [ jSON ] Dark Sky api 활용 날씨정보 가져오기"></a>2. [ jSON ] Dark Sky api 활용 날씨정보 가져오기</h3><ul>
+<li>DarkSky api 는 위도와 경도를 입력하면, 날씨 정보를 주는 api 이다.</li>
+<li><p><a href="https://darsky.net/dev/" target="_blank" rel="noopener">https://darsky.net/dev/</a> 에 가입 후, TOKEN 을 받는다.</p>
+</li>
+<li><p>위에서 받은 개인의 TOKEN 을 활용해 url 을 먼저, formating을 해준다.</p>
+</li>
+<li>requests의 get 메소드를 활용해 url 의 정보를 받아온다.</li>
+<li>받아온 정보를 requests 의 json 메소드로 json 형식으로 변환해준다.</li>
+<li>json 을 확인하고 원하는 정보를 return 해준다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">forecast</span><span class="params">(lat, lng)</span>:</span></span><br><span class="line">  url = <span class="string">"https://api.darksky.net/forecast/&#123;&#125;/&#123;&#125;,&#123;&#125;"</span>.format(TOKEN, lat, lng)</span><br><span class="line">      response = requests.get(url)</span><br><span class="line">      json_obj = response.json()</span><br><span class="line">      <span class="keyword">return</span> json_obj[<span class="string">"hourly"</span>][<span class="string">"summary"</span>]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-html-BS4-활용-html-selecting-해서-가져오기"><a href="#3-html-BS4-활용-html-selecting-해서-가져오기" class="headerlink" title="3. [ html ] BS4 활용 html selecting 해서 가져오기"></a>3. [ html ] BS4 활용 html selecting 해서 가져오기</h3><ul>
+<li>네이버의 실시간 검색순위 부분의 text 를 크롤링 해보자</li>
+<li>html 파일을 BS4 를 활용해 받아온뒤, CSS selecting 으로 원하는 text data 를 가져온다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">naver</span><span class="params">()</span>:</span></span><br><span class="line">  url = <span class="string">"https://www.naver.com"</span></span><br><span class="line">  df = pd.DataFrame(columns=[<span class="string">"rank"</span>, <span class="string">"keyword"</span>])</span><br><span class="line">  response = requests.get(url)</span><br><span class="line">  dom = BeautifulSoup(response.content, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># BeautifulSoup(markup, features, builder, parse_only, from_encoding, exclude_encodings)</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">        df.loc[len(df)] = &#123;</span><br><span class="line">            <span class="string">"rank"</span>:keyword.select_one(<span class="string">'.ah_r'</span>).text,</span><br><span class="line">            <span class="string">"keyword"</span>:keyword.select_one(<span class="string">'.ah_k'</span>).text</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> df</span><br></pre></td></tr></table></figure>
+<ul>
+<li>print(response.content)의 모양을 보자.</li>
+<li>따라서, BeautifulSoup 으로 html 형식으로 parsing 해주고, css 를 활용해 selecting 해준다.</li>
+<li>.select 는 여러개의 엘리먼트를 선택 -&gt; 결과가 리스트</li>
+<li>.select_one은 하나의 엘리먼트를 선택 -&gt; 결과가 하나의 객체</li>
+</ul>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2018/10/24/Requests/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="/2018/10/24/Selenium/">
                             Selenium
                         </a>
@@ -864,157 +1018,6 @@ You can start your first spider with:
                     
                         <p>
                             <a href="/2018/10/24/Selenium/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/10/24/Requests/">
-                            Requests
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-10-24T12:02:50+09:00">
-	
-		    Oct 24, 2018
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Requests/">Requests</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="WEB-CRAWLING-1"><a href="#WEB-CRAWLING-1" class="headerlink" title="WEB CRAWLING 1"></a>WEB CRAWLING 1</h1><blockquote>
-<p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
-</blockquote>
-<h2 id="Requests"><a href="#Requests" class="headerlink" title="Requests "></a>Requests <br></h2><ul>
-<li>Requests 패키지는 크롤링 하고자 하는 페이지를 url 값을 통해 가져와 객체로 변환 해주는 기능을 가지고 있다. <br></li>
-</ul>
-<h3 id="1-Installation"><a href="#1-Installation" class="headerlink" title="1. Installation"></a>1. Installation</h3><ul>
-<li>Requests 를 이용하기 위해 package 를 설치해준다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install requests</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><br></p>
-<ul>
-<li>request를 이용하면서, json 형식으로의 크롤링과, html 형식으로 css  selecting 을 위한 크롤링을 실습해 볼 것이므로, BeautifulSoup Package 역시 같이 설치해준다. (BeautifulSoup은 html parser 를 이용해보기 위함이다.)</li>
-<li><p>python-forecastio 는 dark sky 의 api를 활용해 날씨 데이터를 받아올때 사용해보기 위해 설치한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install bs4</span><br><span class="line">$ pip3 install python-forecastio</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>import 할 것들</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> forecastio</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> pandas.io.json <span class="keyword">import</span> json_normalize</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-jSON-Dark-Sky-api-활용-날씨정보-가져오기"><a href="#2-jSON-Dark-Sky-api-활용-날씨정보-가져오기" class="headerlink" title="2. [ jSON ] Dark Sky api 활용 날씨정보 가져오기"></a>2. [ jSON ] Dark Sky api 활용 날씨정보 가져오기</h3><ul>
-<li>DarkSky api 는 위도와 경도를 입력하면, 날씨 정보를 주는 api 이다.</li>
-<li><p><a href="https://darsky.net/dev/" target="_blank" rel="noopener">https://darsky.net/dev/</a> 에 가입 후, TOKEN 을 받는다.</p>
-</li>
-<li><p>위에서 받은 개인의 TOKEN 을 활용해 url 을 먼저, formating을 해준다.</p>
-</li>
-<li>requests의 get 메소드를 활용해 url 의 정보를 받아온다.</li>
-<li>받아온 정보를 requests 의 json 메소드로 json 형식으로 변환해준다.</li>
-<li>json 을 확인하고 원하는 정보를 return 해준다.<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">forecast</span><span class="params">(lat, lng)</span>:</span></span><br><span class="line">  url = <span class="string">"https://api.darksky.net/forecast/&#123;&#125;/&#123;&#125;,&#123;&#125;"</span>.format(TOKEN, lat, lng)</span><br><span class="line">      response = requests.get(url)</span><br><span class="line">      json_obj = response.json()</span><br><span class="line">      <span class="keyword">return</span> json_obj[<span class="string">"hourly"</span>][<span class="string">"summary"</span>]</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-html-BS4-활용-html-selecting-해서-가져오기"><a href="#3-html-BS4-활용-html-selecting-해서-가져오기" class="headerlink" title="3. [ html ] BS4 활용 html selecting 해서 가져오기"></a>3. [ html ] BS4 활용 html selecting 해서 가져오기</h3><ul>
-<li>네이버의 실시간 검색순위 부분의 text 를 크롤링 해보자</li>
-<li>html 파일을 BS4 를 활용해 받아온뒤, CSS selecting 으로 원하는 text data 를 가져온다.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">naver</span><span class="params">()</span>:</span></span><br><span class="line">  url = <span class="string">"https://www.naver.com"</span></span><br><span class="line">  df = pd.DataFrame(columns=[<span class="string">"rank"</span>, <span class="string">"keyword"</span>])</span><br><span class="line">  response = requests.get(url)</span><br><span class="line">  dom = BeautifulSoup(response.content, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># BeautifulSoup(markup, features, builder, parse_only, from_encoding, exclude_encodings)</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">        df.loc[len(df)] = &#123;</span><br><span class="line">            <span class="string">"rank"</span>:keyword.select_one(<span class="string">'.ah_r'</span>).text,</span><br><span class="line">            <span class="string">"keyword"</span>:keyword.select_one(<span class="string">'.ah_k'</span>).text</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> df</span><br></pre></td></tr></table></figure>
-<ul>
-<li>print(response.content)의 모양을 보자.</li>
-<li>따라서, BeautifulSoup 으로 html 형식으로 parsing 해주고, css 를 활용해 selecting 해준다.</li>
-<li>.select 는 여러개의 엘리먼트를 선택 -&gt; 결과가 리스트</li>
-<li>.select_one은 하나의 엘리먼트를 선택 -&gt; 결과가 하나의 객체</li>
-</ul>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/10/24/Requests/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/10/24/Thread/">
-                            Thread
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-10-24T12:02:50+09:00">
-	
-		    Oct 24, 2018
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Python/">Python</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h1><blockquote>
-<p>공부한 내용을 스스로 보기 쉽게 정리한 글입니다.</p>
-<ul>
-<li>파이썬 기본 : Single Thread (Main Thread)</li>
-<li>threading 모듈 : main thread에서 subthread 를 생성하여 진행하는 방식</li>
-<li>multiprocessing 모듈 : double cpu</li>
-</ul>
-</blockquote>
-<ul>
-<li>ThreadPoolExecutor : API - 멀티스레드와 멀티프로세스 동일한 형태로 디자인(Pool 클래스만 변경하면됨)</li>
-</ul>
-<h3 id="threading-Thread-arguement"><a href="#threading-Thread-arguement" class="headerlink" title="threading.Thread() arguement"></a>threading.Thread() arguement</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Thread(group=, target=, args= , kwargs=, *, daemon=<span class="keyword">None</span>)</span><br><span class="line"><span class="comment">#target= : 실제 스레드에서 돌아가게 될 함수</span></span><br><span class="line"><span class="comment">#args= : tuple 로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#kwargs= : dictionary로 target 함수에 들어가게될 argument</span></span><br><span class="line"><span class="comment">#daemon : 데몬 스레드로 돌아갈지 여부</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Thread 의 메소드</span></span><br><span class="line">start(): <span class="comment">#스레드의 실행, self 의 run() 메소드를 호출</span></span><br><span class="line">run(): <span class="comment">#스레드가 실제로 수행하게될 작업</span></span><br><span class="line">name : <span class="comment">#스레드의 이름</span></span><br><span class="line">threading.locals() : <span class="comment">#해당 스레드 내부에서 사용할 로컬 변수 지정</span></span><br></pre></td></tr></table></figure>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/10/24/Thread/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>

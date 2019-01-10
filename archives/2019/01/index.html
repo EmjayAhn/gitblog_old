@@ -182,6 +182,102 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="/2019/01/10/Provision/">
+                            Provision
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2019-01-10T23:34:05+09:00">
+	
+		    Jan 10, 2019
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/wiki/">wiki</a>, <a class="category-link" href="/categories/wiki/Provision/">Provision</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="Server-Provisioning-amp-Terraform"><a href="#Server-Provisioning-amp-Terraform" class="headerlink" title="Server Provisioning &amp; Terraform"></a>Server Provisioning &amp; Terraform</h1><ul>
+<li>Provisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는 주제이다.  (IT 분야만으로 한정되지도 않는다) IT 분야의 Provisioning의 예시로는, Server Provisioning, Storage Provisioning, Telecommunication Provisioning 등이 있다.</li>
+<li>여기서는 <strong>Terraform</strong> 을 활용한 AWS 서버 프로비져닝에 관해 다룬다.</li>
+</ul>
+<h2 id="AWS-EC2"><a href="#AWS-EC2" class="headerlink" title="## AWS EC2"></a>## AWS EC2</h2><ul>
+<li>AWS EC2를 활용하기 위해서는 3가지의 기본적인 세팅이 필요하다.<ol>
+<li>키페어 (Key pair)</li>
+<li>보안그룹 (Security Group)</li>
+<li>인스턴스 (Instance)</li>
+</ol>
+</li>
+<li>이 세가지를 Terraform 을 활용해 생성하는 코드를 정리한다.</li>
+</ul>
+<h3 id="1-키페어-생성-Key-pair"><a href="#1-키페어-생성-Key-pair" class="headerlink" title="1. 키페어 생성 (Key pair)"></a>1. 키페어 생성 (Key pair)</h3><h4 id="1-1-Key-만들기"><a href="#1-1-Key-만들기" class="headerlink" title="1-1. Key 만들기"></a>1-1. Key 만들기</h4><pre><code>- 자신의 email로 ssh key 를 생성하여, key_name 이름으로 .ssh 폴더에 저장
+</code></pre><p><code>ssh-keygen -t rsa -b 4096 -C “email” -f “$HOME/.ssh/key_name” -N “”</code></p>
+<pre><code>- 이렇게 생성된 key 는 /key_name/ 과 /key_name.pub/로 private key 와 public key가 생성된다.
+</code></pre><h4 id="1-2-Key-pair-생성"><a href="#1-2-Key-pair-생성" class="headerlink" title="1-2. Key pair 생성"></a>1-2. Key pair 생성</h4><pre><code>- `main.tf`  파일 생성
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">`provider “aws” &#123;</span><br><span class="line">	# 이 region 은 seoul 을 의미한다</span><br><span class="line">	region = “ap-northeast-2”</span><br><span class="line">&#125;</span><br><span class="line">Resource “aws_key_pair” “resource_name” &#123;</span><br><span class="line">	# keygen 으로 생성한 key_name</span><br><span class="line">	key_name = &quot;key_name&quot;</span><br><span class="line">	public_key = &quot;$&#123;file(&quot;~/.ssh/key_name.pub&quot;)&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- apply 를 실행해, aws 키페어를 생성
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ terraform init</span><br><span class="line">$ terraform plan</span><br><span class="line">$ terraform apply</span><br></pre></td></tr></table></figure>
+<pre><code>- destroy 를 실행해, aws 키페어를 삭제
+</code></pre><p><code>$ terraform destroy</code></p>
+<h3 id="2-보안그룹-생성-Security-Group"><a href="#2-보안그룹-생성-Security-Group" class="headerlink" title="2. 보안그룹 생성 (Security Group)"></a>2. 보안그룹 생성 (Security Group)</h3><pre><code>- 보안그룹은 생성될 인스턴스의 정책을 설정하는 부분이다. 가장 대표적인 기능은 인바운드와 아웃바운드 port 를 설정할 수 있다.
+- 필요에 따라 port number 를 열어주면 된다.
+- `ingress` 는 인바운드, `egress` 는 아웃바운드 태그이다.
+- `from_port` 와 `to_port` 는 말 그대로 from 부터 to 까지의 번호를 지정한다.
+- 대표적인 포트번호에 관한 설명
+    - 22 : ssh 접속을 위한 포트
+    - 80 : http의 기본포트
+    - 8888 : Jupiter notebook 사용을 위한  포트
+    - 27017 : MongoDB 사용을 위한 포트
+    - 3306 : MySQL 사용을 위한 포트
+( /여기서는 DB의 경우, 다른 서버를 두고 사용하고 있으므로, 열어주지 않는다/ )
+
+
+- `main.tf`  파일 생성
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">provider &quot;aws&quot; &#123;</span><br><span class="line">    region = &quot;ap-northeast-2&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">resource &quot;aws_security_group&quot; &quot;resource_name&quot; &#123;</span><br><span class="line">		name = &quot;보안그룹 이름&quot;</span><br><span class="line">		description = &quot;보안그룹의 설명&quot;</span><br><span class="line">		ingress &#123;</span><br><span class="line">			from_port = 22</span><br><span class="line">			to_port = 22</span><br><span class="line">			protocol = &quot;tcp&quot;</span><br><span class="line">			cidr_blocks = [&quot;0.0.0.0/0&quot;]</span><br><span class="line">		&#125;</span><br><span class="line">		ingress &#123;</span><br><span class="line">			from_port = 80</span><br><span class="line">			to_port = 80</span><br><span class="line">			protocol = &quot;tcp&quot;</span><br><span class="line">			cidr_blocks = [&quot;0.0.0.0/0&quot;]</span><br><span class="line">		&#125;</span><br><span class="line">		ingress &#123;</span><br><span class="line">			from_port = 8888</span><br><span class="line">			to_port = 8888</span><br><span class="line">			protocol = &quot;tcp&quot;</span><br><span class="line">			cidr_blocks = [&quot;0.0.0.0/0&quot;]</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>마찬가지로, <code>init</code>, <code>plan</code>, <code>apply</code> 를 활용하여 보안그룹을 생성하고, <code>destroy</code> 로 제거한다.</li>
+</ul>
+<h3 id="3-인스턴스-생성"><a href="#3-인스턴스-생성" class="headerlink" title="3. 인스턴스 생성"></a>3. 인스턴스 생성</h3><pre><code>- 대망의 인스턴스 생성!
+- 여기선, EC2 중, linux ubuntu 18.04 버젼 을 활용한다. AWS 내에서 다른 종류의 인스턴스를 사용할 경우, ami 를 다른 값으로 사용하면 된다.
+- 또한, 다양한 인스턴스 유형중, t2.nano를 사용한다. 인스턴스 유형도 필요에 따라 다르게 설정하면 된다.
+
+- `main.tf`  파일 생성
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">provider &quot;aws&quot; &#123;</span><br><span class="line">		region = &quot;ap-northeast-2&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">data &quot;aws_security_group&quot; &quot;resource1&quot; &#123;</span><br><span class="line">     name = &quot;security_group_name&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">resource &quot;aws_instance&quot; &quot;resource2&quot; &#123;</span><br><span class="line">		ami = &quot;ami-06e7b9c5e0c4dd014&quot;</span><br><span class="line">		instance_type = &quot;t2.nano&quot;</span><br><span class="line">		key_name = &quot;key_name&quot;</span><br><span class="line">		vpc_security_group_ids = [</span><br><span class="line">			 &quot;$&#123;data.aws_security_group.resource1.id&#125;&quot;</span><br><span class="line">		]</span><br><span class="line">		tags &#123;</span><br><span class="line">			Name = &quot;dss_instance&quot;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>- `init`, `plan`, `apply` 를 활용하여  인스턴스를 생성하고, `destroy` 로 제거한다.
+</code></pre><h3 id="4-생성된-인스턴스-확인"><a href="#4-생성된-인스턴스-확인" class="headerlink" title="4. 생성된 인스턴스 확인"></a>4. 생성된 인스턴스 확인</h3><p><code>ssh -I ~/.ssh/key_name ubuntu@외부ip</code> 로 생성된 인스턴스를 확인하고, 활용할 수 있다.</p>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2019/01/10/Provision/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="/2019/01/09/190109-TodayWhatILearned/">
                             190109-TodayWhatILearned
                         </a>
@@ -350,7 +446,24 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 

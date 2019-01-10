@@ -6,7 +6,7 @@
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Emjay&#39;s DailyCommit Blog">
-    <title>Archives: 2019 - Emjay&#39;s DailyCommit Blog</title>
+    <title>Provision - Emjay&#39;s DailyCommit Blog</title>
     <meta name="author" content="EmjayAhn(Minjae Ahn)">
     
         <meta name="keywords" content="hexo,datascience,datascientist,">
@@ -15,18 +15,19 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{}</script>
-    <meta name="description" content="매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"articleBody":"Server Provisioning &amp; Terraform\nProvisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는 주제이다.  (IT 분야만으로 한정되지도 않는다) IT 분야의 Provisioning의 예시로는, Server Provisioning, Storage Provisioning, Telecommunication Provisioning 등이 있다.\n여기서는 Terraform 을 활용한 AWS 서버 프로비져닝에 관해 다룬다.\n\n## AWS EC2\nAWS EC2를 활용하기 위해서는 3가지의 기본적인 세팅이 필요하다.\n키페어 (Key pair)\n보안그룹 (Security Group)\n인스턴스 (Instance)\n\n\n이 세가지를 Terraform 을 활용해 생성하는 코드를 정리한다.\n\n1. 키페어 생성 (Key pair)1-1. Key 만들기- 자신의 email로 ssh key 를 생성하여, key_name 이름으로 .ssh 폴더에 저장\nssh-keygen -t rsa -b 4096 -C “email” -f “$HOME/.ssh/key_name” -N “”\n- 이렇게 생성된 key 는 /key_name/ 과 /key_name.pub/로 private key 와 public key가 생성된다.\n1-2. Key pair 생성- `main.tf`  파일 생성\n123456789`provider “aws” &#123;\t# 이 region 은 seoul 을 의미한다\tregion = “ap-northeast-2”&#125;Resource “aws_key_pair” “resource_name” &#123;\t# keygen 으로 생성한 key_name\tkey_name = &quot;key_name&quot;\tpublic_key = &quot;$&#123;file(&quot;~/.ssh/key_name.pub&quot;)&#125;&quot;&#125;\n- apply 를 실행해, aws 키페어를 생성\n123$ terraform init$ terraform plan$ terraform apply\n- destroy 를 실행해, aws 키페어를 삭제\n$ terraform destroy\n2. 보안그룹 생성 (Security Group)- 보안그룹은 생성될 인스턴스의 정책을 설정하는 부분이다. 가장 대표적인 기능은 인바운드와 아웃바운드 port 를 설정할 수 있다.\n- 필요에 따라 port number 를 열어주면 된다.\n- `ingress` 는 인바운드, `egress` 는 아웃바운드 태그이다.\n- `from_port` 와 `to_port` 는 말 그대로 from 부터 to 까지의 번호를 지정한다.\n- 대표적인 포트번호에 관한 설명\n    - 22 : ssh 접속을 위한 포트\n    - 80 : http의 기본포트\n    - 8888 : Jupiter notebook 사용을 위한  포트\n    - 27017 : MongoDB 사용을 위한 포트\n    - 3306 : MySQL 사용을 위한 포트\n( /여기서는 DB의 경우, 다른 서버를 두고 사용하고 있으므로, 열어주지 않는다/ )\n\n\n- `main.tf`  파일 생성\n1234567891011121314151617181920212223242526provider &quot;aws&quot; &#123;    region = &quot;ap-northeast-2&quot;&#125;resource &quot;aws_security_group&quot; &quot;resource_name&quot; &#123;\t\tname = &quot;보안그룹 이름&quot;\t\tdescription = &quot;보안그룹의 설명&quot;\t\tingress &#123;\t\t\tfrom_port = 22\t\t\tto_port = 22\t\t\tprotocol = &quot;tcp&quot;\t\t\tcidr_blocks = [&quot;0.0.0.0/0&quot;]\t\t&#125;\t\tingress &#123;\t\t\tfrom_port = 80\t\t\tto_port = 80\t\t\tprotocol = &quot;tcp&quot;\t\t\tcidr_blocks = [&quot;0.0.0.0/0&quot;]\t\t&#125;\t\tingress &#123;\t\t\tfrom_port = 8888\t\t\tto_port = 8888\t\t\tprotocol = &quot;tcp&quot;\t\t\tcidr_blocks = [&quot;0.0.0.0/0&quot;]\t\t&#125;&#125;\n\n마찬가지로, init, plan, apply 를 활용하여 보안그룹을 생성하고, destroy 로 제거한다.\n\n3. 인스턴스 생성- 대망의 인스턴스 생성!\n- 여기선, EC2 중, linux ubuntu 18.04 버젼 을 활용한다. AWS 내에서 다른 종류의 인스턴스를 사용할 경우, ami 를 다른 값으로 사용하면 된다.\n- 또한, 다양한 인스턴스 유형중, t2.nano를 사용한다. 인스턴스 유형도 필요에 따라 다르게 설정하면 된다.\n\n- `main.tf`  파일 생성\n12345678910111213141516171819provider &quot;aws&quot; &#123;\t\tregion = &quot;ap-northeast-2&quot;&#125;data &quot;aws_security_group&quot; &quot;resource1&quot; &#123;     name = &quot;security_group_name&quot;&#125;resource &quot;aws_instance&quot; &quot;resource2&quot; &#123;\t\tami = &quot;ami-06e7b9c5e0c4dd014&quot;\t\tinstance_type = &quot;t2.nano&quot;\t\tkey_name = &quot;key_name&quot;\t\tvpc_security_group_ids = [\t\t\t &quot;$&#123;data.aws_security_group.resource1.id&#125;&quot;\t\t]\t\ttags &#123;\t\t\tName = &quot;dss_instance&quot;\t\t&#125;&#125;\n- `init`, `plan`, `apply` 를 활용하여  인스턴스를 생성하고, `destroy` 로 제거한다.\n4. 생성된 인스턴스 확인ssh -I ~/.ssh/key_name ubuntu@외부ip 로 생성된 인스턴스를 확인하고, 활용할 수 있다.\n","dateCreated":"2019-01-10T23:34:05+09:00","dateModified":"2019-01-10T23:36:51+09:00","datePublished":"2019-01-10T23:34:05+09:00","description":"","headline":"Provision","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://emjayahn.github.io/2019/01/10/Provision/"},"publisher":{"@type":"Organization","name":"EmjayAhn(Minjae Ahn)","sameAs":["https://github.com/emjayahn","https://facebook.com/jjminjae"]},"url":"https://emjayahn.github.io/2019/01/10/Provision/"}</script>
+    <meta name="description" content="Server Provisioning &amp;amp; Terraform Provisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는">
 <meta name="keywords" content="hexo,datascience,datascientist">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:url" content="https://emjayahn.github.io/archives/2019/index.html">
+<meta property="og:title" content="Provision">
+<meta property="og:url" content="https://emjayahn.github.io/2019/01/10/Provision/index.html">
 <meta property="og:site_name" content="Emjay&#39;s DailyCommit Blog">
-<meta property="og:description" content="매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.">
+<meta property="og:description" content="Server Provisioning &amp;amp; Terraform Provisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-01-10T14:36:51.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Emjay&#39;s DailyCommit Blog">
-<meta name="twitter:description" content="매일 공부한 것, 알게된 것을 기록하는 블로그입니다. 또한 제가 알고 있는 지식을 찾아보기 위해 개인 위키처럼 사용하고 있습니다.">
+<meta name="twitter:title" content="Provision">
+<meta name="twitter:description" content="Server Provisioning &amp;amp; Terraform Provisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는">
     
     
         
@@ -50,7 +51,7 @@
 
     
 
-<header id="header" data-behavior="1">
+<header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
         <a class="header-title-link" href="/ ">Emjay&#39;s DailyCommit Blog</a>
@@ -67,7 +68,7 @@
             <!-- Define author's picture -->
 
 
-<nav id="sidebar" data-behavior="1">
+<nav id="sidebar" data-behavior="4">
     <div class="sidebar-container">
         
         
@@ -168,26 +169,22 @@
 </nav>
 
             
-            <div id="main" data-behavior="1"
+            <div id="main" data-behavior="4"
                  class="
                         hasCoverMetaIn
                         ">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post">
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2019/01/10/Provision/">
-                            Provision
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Provision
+        </h1>
+    
+    
+        <div class="post-meta">
     <time datetime="2019-01-10T23:34:05+09:00">
 	
 		    Jan 10, 2019
@@ -202,10 +199,13 @@
     
 </div>
 
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="Server-Provisioning-amp-Terraform"><a href="#Server-Provisioning-amp-Terraform" class="headerlink" title="Server Provisioning &amp; Terraform"></a>Server Provisioning &amp; Terraform</h1><ul>
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <h1 id="Server-Provisioning-amp-Terraform"><a href="#Server-Provisioning-amp-Terraform" class="headerlink" title="Server Provisioning &amp; Terraform"></a>Server Provisioning &amp; Terraform</h1><ul>
 <li>Provisioning 이란,  한정된 자원을 최적의 효율을 위해 제공하는 기술적 개념을 말한다. 유저의 요청에 맞게 자원을 미리 세팅해두고, 유저의 요청에 따라 준비된 자원들을 목적과 효율에 맞게 제공하는 개념이다. 특정 분야에서 한정되어 사용하는 개념이 아니라 다양한 분야에서 응용되어지는 주제이다.  (IT 분야만으로 한정되지도 않는다) IT 분야의 Provisioning의 예시로는, Server Provisioning, Storage Provisioning, Telecommunication Provisioning 등이 있다.</li>
 <li>여기서는 <strong>Terraform</strong> 을 활용한 AWS 서버 프로비져닝에 관해 다룬다.</li>
 </ul>
@@ -254,155 +254,96 @@
 <pre><code>- `init`, `plan`, `apply` 를 활용하여  인스턴스를 생성하고, `destroy` 로 제거한다.
 </code></pre><h3 id="4-생성된-인스턴스-확인"><a href="#4-생성된-인스턴스-확인" class="headerlink" title="4. 생성된 인스턴스 확인"></a>4. 생성된 인스턴스 확인</h3><p><code>ssh -I ~/.ssh/key_name ubuntu@외부ip</code> 로 생성된 인스턴스를 확인하고, 활용할 수 있다.</p>
 
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2019/01/10/Provision/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
             
+
         </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2019/01/09/190109-TodayWhatILearned/">
-                            190109-TodayWhatILearned
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2019-01-09T23:58:09+09:00">
-	
-		    Jan 09, 2019
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="190109-TWIL"><a href="#190109-TWIL" class="headerlink" title="190109 TWIL"></a>190109 TWIL</h1><hr>
-<h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol>
-<li>BLOG RENEWAL</li>
-</ol>
-<hr>
-<h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol>
-<li>Graph모형 공부</li>
-<li>LinearAlgebra 1강, 2강<br><br></li>
-</ol>
-<hr>
-<h2 id="무엇을-느꼈는가"><a href="#무엇을-느꼈는가" class="headerlink" title="무엇을 느꼈는가"></a>무엇을 느꼈는가</h2><ul>
-<li>새해를 맞아 블로그를 새 테마로 바꾸었다. 기존에 hueman theme 에 익숙해져 있어서, 새로운 테마의 기능을<br>수정하고, 전처럼 편해지려면 또 적응의 시간이 필요할 것 같다. 블로그의 테마는 작년부터 글의 양이 늘어나면 늘어날수록<br>그 욕구가 더 심해 졌다. 특정 카테고리에서 글이 누적되가면서, 어떤 글들이 담겨있는지 제목을 통해 직관적으로<br>보고싶었다. hueman 은 글마다 썸네일들이 있고, 글의 순서가 조금 불편하게 배치되어 있다. 시리즈성 글들을 올린다거나,<br>주제가 1, 2, 3 등으로 나뉘는 글들이 있을 때, 글 제목으로 연속성을 보기가 힘들었다.</li>
-<li>위의 이유로 선택한 이번 테마는 내가 중점적으로 생각한 부분을 조금이나마 개선할 수 있는 것 같다. 틈틈히<br>새로운 테마의 세팅도 마쳐야겠다.</li>
-</ul>
-<hr>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2019/01/09/190109-TodayWhatILearned/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2019/01/08/190108-TodayWhatILearned/">
-                            REBOOT
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2019-01-08T11:35:35+09:00">
-	
-		    Jan 08, 2019
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Diary/">Diary</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <p><strong> REBOOT </strong></p>
-<ul>
-<li>Text Classification Project 를 한다는 핑계로 그간 TodayWhatILearned의 작성을 하지 못했다.<br>프로젝트를 하는 동안은 매일 어떤 것을 공부할 계획이고, 어떤 공부를 했는지 남길 만한 내용이 없었던 것도 사실이다.<br>프로젝트 동안 미뤄뒀던 공부들, 보고싶었던 주제들을 이제 다시 새로운 마음가짐을 가지고 시작할 것이다.<br>새해가 밝은 만큼 블로그를 만들기 시작하면서 다짐했던 초심을 상기하자.</li>
-</ul>
-<h2 id="To-Do-List"><a href="#To-Do-List" class="headerlink" title="To-Do-List"></a>To-Do-List</h2><ol>
-<li>Graph모형, 네트워크 추론 공부 (수식) - 새로운 패키지, 코드 정리하면서 공부</li>
-<li>LinearAlgebra 1강, 2강 다시 시작</li>
-</ol>
-<hr>
-<h2 id="오늘-한-일은-무엇인가"><a href="#오늘-한-일은-무엇인가" class="headerlink" title="오늘 한 일은 무엇인가"></a>오늘 한 일은 무엇인가</h2><ol>
-<li>Graph모형 공부</li>
-<li>LinearAlgebra 1강, 2강<br><br></li>
-</ol>
-<hr>
-<h2 id="내일-할-일은-무엇인가"><a href="#내일-할-일은-무엇인가" class="headerlink" title="내일 할 일은 무엇인가"></a>내일 할 일은 무엇인가</h2><ol>
-<li>네트워크 추론 공부(수식 위주로 공부)</li>
-</ol>
-<hr>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2019/01/08/190108-TodayWhatILearned/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
         
-        <li class="pagination-number">page 1 of 1</li>
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2019/01/09/190109-TodayWhatILearned/" data-tooltip="190109-TodayWhatILearned" aria-label="NEXT: 190109-TodayWhatILearned">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+        
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+            
+        
+    </div>
+</article>
 
 
 
@@ -413,6 +354,115 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2019/01/09/190109-TodayWhatILearned/" data-tooltip="190109-TodayWhatILearned" aria-label="NEXT: 190109-TodayWhatILearned">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2019/01/10/Provision/" title="Share on Google+">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
+            
+                
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://emjayahn.github.io/2019/01/10/Provision/">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://emjayahn.github.io/2019/01/10/Provision/">
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://emjayahn.github.io/2019/01/10/Provision/">
+                        <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+
             
         </div>
         
@@ -446,7 +496,25 @@
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
 <script src="/assets/js/script-dbd16rvloemmuxdzniplmnxxvwoz24eya9wol0b7vvmlokgqsjivmb8dnscy.min.js"></script>
-<!--SCRIPTS END--><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://emjayahn.github.io/2019/01/10/Provision/';
+                 
+                    this.page.identifier = '2019/01/10/Provision/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'emjaygithubpage';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -464,6 +532,7 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
+    
 
 
 
